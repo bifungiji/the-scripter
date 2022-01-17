@@ -1,0 +1,929 @@
+TheUser = game:GetService("Players").LocalPlayer.Name
+
+local ScreenGui = Instance.new("ScreenGui")
+local CharacterSuit = Instance.new("Frame")
+local RightLowerArm = Instance.new("TextButton")
+local LeftLowerArm = Instance.new("TextButton")
+local RightHand = Instance.new("TextButton")
+local LeftUpperArm = Instance.new("TextButton")
+local RightUpperArm = Instance.new("TextButton")
+local LeftHand = Instance.new("TextButton")
+local UpperTorso = Instance.new("TextButton")
+local Mask = Instance.new("TextButton")
+local Helmet = Instance.new("TextButton")
+local LowerTorso = Instance.new("TextButton")
+local RightUpperLeg = Instance.new("TextButton")
+local LeftUpperLeg = Instance.new("TextButton")
+local RightLowerLeg = Instance.new("TextButton")
+local LeftLowerLeg = Instance.new("TextButton")
+local LeftHand_2 = Instance.new("TextButton")
+local RightHand_2 = Instance.new("TextButton")
+local Fix = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local CloseS = Instance.new("TextButton")
+local MusicPage = Instance.new("TextButton")
+local Music = Instance.new("Frame")
+local CloseM = Instance.new("TextButton")
+local SuitPage = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local OpenGui = Instance.new("Frame")
+local CloseCredits = Instance.new("TextButton")
+local OpenGui_2 = Instance.new("TextButton")
+local CreditsGui = Instance.new("Frame")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local TextLabel_6 = Instance.new("TextLabel")
+local TextLabel_7 = Instance.new("TextLabel")
+local TextLabel_8 = Instance.new("TextLabel")
+local DiscordInvite = Instance.new("TextButton")
+local OpenCredits = Instance.new("TextButton")
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+CharacterSuit.Name = "CharacterSuit"
+CharacterSuit.Parent = ScreenGui
+CharacterSuit.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+CharacterSuit.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CharacterSuit.BorderSizePixel = 5
+CharacterSuit.Position = UDim2.new(1.20527561e-08, 0, 0, 0)
+CharacterSuit.Size = UDim2.new(0, 272, 0, 591)
+CharacterSuit.Visible = true
+
+RightUpperArm.Name = "RightUpperArm"
+RightUpperArm.Parent = CharacterSuit
+RightUpperArm.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RightUpperArm.BorderSizePixel = 4
+RightUpperArm.Position = UDim2.new(0.176470667, 0, 0.191201359, 0)
+RightUpperArm.Size = UDim2.new(0, 50, 0, 50)
+RightUpperArm.Font = Enum.Font.SciFi
+RightUpperArm.Text = "RightArm"
+RightUpperArm.TextColor3 = Color3.fromRGB(0, 0, 0)
+RightUpperArm.TextSize = 14.000
+RightUpperArm.MouseButton1Down:connect(function()
+
+
+local A_1 = game:GetService("Workspace")[TheUser].Suit.RightLowerArm.Main
+local A_2 = game:GetService("Workspace")[TheUser].RightLowerArm
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+end)
+
+LeftLowerArm.Name = "LeftLowerArm"
+LeftLowerArm.Parent = CharacterSuit
+LeftLowerArm.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LeftLowerArm.BorderSizePixel = 4
+LeftLowerArm.Position = UDim2.new(0.632353008, 0, 0.275803715, 0)
+LeftLowerArm.Size = UDim2.new(0, 50, 0, 50)
+LeftLowerArm.Font = Enum.Font.SourceSans
+LeftLowerArm.Text = ""
+LeftLowerArm.TextColor3 = Color3.fromRGB(0, 0, 0)
+LeftLowerArm.TextSize = 14.000
+LeftLowerArm.MouseButton1Down:connect(function()
+local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftLowerArm.Main
+local A_2 = game:GetService("Workspace")[TheUser].LeftUpperArm
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftUpperArm.Main
+local A_2 = game:GetService("Workspace")[TheUser].LeftUpperArm
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftHand.Main
+local A_2 = game:GetService("Workspace")[TheUser].LeftUpperArm
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+
+
+wait(0.3)
+
+
+
+
+
+local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftLowerArm.Main
+local A_2 = game:GetService("Workspace")[TheUser].LeftLowerArm
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+
+end)
+
+RightHand.Name = "RightHand"
+RightHand.Parent = CharacterSuit
+RightHand.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RightHand.BorderSizePixel = 4
+RightHand.Position = UDim2.new(0.176470652, 0, 0.360406071, 0)
+RightHand.Size = UDim2.new(0, 50, 0, 22)
+RightHand.Font = Enum.Font.SourceSans
+RightHand.Text = ""
+RightHand.TextColor3 = Color3.fromRGB(0, 0, 0)
+RightHand.TextSize = 14.000
+RightHand.MouseButton1Down:connect(function()
+local A_1 = game:GetService("Workspace")[TheUser].Suit.RightLowerArm.Main
+local A_2 = game:GetService("Workspace")[TheUser].RightLowerArm
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+local A_1 = game:GetService("Workspace")[TheUser].Suit.RightLowerArm.Main
+local A_2 = game:GetService("Workspace")[TheUser].RightLowerArm
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+local A_1 = game:GetService("Workspace")[TheUser].Suit.RightHand.Main
+local A_2 = game:GetService("Workspace")[TheUser].RightLowerArm
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+
+
+wait(0.3)
+
+
+
+local A_1 = game:GetService("Workspace")[TheUser].Suit.RightHand.Main
+local A_2 = game:GetService("Workspace")[TheUser].RightLowerArm
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+local A_1 = game:GetService("Workspace")[TheUser].Suit.RightLowerArm.Main
+local A_2 = game:GetService("Workspace")[TheUser].RightLowerArm
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+wait(0.3)
+local A_1 = game:GetService("Workspace")[TheUser].Suit.RightHand.Main
+local A_2 = game:GetService("Workspace")[TheUser].RightHand
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+end)
+
+LeftUpperArm.Name = "LeftUpperArm"
+LeftUpperArm.Parent = CharacterSuit
+LeftUpperArm.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LeftUpperArm.BorderSizePixel = 4
+LeftUpperArm.Position = UDim2.new(0.636029482, 0, 0.191201359, 0)
+LeftUpperArm.Size = UDim2.new(0, 50, 0, 50)
+LeftUpperArm.Font = Enum.Font.SciFi
+LeftUpperArm.Text = "LeftArm"
+LeftUpperArm.TextColor3 = Color3.fromRGB(0, 0, 0)
+LeftUpperArm.TextSize = 14.000
+LeftUpperArm.MouseButton1Down:connect(function()
+local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftUpperArm.Main
+local A_2 = game:GetService("Workspace")[TheUser].LeftUpperArm
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+end)
+
+RightLowerArm.Name = "RightLowerArm"
+RightLowerArm.Parent = CharacterSuit
+RightLowerArm.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RightLowerArm.BorderSizePixel = 4
+RightLowerArm.Position = UDim2.new(0.176470667, 0, 0.275803715, 0)
+RightLowerArm.Size = UDim2.new(0, 50, 0, 50)
+RightLowerArm.Font = Enum.Font.SourceSans
+RightLowerArm.Text = ""
+RightLowerArm.TextColor3 = Color3.fromRGB(0, 0, 0)
+RightLowerArm.TextSize = 14.000
+RightLowerArm.MouseButton1Down:connect(function()
+local A_1 = game:GetService("Workspace")[TheUser].Suit.RightLowerArm.Main
+local A_2 = game:GetService("Workspace")[TheUser].RightLowerArm
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+local A_1 = game:GetService("Workspace")[TheUser].Suit.RightLowerArm.Main
+local A_2 = game:GetService("Workspace")[TheUser].RightLowerArm
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+local A_1 = game:GetService("Workspace")[TheUser].Suit.RightHand.Main
+local A_2 = game:GetService("Workspace")[TheUser].RightLowerArm
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+
+
+wait(0.3)
+
+
+
+local A_1 = game:GetService("Workspace")[TheUser].Suit.RightLowerArm.Main
+local A_2 = game:GetService("Workspace")[TheUser].RightLowerArm
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+
+
+end)
+
+LeftHand.Name = "LeftHand"
+LeftHand.Parent = CharacterSuit
+LeftHand.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LeftHand.BorderSizePixel = 4
+LeftHand.Position = UDim2.new(0.632353008, 0, 0.360406071, 0)
+LeftHand.Size = UDim2.new(0, 50, 0, 22)
+LeftHand.Font = Enum.Font.SourceSans
+LeftHand.Text = ""
+LeftHand.TextColor3 = Color3.fromRGB(0, 0, 0)
+LeftHand.TextSize = 14.000
+LeftHand.MouseButton1Down:connect(function()
+local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftHand.Main
+local A_2 = game:GetService("Workspace")[TheUser].LeftUpperArm
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftUpperArm.Main
+local A_2 = game:GetService("Workspace")[TheUser].LeftUpperArm
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftLowerArm.Main
+local A_2 = game:GetService("Workspace")[TheUser].LeftUpperArm
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+wait(0.3)
+local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftLowerArm.Main
+local A_2 = game:GetService("Workspace")[TheUser].LeftLowerArm.Main
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftHand.Main
+local A_2 = game:GetService("Workspace")[TheUser].LeftLowerArm
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+wait(0.3)
+local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftHand.Main
+local A_2 = game:GetService("Workspace")[TheUser].LeftHand
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+end)
+
+UpperTorso.Name = "UpperTorso"
+UpperTorso.Parent = CharacterSuit
+UpperTorso.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UpperTorso.BorderSizePixel = 4
+UpperTorso.Position = UDim2.new(0.360294163, 0, 0.191201359, 0)
+UpperTorso.Size = UDim2.new(0, 70, 0, 100)
+UpperTorso.Font = Enum.Font.SciFi
+UpperTorso.Text = "Uppertorso"
+UpperTorso.TextColor3 = Color3.fromRGB(0, 0, 0)
+UpperTorso.TextSize = 14.000
+
+Mask.Name = "Mask"
+Mask.Parent = CharacterSuit
+Mask.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Mask.BorderSizePixel = 4
+Mask.Position = UDim2.new(0.360294163, 0, 0.0693739429, 0)
+Mask.Size = UDim2.new(0, 70, 0, 31)
+Mask.Font = Enum.Font.SciFi
+Mask.Text = "Mask"
+Mask.TextColor3 = Color3.fromRGB(0, 0, 0)
+Mask.TextSize = 14.000
+Mask.MouseButton1Down:connect(function()
+ local A_1 = game:GetService("Workspace")[TheUser].Suit.Helmet.HelmetMain
+local A_2 = game:GetService("Workspace")[TheUser].Head
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+wait(0.3)
+ local A_1 = game:GetService("Workspace")[TheUser].Suit.Mask.Main
+local A_2 = game:GetService("Workspace")[TheUser].Head
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+end)
+
+Helmet.Name = "Helmet"
+Helmet.Parent = CharacterSuit
+Helmet.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Helmet.BorderSizePixel = 4
+Helmet.Position = UDim2.new(0.360294163, 0, 0.138747886, 0)
+Helmet.Size = UDim2.new(0, 70, 0, 31)
+Helmet.Font = Enum.Font.SciFi
+Helmet.Text = "Helmet"
+Helmet.TextColor3 = Color3.fromRGB(0, 0, 0)
+Helmet.TextSize = 14.000
+Helmet.MouseButton1Down:connect(function()
+ local A_1 = game:GetService("Workspace")[TheUser].Suit.Helmet.HelmetMain
+local A_2 = game:GetService("Workspace")[TheUser].Head
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+end)
+
+LowerTorso.Name = "LowerTorso"
+LowerTorso.Parent = CharacterSuit
+LowerTorso.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LowerTorso.BorderSizePixel = 4
+LowerTorso.Position = UDim2.new(0.360294163, 0, 0.367174268, 0)
+LowerTorso.Size = UDim2.new(0, 70, 0, 31)
+LowerTorso.Font = Enum.Font.SciFi
+LowerTorso.Text = "LowerTorso"
+LowerTorso.TextColor3 = Color3.fromRGB(0, 0, 0)
+LowerTorso.TextSize = 14.000
+LowerTorso.MouseButton1Down:connect(function()
+local A_1 = game:GetService("Workspace")[TheUser].Suit.LowerTorso.Main
+local A_2 = game:GetService("Workspace")[TheUser].LowerTorso
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+end)
+
+RightUpperLeg.Name = "RightUpperLeg"
+RightUpperLeg.Parent = CharacterSuit
+RightUpperLeg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RightUpperLeg.BorderSizePixel = 4
+RightUpperLeg.Position = UDim2.new(0.172794223, 0, 0.417935699, 0)
+RightUpperLeg.Size = UDim2.new(0, 50, 0, 50)
+RightUpperLeg.Font = Enum.Font.SciFi
+RightUpperLeg.Text = "RightLeg"
+RightUpperLeg.TextColor3 = Color3.fromRGB(0, 0, 0)
+RightUpperLeg.TextSize = 14.000
+RightUpperLeg.MouseButton1Down:connect(function()
+local A_1 = game:GetService("Workspace")[TheUser].Suit.RightUpperLeg.Main
+local A_2 = game:GetService("Workspace")[TheUser].RightUpperLeg
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+end)
+
+LeftUpperLeg.Name = "LeftUpperLeg"
+LeftUpperLeg.Parent = CharacterSuit
+LeftUpperLeg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LeftUpperLeg.BorderSizePixel = 4
+LeftUpperLeg.Position = UDim2.new(0.613970697, 0, 0.417935699, 0)
+LeftUpperLeg.Size = UDim2.new(0, 50, 0, 50)
+LeftUpperLeg.Font = Enum.Font.SciFi
+LeftUpperLeg.Text = "LeftLeg"
+LeftUpperLeg.TextColor3 = Color3.fromRGB(0, 0, 0)
+LeftUpperLeg.TextSize = 14.000
+LeftUpperLeg.MouseButton1Down:connect(function()
+local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftUpperLeg.Main
+local A_2 = game:GetService("Workspace")[TheUser].LeftUpperLeg
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+end)
+
+RightLowerLeg.Name = "RightLowerLeg"
+RightLowerLeg.Parent = CharacterSuit
+RightLowerLeg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RightLowerLeg.BorderSizePixel = 4
+RightLowerLeg.Position = UDim2.new(0.172794223, 0, 0.502538085, 0)
+RightLowerLeg.Size = UDim2.new(0, 50, 0, 50)
+RightLowerLeg.Font = Enum.Font.SourceSans
+RightLowerLeg.Text = ""
+RightLowerLeg.TextColor3 = Color3.fromRGB(0, 0, 0)
+RightLowerLeg.TextSize = 14.000
+RightLowerLeg.MouseButton1Down:connect(function()
+local A_1 = game:GetService("Workspace")[TheUser].Suit.RightLowerLeg.Main
+local A_2 = game:GetService("Workspace")[TheUser].RightUpperLeg
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+local A_1 = game:GetService("Workspace")[TheUser].Suit.RightUpperLeg.Main
+local A_2 = game:GetService("Workspace")[TheUser].RightUpperLeg
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+
+wait(0.3)
+local A_1 = game:GetService("Workspace")[TheUser].Suit.RightLowerLeg.Main
+local A_2 = game:GetService("Workspace")[TheUser].RightLowerLeg
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+end)
+
+LeftLowerLeg.Name = "LeftLowerLeg"
+LeftLowerLeg.Parent = CharacterSuit
+LeftLowerLeg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LeftLowerLeg.BorderSizePixel = 4
+LeftLowerLeg.Position = UDim2.new(0.613970697, 0, 0.502538085, 0)
+LeftLowerLeg.Size = UDim2.new(0, 50, 0, 50)
+LeftLowerLeg.Font = Enum.Font.SourceSans
+LeftLowerLeg.Text = ""
+LeftLowerLeg.TextColor3 = Color3.fromRGB(0, 0, 0)
+LeftLowerLeg.TextSize = 14.000
+LeftLowerLeg.MouseButton1Down:connect(function()
+local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftLowerLeg.Main
+local A_2 = game:GetService("Workspace")[TheUser].LeftUpperLeg
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftUpperLeg.Main
+local A_2 = game:GetService("Workspace")[TheUser].LeftUpperLeg
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+wait(0.3)
+local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftLowerLeg.Main
+local A_2 = game:GetService("Workspace")[TheUser].LeftLowerLeg
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+end)
+
+
+LeftHand_2.Name = "LeftHand"
+LeftHand_2.Parent = CharacterSuit
+LeftHand_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LeftHand_2.BorderSizePixel = 4
+LeftHand_2.Position = UDim2.new(0.613970697, 0, 0.587140441, 0)
+LeftHand_2.Size = UDim2.new(0, 50, 0, 25)
+LeftHand_2.Font = Enum.Font.SourceSans
+LeftHand_2.Text = ""
+LeftHand_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+LeftHand_2.TextSize = 14.000
+LeftHand_2.MouseButton1Down:connect(function()
+local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftLowerArm.Main
+local A_2 = game:GetService("Workspace")[TheUser].LeftUpperArm
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftHand.Main
+local A_2 = game:GetService("Workspace")[TheUser].LeftUpperArm
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftUpperArm.Main
+local A_2 = game:GetService("Workspace")[TheUser].LeftUpperArm
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+wait(0.3)
+local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftHand.Main
+local A_2 = game:GetService("Workspace")[TheUser].LeftLowerArm
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftLowerArm.Main
+local A_2 = game:GetService("Workspace")[TheUser].LeftLowerArm
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+wait(0.3)
+local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftHand.Main
+local A_2 = game:GetService("Workspace")[TheUser].LeftHand
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+end)
+
+RightHand_2.Name = "RightHand"
+RightHand_2.Parent = CharacterSuit
+RightHand_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RightHand_2.BorderSizePixel = 4
+RightHand_2.Position = UDim2.new(0.172794223, 0, 0.587140441, 0)
+RightHand_2.Size = UDim2.new(0, 50, 0, 25)
+RightHand_2.Font = Enum.Font.SourceSans
+RightHand_2.Text = ""
+RightHand_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+RightHand_2.TextSize = 14.000
+RightHand_2.MouseButton1Down:connect(function()
+local A_1 = game:GetService("Workspace")[TheUser].Suit.RightLowerArm.Main
+local A_2 = game:GetService("Workspace")[TheUser].RightUpperArm
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+local A_1 = game:GetService("Workspace")[TheUser].Suit.RightHand.Main
+local A_2 = game:GetService("Workspace")[TheUser].RightUpperArm
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+local A_1 = game:GetService("Workspace")[TheUser].Suit.RightUpperArm.Main
+local A_2 = game:GetService("Workspace")[TheUser].RightUpperArm
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+wait(0.3)
+local A_1 = game:GetService("Workspace")[TheUser].Suit.RightHand.Main
+local A_2 = game:GetService("Workspace")[TheUser].RightLowerArm
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftLowerArm.Main
+local A_2 = game:GetService("Workspace")[TheUser].RightLowerArm
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+wait(0.3)
+local A_1 = game:GetService("Workspace")[TheUser].Suit.RightHand.Main
+local A_2 = game:GetService("Workspace")[TheUser].RightHand
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+end)
+
+Fix.Name = "Fix"
+Fix.Parent = CharacterSuit
+Fix.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Fix.Position = UDim2.new(0.363970637, 0, 0.856175959, 0)
+Fix.Size = UDim2.new(0, 68, 0, 36)
+Fix.Font = Enum.Font.SciFi
+Fix.Text = "Fix"
+Fix.TextColor3 = Color3.fromRGB(0, 0, 0)
+Fix.TextSize = 30.000
+Fix.MouseButton1Down:connect(function()
+local Event = game:GetService("ReplicatedStorage").Events.Eject
+Event:FireServer()
+local A_1 = game:GetService("Workspace")[TheUser].Suit.UpperTorso.Main
+local A_2 = game:GetService("Workspace")[TheUser].UpperTorso
+local Event = game:GetService("ReplicatedStorage").Events.Eject
+Event:FireServer(A_1, A_2)
+wait(0.3)
+ 
+local A_1 = game:GetService("Workspace")[TheUser].Suit.UpperTorso.Main
+local A_2 = game:GetService("Workspace")[TheUser].UpperTorso
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+
+-- Script generated by R2Sv2
+-- R2Sv2 developed by Luckyxero
+-- Script generated by R2Sv2
+-- R2Sv2 developed by Luckyxero
+ 
+
+
+
+
+
+local A_1 = game:GetService("Workspace")[TheUser].Suit.Helmet.HelmetMain
+local A_2 = game:GetService("Workspace")[TheUser].UpperTorso
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+-- Script generated by R2Sv2
+-- R2Sv2 developed by Luckyxero
+ 
+
+
+local A_1 = game:GetService("Workspace")[TheUser].Suit.LowerTorso.Main
+local A_2 = game:GetService("Workspace")[TheUser].UpperTorso
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+-- Script generated by R2Sv2
+-- R2Sv2 developed by Luckyxero
+-- Script generated by R2Sv2
+-- R2Sv2 developed by Luckyxero
+ 
+
+ 
+local A_1 = game:GetService("Workspace")[TheUser].Suit.RightUpperArm.Main
+local A_2 = game:GetService("Workspace")[TheUser].UpperTorso
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+-- Script generated by R2Sv2
+-- R2Sv2 developed by Luckyxero
+
+-- Script generated by R2Sv2
+-- R2Sv2 developed by Luckyxero
+ 
+
+ 
+local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftUpperArm.Main
+local A_2 = game:GetService("Workspace")[TheUser].UpperTorso
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+
+-- Script generated by R2Sv2
+-- R2Sv2 developed by Luckyxero
+-- Script generated by R2Sv2
+-- R2Sv2 developed by Luckyxero
+ 
+
+ 
+local A_1 = game:GetService("Workspace")[TheUser].Suit.Mask.Main
+local A_2 = game:GetService("Workspace")[TheUser].UpperTorso
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+-- Script generated by R2Sv2
+-- R2Sv2 developed by Luckyxero
+ 
+
+
+local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftLowerArm.Main
+local A_2 = game:GetService("Workspace")[TheUser].UpperTorso
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+-- Script generated by R2Sv2
+-- R2Sv2 developed by Luckyxero
+ 
+
+
+local A_1 = game:GetService("Workspace")[TheUser].Suit.RightLowerArm.Main
+local A_2 = game:GetService("Workspace")[TheUser].UpperTorso
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+-- Script generated by R2Sv2
+-- Script generated by R2Sv2
+-- R2Sv2 developed by Luckyxero
+
+
+ 
+local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftHand.Main
+local A_2 = game:GetService("Workspace")[TheUser].UpperTorso
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+-- Script generated by R2Sv2
+-- R2Sv2 developed by Luckyxero
+-- Script generated by R2Sv2
+-- R2Sv2 developed by Luckyxero
+ 
+
+ 
+local A_1 = game:GetService("Workspace")[TheUser].Suit.RightHand.Main
+local A_2 = game:GetService("Workspace")[TheUser].UpperTorso
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+-- Script generated by R2Sv2
+-- R2Sv2 developed by Luckyxero
+-- Script generated by R2Sv2
+-- R2Sv2 developed by Luckyxero
+ 
+
+ 
+local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftUpperLeg.Main
+local A_2 = game:GetService("Workspace")[TheUser].UpperTorso
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+-- Script generated by R2Sv2
+-- R2Sv2 developed by Luckyxero
+-- Script generated by R2Sv2
+-- R2Sv2 developed by Luckyxero
+ 
+
+ 
+local A_1 = game:GetService("Workspace")[TheUser].Suit.RightUpperLeg.Main
+local A_2 = game:GetService("Workspace")[TheUser].UpperTorso
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+-- Script generated by R2Sv2
+-- R2Sv2 developed by Luckyxero
+ 
+
+
+local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftLowerLeg.Main
+local A_2 = game:GetService("Workspace")[TheUser].UpperTorso
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+-- Script generated by R2Sv2
+-- R2Sv2 developed by Luckyxero
+ 
+
+
+local A_1 = game:GetService("Workspace")[TheUser].Suit.RightLowerLeg.Main
+local A_2 = game:GetService("Workspace")[TheUser].UpperTorso
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+
+-- Script generated by R2Sv2
+-- R2Sv2 developed by Luckyxero
+ 
+
+
+local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftFoot.Main
+local A_2 = game:GetService("Workspace")[TheUser].UpperTorso
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+-- Script generated by R2Sv2
+-- R2Sv2 developed by Luckyxero
+ 
+
+
+local A_1 = game:GetService("Workspace")[TheUser].Suit.RightFoot.Main
+local A_2 = game:GetService("Workspace")[TheUser].UpperTorso
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+-- Script generated by R2Sv2
+-- R2Sv2 developed by Luckyxero
+ 
+local A_1 = false
+local Event = game:GetService("ReplicatedStorage").Events.TogglePower
+Event:FireServer(A_1)
+
+
+end)
+
+TextLabel.Parent = CharacterSuit
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.Position = UDim2.new(0, 0, 0.776649773, 0)
+TextLabel.Size = UDim2.new(0, 272, 0, 38)
+TextLabel.Font = Enum.Font.SciFi
+TextLabel.Text = "If Body Parts Disappear Click Fix"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 18.000
+
+CloseS.Name = "CloseS"
+CloseS.Parent = CharacterSuit
+CloseS.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+CloseS.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CloseS.BorderSizePixel = 4
+CloseS.Position = UDim2.new(1.02205884, 0, 0, 0)
+CloseS.Size = UDim2.new(0, 90, 0, 50)
+CloseS.Font = Enum.Font.SciFi
+CloseS.Text = "Close"
+CloseS.TextColor3 = Color3.fromRGB(255, 255, 255)
+CloseS.TextSize = 20.000
+CloseS.MouseButton1Down:connect(function()
+CharacterSuit.Visible = false
+Music.Visible = false
+OpenGui.Visible = true
+end)
+
+MusicPage.Name = "MusicPage"
+MusicPage.Parent = CharacterSuit
+MusicPage.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+MusicPage.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MusicPage.BorderSizePixel = 4
+MusicPage.Position = UDim2.new(1.02205884, 0, 0.0846023709, 0)
+MusicPage.Size = UDim2.new(0, 90, 0, 50)
+MusicPage.Font = Enum.Font.SciFi
+MusicPage.Text = "Music"
+MusicPage.TextColor3 = Color3.fromRGB(255, 255, 255)
+MusicPage.TextSize = 20.000
+
+
+Music.Name = "Music"
+Music.Parent = ScreenGui
+Music.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+Music.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Music.BorderSizePixel = 5
+Music.Position = UDim2.new(1.20527561e-08, 0, 0, 0)
+Music.Size = UDim2.new(0, 272, 0, 591)
+Music.Visible = false
+
+CloseM.Name = "CloseM"
+CloseM.Parent = Music
+CloseM.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+CloseM.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CloseM.BorderSizePixel = 4
+CloseM.Position = UDim2.new(1.02205884, 0, 0, 0)
+CloseM.Size = UDim2.new(0, 90, 0, 50)
+CloseM.Font = Enum.Font.SciFi
+CloseM.Text = "Close"
+CloseM.TextColor3 = Color3.fromRGB(255, 255, 255)
+CloseM.TextSize = 20.000
+
+SuitPage.Name = "SuitPage"
+SuitPage.Parent = Music
+SuitPage.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+SuitPage.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SuitPage.BorderSizePixel = 4
+SuitPage.Position = UDim2.new(1.02205884, 0, 0.0846023709, 0)
+SuitPage.Size = UDim2.new(0, 90, 0, 50)
+SuitPage.Font = Enum.Font.SciFi
+SuitPage.Text = "Suit"
+SuitPage.TextColor3 = Color3.fromRGB(255, 255, 255)
+SuitPage.TextSize = 30.000
+
+TextLabel_2.Parent = Music
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+TextLabel_2.BorderColor3 = Color3.fromRGB(54, 54, 54)
+TextLabel_2.Position = UDim2.new(-0.0036764706, 0, 0.147208124, 0)
+TextLabel_2.Size = UDim2.new(0, 266, 0, 50)
+TextLabel_2.Font = Enum.Font.SciFi
+TextLabel_2.Text = "Coming Soon"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 40.000
+
+
+OpenGui.Name = "OpenGui"
+OpenGui.Parent = ScreenGui
+OpenGui.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+OpenGui.BorderSizePixel = 5
+OpenGui.Size = UDim2.new(0, 90, 0, 100)
+OpenGui.Visible = false
+
+CloseCredits.Name = "Close Credits"
+CloseCredits.Parent = OpenGui
+CloseCredits.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+CloseCredits.BorderSizePixel = 3
+CloseCredits.Size = UDim2.new(0, 90, 0, 50)
+CloseCredits.Visible = false
+CloseCredits.Font = Enum.Font.SciFi
+CloseCredits.Text = "Credits"
+CloseCredits.TextColor3 = Color3.fromRGB(255, 255, 255)
+CloseCredits.TextSize = 14.000
+CloseCredits.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+CloseCredits.MouseButton1Down:connect(function()
+CreditsGui.Visible = false
+CloseCredits.Visible = false
+OpenCredits.Visible = true
+end)
+
+OpenGui_2.Name = "OpenGui"
+OpenGui_2.Parent = OpenGui
+OpenGui_2.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+OpenGui_2.BorderSizePixel = 3
+OpenGui_2.Position = UDim2.new(0, 0, 0.5, 0)
+OpenGui_2.Size = UDim2.new(0, 90, 0, 50)
+OpenGui_2.Font = Enum.Font.SciFi
+OpenGui_2.Text = "Open"
+OpenGui_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+OpenGui_2.TextSize = 14.000
+OpenGui_2.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+OpenGui.MouseButton1Down:connect(function()
+CharacterSuit.Visible = true
+OpenGui.Visible = false
+CreditsGui.Visible = false
+end)
+
+CreditsGui.Name = "CreditsGui"
+CreditsGui.Parent = OpenGui
+CreditsGui.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+CreditsGui.BorderSizePixel = 5
+CreditsGui.Position = UDim2.new(2.33333349, 0, 0.349999994, 0)
+CreditsGui.Size = UDim2.new(0, 846, 0, 508)
+CreditsGui.Visible = false
+
+TextLabel_3.Parent = CreditsGui
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+TextLabel_3.Size = UDim2.new(0, 846, 0, 50)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "Rev#4892 Built Gui"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 40.000
+
+TextLabel_4.Parent = CreditsGui
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+TextLabel_4.Position = UDim2.new(0, 0, 0.0984251946, 0)
+TextLabel_4.Size = UDim2.new(0, 846, 0, 50)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "Rev#4892  Scripted Functions"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextSize = 40.000
+
+TextLabel_5.Parent = CreditsGui
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+TextLabel_5.Position = UDim2.new(0, 0, 0.196850389, 0)
+TextLabel_5.Size = UDim2.new(0, 846, 0, 50)
+TextLabel_5.Font = Enum.Font.SourceSans
+TextLabel_5.Text = "Rev#4892 Tested"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 40.000
+
+TextLabel_6.Parent = CreditsGui
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+TextLabel_6.Position = UDim2.new(0, 0, 0.295275569, 0)
+TextLabel_6.Size = UDim2.new(0, 846, 0, 50)
+TextLabel_6.Font = Enum.Font.SourceSans
+TextLabel_6.Text = "Alan™#0001 Tested"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextSize = 40.000
+
+TextLabel_7.Parent = CreditsGui
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+TextLabel_7.Position = UDim2.new(0, 0, 0.393700778, 0)
+TextLabel_7.Size = UDim2.new(0, 846, 0, 50)
+TextLabel_7.Font = Enum.Font.SourceSans
+TextLabel_7.Text = "KozuKama#0001 Tested"
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextSize = 40.000
+
+TextLabel_8.Parent = CreditsGui
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+TextLabel_8.Position = UDim2.new(0, 0, 0.492125988, 0)
+TextLabel_8.Size = UDim2.new(0, 846, 0, 50)
+TextLabel_8.Font = Enum.Font.SourceSans
+TextLabel_8.Text = "Hello"
+TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.TextSize = 40.000
+
+DiscordInvite.Name = "DiscordInvite"
+DiscordInvite.Parent = CreditsGui
+DiscordInvite.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+DiscordInvite.Position = UDim2.new(0, 0, 0.590551198, 0)
+DiscordInvite.Size = UDim2.new(0, 846, 0, 50)
+DiscordInvite.Font = Enum.Font.SourceSans
+DiscordInvite.Text = "Click For Discord Invite"
+DiscordInvite.TextColor3 = Color3.fromRGB(255, 255, 255)
+DiscordInvite.TextSize = 40.000
+DiscordInvite.MouseButton1Down:connect(function()
+Synapse:CopyString([[
+https://discord.gg/gjsaatWHuH
+]])()
+end)
+
+OpenCredits.Name = "OpenCredits"
+OpenCredits.Parent = OpenGui
+OpenCredits.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+OpenCredits.BorderSizePixel = 3
+OpenCredits.Size = UDim2.new(0, 90, 0, 50)
+OpenCredits.Font = Enum.Font.SciFi
+OpenCredits.Text = "Credits"
+OpenCredits.TextColor3 = Color3.fromRGB(255, 255, 255)
+OpenCredits.TextSize = 14.000
+OpenCredits.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+OpenCredits.MouseButton1Down:connect(function()
+CreditsGui.Visible = true
+CloseCredits.Visible = true
+OpenCredits.Visible = false
+end)
+
