@@ -16,8 +16,6 @@ local RightUpperLeg = Instance.new("TextButton")
 local LeftUpperLeg = Instance.new("TextButton")
 local RightLowerLeg = Instance.new("TextButton")
 local LeftLowerLeg = Instance.new("TextButton")
-local LeftHand_2 = Instance.new("TextButton")
-local RightHand_2 = Instance.new("TextButton")
 local Fix = Instance.new("TextButton")
 local TextLabel = Instance.new("TextLabel")
 local CloseS = Instance.new("TextButton")
@@ -38,6 +36,8 @@ local TextLabel_7 = Instance.new("TextLabel")
 local TextLabel_8 = Instance.new("TextLabel")
 local DiscordInvite = Instance.new("TextButton")
 local OpenCredits = Instance.new("TextButton")
+local LeftFoot = Instance.new("TextButton")
+local RightFoot = Instance.new("TextButton")
 --Properties:
 
 ScreenGui.Parent = game.CoreGui
@@ -93,10 +93,6 @@ local A_2 = game:GetService("Workspace")[TheUser].LeftUpperArm
 local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
 Event:FireServer(A_1, A_2)
 
-local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftHand.Main
-local A_2 = game:GetService("Workspace")[TheUser].LeftUpperArm
-local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
-Event:FireServer(A_1, A_2)
 
 
 
@@ -364,6 +360,101 @@ local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
 Event:FireServer(A_1, A_2)
 end)
 
+
+LeftFoot.Name = "LeftFoot"
+LeftFoot.Parent = CharacterSuit
+LeftFoot.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LeftFoot.BorderSizePixel = 4
+LeftFoot.Position = UDim2.new(0.613970697, 0, 0.587140441, 0)
+LeftFoot.Size = UDim2.new(0, 50, 0, 25)
+LeftFoot.Font = Enum.Font.SourceSans
+LeftFoot.Text = ""
+LeftFoot.TextColor3 = Color3.fromRGB(0, 0, 0)
+LeftFoot.TextSize = 14.000
+LeftFoot.MouseButton1Down:connect(function()
+local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftLowerLeg.Main
+local A_2 = game:GetService("Workspace")[TheUser].LeftUpperLeg
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftUpperLeg.Main
+local A_2 = game:GetService("Workspace")[TheUser].LeftUpperLeg
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftFoot.Main
+local A_2 = game:GetService("Workspace")[TheUser].LeftUpperLeg
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+wait(0.3)
+local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftFoot.Main
+local A_2 = game:GetService("Workspace")[TheUser].LeftLowerLeg
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftLowerLeg.Main
+local A_2 = game:GetService("Workspace")[TheUser].LeftLowerLeg
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+wait(0.3)
+
+local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftFoot.Main
+local A_2 = game:GetService("Workspace")[TheUser].LeftFoot
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+
+end)
+
+RightFoot.Name = "RightFoot"
+RightFoot.Parent = CharacterSuit
+RightFoot.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RightFoot.BorderSizePixel = 4
+RightFoot.Position = UDim2.new(0.172794223, 0, 0.587140441, 0)
+RightFoot.Size = UDim2.new(0, 50, 0, 25)
+RightFoot.Font = Enum.Font.SourceSans
+RightFoot.Text = ""
+RightFoot.TextColor3 = Color3.fromRGB(0, 0, 0)
+RightFoot.TextSize = 14.000
+RightFoot.MouseButton1Down:connect(function()
+local A_1 = game:GetService("Workspace")[TheUser].Suit.RightUpperLeg.Main
+local A_2 = game:GetService("Workspace")[TheUser].RightUpperLeg
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+local A_1 = game:GetService("Workspace")[TheUser].Suit.RightLowerLeg
+local A_2 = game:GetService("Workspace")[TheUser].RightUpperLeg
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+local A_1 = game:GetService("Workspace")[TheUser].Suit.RightFoot.Main
+local A_2 = game:GetService("Workspace")[TheUser].RightUpperLeg
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+wait(0.3)
+
+local A_1 = game:GetService("Workspace")[TheUser].Suit.RightLowerLeg.Main
+local A_2 = game:GetService("Workspace")[TheUser].RightLowerLeg
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+local A_1 = game:GetService("Workspace")[TheUser].Suit.RightFoot.Main
+local A_2 = game:GetService("Workspace")[TheUser].RightLowerLeg
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
+wait(0.3)
+
+local A_1 = game:GetService("Workspace")[TheUser].Suit.RightFoot.Main
+local A_2 = game:GetService("Workspace")[TheUser].RightFoot
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+end)
+
+
+
 RightLowerLeg.Name = "RightLowerLeg"
 RightLowerLeg.Parent = CharacterSuit
 RightLowerLeg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -421,91 +512,9 @@ Event:FireServer(A_1, A_2)
 end)
 
 
-LeftHand_2.Name = "LeftHand"
-LeftHand_2.Parent = CharacterSuit
-LeftHand_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-LeftHand_2.BorderSizePixel = 4
-LeftHand_2.Position = UDim2.new(0.613970697, 0, 0.587140441, 0)
-LeftHand_2.Size = UDim2.new(0, 50, 0, 25)
-LeftHand_2.Font = Enum.Font.SourceSans
-LeftHand_2.Text = ""
-LeftHand_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-LeftHand_2.TextSize = 14.000
-LeftHand_2.MouseButton1Down:connect(function()
-local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftLowerArm.Main
-local A_2 = game:GetService("Workspace")[TheUser].LeftUpperArm
-local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
-Event:FireServer(A_1, A_2)
 
-local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftHand.Main
-local A_2 = game:GetService("Workspace")[TheUser].LeftUpperArm
-local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
-Event:FireServer(A_1, A_2)
 
-local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftUpperArm.Main
-local A_2 = game:GetService("Workspace")[TheUser].LeftUpperArm
-local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
-Event:FireServer(A_1, A_2)
-wait(0.3)
-local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftHand.Main
-local A_2 = game:GetService("Workspace")[TheUser].LeftLowerArm
-local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
-Event:FireServer(A_1, A_2)
 
-local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftLowerArm.Main
-local A_2 = game:GetService("Workspace")[TheUser].LeftLowerArm
-local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
-Event:FireServer(A_1, A_2)
-
-wait(0.3)
-local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftHand.Main
-local A_2 = game:GetService("Workspace")[TheUser].LeftHand
-local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
-Event:FireServer(A_1, A_2)
-end)
-
-RightHand_2.Name = "RightHand"
-RightHand_2.Parent = CharacterSuit
-RightHand_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-RightHand_2.BorderSizePixel = 4
-RightHand_2.Position = UDim2.new(0.172794223, 0, 0.587140441, 0)
-RightHand_2.Size = UDim2.new(0, 50, 0, 25)
-RightHand_2.Font = Enum.Font.SourceSans
-RightHand_2.Text = ""
-RightHand_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-RightHand_2.TextSize = 14.000
-RightHand_2.MouseButton1Down:connect(function()
-local A_1 = game:GetService("Workspace")[TheUser].Suit.RightLowerArm.Main
-local A_2 = game:GetService("Workspace")[TheUser].RightUpperArm
-local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
-Event:FireServer(A_1, A_2)
-
-local A_1 = game:GetService("Workspace")[TheUser].Suit.RightHand.Main
-local A_2 = game:GetService("Workspace")[TheUser].RightUpperArm
-local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
-Event:FireServer(A_1, A_2)
-
-local A_1 = game:GetService("Workspace")[TheUser].Suit.RightUpperArm.Main
-local A_2 = game:GetService("Workspace")[TheUser].RightUpperArm
-local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
-Event:FireServer(A_1, A_2)
-wait(0.3)
-local A_1 = game:GetService("Workspace")[TheUser].Suit.RightHand.Main
-local A_2 = game:GetService("Workspace")[TheUser].RightLowerArm
-local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
-Event:FireServer(A_1, A_2)
-
-local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftLowerArm.Main
-local A_2 = game:GetService("Workspace")[TheUser].RightLowerArm
-local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
-Event:FireServer(A_1, A_2)
-
-wait(0.3)
-local A_1 = game:GetService("Workspace")[TheUser].Suit.RightHand.Main
-local A_2 = game:GetService("Workspace")[TheUser].RightHand
-local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
-Event:FireServer(A_1, A_2)
-end)
 
 Fix.Name = "Fix"
 Fix.Parent = CharacterSuit
@@ -906,9 +915,7 @@ DiscordInvite.Text = "Click For Discord Invite"
 DiscordInvite.TextColor3 = Color3.fromRGB(255, 255, 255)
 DiscordInvite.TextSize = 40.000
 DiscordInvite.MouseButton1Down:connect(function()
-Synapse:CopyString([[
-https://discord.gg/gjsaatWHuH
-]])()
+setclipboard( "https://discord.gg/gjsaatWHuH") 
 end)
 
 OpenCredits.Name = "OpenCredits"
