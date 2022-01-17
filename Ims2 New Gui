@@ -188,19 +188,16 @@ RightLowerArm.TextColor3 = Color3.fromRGB(0, 0, 0)
 RightLowerArm.TextSize = 14.000
 RightLowerArm.MouseButton1Down:connect(function()
 local A_1 = game:GetService("Workspace")[TheUser].Suit.RightLowerArm.Main
-local A_2 = game:GetService("Workspace")[TheUser].RightLowerArm
+local A_2 = game:GetService("Workspace")[TheUser].RightUpperArm
 local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
 Event:FireServer(A_1, A_2)
 
-local A_1 = game:GetService("Workspace")[TheUser].Suit.RightLowerArm.Main
-local A_2 = game:GetService("Workspace")[TheUser].RightLowerArm
+local A_1 = game:GetService("Workspace")[TheUser].Suit.RightUpperArm.Main
+local A_2 = game:GetService("Workspace")[TheUser].RightUpperArm
 local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
 Event:FireServer(A_1, A_2)
 
-local A_1 = game:GetService("Workspace")[TheUser].Suit.RightHand.Main
-local A_2 = game:GetService("Workspace")[TheUser].RightLowerArm
-local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
-Event:FireServer(A_1, A_2)
+
 
 
 
@@ -228,7 +225,7 @@ LeftHand.Text = ""
 LeftHand.TextColor3 = Color3.fromRGB(0, 0, 0)
 LeftHand.TextSize = 14.000
 LeftHand.MouseButton1Down:connect(function()
-local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftHand.Main
+local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftLowerArm.Main
 local A_2 = game:GetService("Workspace")[TheUser].LeftUpperArm
 local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
 Event:FireServer(A_1, A_2)
@@ -238,25 +235,34 @@ local A_2 = game:GetService("Workspace")[TheUser].LeftUpperArm
 local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
 Event:FireServer(A_1, A_2)
 
-local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftLowerArm.Main
+local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftHand.Main
 local A_2 = game:GetService("Workspace")[TheUser].LeftUpperArm
 local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
 Event:FireServer(A_1, A_2)
+
+
+
 wait(0.3)
-local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftLowerArm.Main
-local A_2 = game:GetService("Workspace")[TheUser].LeftLowerArm.Main
-local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
-Event:FireServer(A_1, A_2)
+
+
 
 local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftHand.Main
 local A_2 = game:GetService("Workspace")[TheUser].LeftLowerArm
 local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
 Event:FireServer(A_1, A_2)
+
+local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftLowerArm.Main
+local A_2 = game:GetService("Workspace")[TheUser].LeftLowerArm
+local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
+Event:FireServer(A_1, A_2)
+
 wait(0.3)
 local A_1 = game:GetService("Workspace")[TheUser].Suit.LeftHand.Main
 local A_2 = game:GetService("Workspace")[TheUser].LeftHand
 local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
 Event:FireServer(A_1, A_2)
+
+
 end)
 
 UpperTorso.Name = "UpperTorso"
@@ -269,6 +275,12 @@ UpperTorso.Font = Enum.Font.SciFi
 UpperTorso.Text = "Uppertorso"
 UpperTorso.TextColor3 = Color3.fromRGB(0, 0, 0)
 UpperTorso.TextSize = 14.000
+UpperTorso.MouseButton1Down:connect(function()
+local A_1 = game:GetService("Workspace")[TheUser].Suit.UpperTorso.Main
+local A_2 = game:GetService("Workspace")[TheUser].UpperTorso
+local Event = game:GetService("ReplicatedStorage").Events.Eject
+Event:FireServer(A_1, A_2)
+end)
 
 Mask.Name = "Mask"
 Mask.Parent = CharacterSuit
