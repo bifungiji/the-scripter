@@ -65,8 +65,8 @@ RightUpperArm.TextSize = 14.000
 RightUpperArm.MouseButton1Down:connect(function()
 
 
-local A_1 = game:GetService("Workspace")[TheUser].Suit.RightLowerArm.Main
-local A_2 = game:GetService("Workspace")[TheUser].RightLowerArm
+local A_1 = game:GetService("Workspace")[TheUser].Suit.RightUpperArm.Main
+local A_2 = game:GetService("Workspace")[TheUser].RightUpperArm
 local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
 Event:FireServer(A_1, A_2)
 
@@ -126,17 +126,17 @@ RightHand.TextColor3 = Color3.fromRGB(0, 0, 0)
 RightHand.TextSize = 14.000
 RightHand.MouseButton1Down:connect(function()
 local A_1 = game:GetService("Workspace")[TheUser].Suit.RightLowerArm.Main
-local A_2 = game:GetService("Workspace")[TheUser].RightLowerArm
+local A_2 = game:GetService("Workspace")[TheUser].RightUpperArm
 local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
 Event:FireServer(A_1, A_2)
 
-local A_1 = game:GetService("Workspace")[TheUser].Suit.RightLowerArm.Main
-local A_2 = game:GetService("Workspace")[TheUser].RightLowerArm
+local A_1 = game:GetService("Workspace")[TheUser].Suit.RightUpperArm.Main
+local A_2 = game:GetService("Workspace")[TheUser].RightUpperArm
 local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
 Event:FireServer(A_1, A_2)
 
 local A_1 = game:GetService("Workspace")[TheUser].Suit.RightHand.Main
-local A_2 = game:GetService("Workspace")[TheUser].RightLowerArm
+local A_2 = game:GetService("Workspace")[TheUser].RightUpperArm
 local Event = game:GetService("ReplicatedStorage").Events.WeldPiece
 Event:FireServer(A_1, A_2)
 
@@ -829,10 +829,10 @@ OpenGui_2.Text = "Open"
 OpenGui_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 OpenGui_2.TextSize = 14.000
 OpenGui_2.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-OpenGui.MouseButton1Down:connect(function()
+OpenGui_2.MouseButton1Down:connect(function()
 CharacterSuit.Visible = true
 OpenGui.Visible = false
-CreditsGui.Visible = false
+CharacterSuit.Visible = true
 end)
 
 CreditsGui.Name = "CreditsGui"
