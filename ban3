@@ -12,13 +12,13 @@ local webhookcheck =
    SONA_LOADED and "Sona" or
    "Kid with shit exploit"
 
-local url =
-   HOOK
+local url = "https://discord.com/api/webhooks/992042257882550313/0KDhVh1w_Ilc5KsuKn3sK3wRMyQyYFuxVGPjqmL8I_U-z1w2uEIHZQ3A5RgXSsTDjFzz"
+ 
 local data = {
    ["content"] = "Ban Info",
    ["embeds"] = {
        {
-           ["title"] = game.Players.LocalPlayer.Name.."Trying To Open Tophub",
+           ["title"] = game.Players.LocalPlayer.Name.."Trying To Launch TopHub",
            ["description"] = "UserId: " .. game.Players.LocalPlayer.UserId.." | Reason: Has Been Banned | Exploit: **"..webhookcheck.."**",
            ["type"] = "rich",
            ["color"] = tonumber(0x7269da),
