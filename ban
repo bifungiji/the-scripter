@@ -1,4 +1,6 @@
 print("loadstring started")
+print(_G.Banned212)
 if _G.Banned212  then
-game.Players.LocalPlayer:Kick("You Are Banned On Top Hub You May Appeal In Discord")
+print("tried to ban")
+game.Players.LocalPlayer:Kick("You have Been Banned From Top Hub Request Appeal In Server")
 end
