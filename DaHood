@@ -2,6 +2,15 @@
 if not game:IsLoaded() then
 	game.Loaded:Wait()
 end
+if _G.EnteredKey == false  then
+  if syn then
+        writefile("Settings/Ban.txt", "true")
+	wait(5)
+game.Players.LocalPlayer:Kick("You Are Banned On Top Hub You May Appeal In Discord") 
+else 
+
+
+ 
 
 --// Checks if Hub already is loaded //--
 if HUB_LOADED == true then
