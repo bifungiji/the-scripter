@@ -1,0 +1,1211 @@
+--// Checks if game loaded //--
+if not game:IsLoaded() then
+	game.Loaded:Wait()
+end
+
+--// Checks if Hub already is loaded //--
+if HUB_LOADED == true then
+	game:GetService("StarterGui"):SetCore("SendNotification",{
+		Title = "Erorr:";
+		Text = "[$-T0P-$] HUB already running!";
+		Time = 10;
+	}) 
+	return
+end
+
+pcall(function() getgenv().HUB_LOADED = true end)
+
+--// Group Notifcation //--
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Roblox Group Copied!";
+	Text = "The script will still work! Support me by joining the group!";
+	Time = 10;
+}) 
+setclipboard("https://www.roblox.com/groups/13712257/Topcoldgamings-Group#!/about")
+
+-- Instances:
+local ScreenGui = Instance.new("ScreenGui")
+local KeyFrame = Instance.new("Frame")
+local UIKeyFrame = Instance.new("UICorner")
+local Textbox = Instance.new("TextBox")
+local UITextbox = Instance.new("UICorner")
+local GetKey = Instance.new("TextButton")
+local UIGetKey = Instance.new("UICorner")
+local UpperTab = Instance.new("TextLabel")
+local UIUpperTab = Instance.new("UICorner")
+local Opener = Instance.new("TextButton")
+local UIOpener = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+KeyFrame.Name = "KeyFrame"
+KeyFrame.Parent = ScreenGui
+KeyFrame.Active = true
+KeyFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+KeyFrame.BackgroundColor3 = Color3.fromRGB(112, 112, 112)
+KeyFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+KeyFrame.BorderSizePixel = 0
+KeyFrame.Draggable = true
+KeyFrame.Position = UDim2.new(0.5, 0, 0.5, 9)
+KeyFrame.Selectable = true
+KeyFrame.Size = UDim2.new(0, 0, 0, 0)
+
+UIKeyFrame.CornerRadius = UDim.new(0, 10)
+UIKeyFrame.Parent = KeyFrame
+
+Textbox.Name = "Textbox"
+Textbox.Parent = KeyFrame
+Textbox.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Textbox.BorderSizePixel = 0
+Textbox.Position = UDim2.new(0.109238096, 0, 0.549409866, 0)
+Textbox.Size = UDim2.new(0, 0, 0, 0)
+Textbox.Font = Enum.Font.SourceSans
+Textbox.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+Textbox.PlaceholderText = "Key Input"
+Textbox.Text = ""
+Textbox.TextColor3 = Color3.fromRGB(255, 255, 255)
+Textbox.TextScaled = true
+Textbox.TextSize = 25.000
+Textbox.TextWrapped = true
+
+UITextbox.CornerRadius = UDim.new(0, 8)
+UITextbox.Parent = Textbox
+
+GetKey.Name = "GetKey"
+GetKey.Parent = KeyFrame
+GetKey.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+GetKey.BorderSizePixel = 0
+GetKey.Position = UDim2.new(0.262238085, 0, 0.139163926, 0)
+GetKey.Size = UDim2.new(0, 0, 0, 0)
+GetKey.Font = Enum.Font.SourceSans
+GetKey.Text = "GET KEY"
+GetKey.TextColor3 = Color3.fromRGB(255, 0, 0)
+GetKey.TextScaled = true
+GetKey.TextSize = 28.000
+GetKey.TextWrapped = true
+GetKey.MouseButton1Down:connect(function()
+	setclipboard("discord.gg/64UqmWpgTy")
+	game:GetService("StarterGui"):SetCore("SendNotification",{
+		Title = "Discord copied!";
+		Text = "chat (?key) for the key (In discord)";
+		Time = 20;
+		Icon = "rbxassetid://505845268";
+		Button1 = "Okay";
+	})
+end)
+
+UIGetKey.CornerRadius = UDim.new(0, 8)
+UIGetKey.Parent = GetKey
+
+UpperTab.Name = "UpperTab"
+UpperTab.Parent = KeyFrame
+UpperTab.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+UpperTab.BorderSizePixel = 0
+UpperTab.Size = UDim2.new(0, 0, 0, 0)
+UpperTab.Font = Enum.Font.SourceSans
+UpperTab.Text = ""
+UpperTab.TextColor3 = Color3.fromRGB(0, 0, 0)
+UpperTab.TextScaled = true
+UpperTab.TextSize = 14.000
+UpperTab.TextWrapped = true
+
+UIUpperTab.CornerRadius = UDim.new(0, 8)
+UIUpperTab.Parent = UpperTab
+
+Opener.Name = "Opener"
+Opener.Parent = KeyFrame
+Opener.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Opener.BorderSizePixel = 0
+Opener.Position = UDim2.new(0, 0, 0.319901764, 0)
+Opener.Size = UDim2.new(0, 210, 0, 39)
+Opener.Font = Enum.Font.SourceSans
+Opener.Text = "Click to open HUB"
+Opener.TextColor3 = Color3.fromRGB(255, 0, 0)
+Opener.TextScaled = true
+Opener.TextSize = 14.000
+Opener.TextWrapped = true
+Opener.Visible = false
+Opener.MouseButton1Down:connect(function()
+	Opener.Visible = false
+	UpperTab.Visible = false
+	Textbox.Visible = false
+	GetKey.Visible = false
+	KeyFrame:TweenSize(UDim2.new(0, 0, 0, 0),"Out","Sine",1)
+	Opener:TweenPosition(UDim2.new(0, 0, 0, 0),"Out","Sine",1)
+	wait(2)
+	KeyFrame.Visible = false
+-- By: Topcoldgaming
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local ShadowFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local MainFrame = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local TargetImage = Instance.new("ImageLabel")
+local UICorner_3 = Instance.new("UICorner")
+local inputplayer = Instance.new("TextBox")
+local goto = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Fling = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local Target = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local view = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local lineSpliter = Instance.new("TextLabel")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local fly = Instance.new("TextButton")
+local macro = Instance.new("TextButton")
+local aimlock = Instance.new("TextButton")
+local autofarm = Instance.new("TextButton")
+local Admin_Fly = Instance.new("TextButton")
+local Crash = Instance.new("TextButton")
+local antibag = Instance.new("TextButton")
+local fistreach = Instance.new("TextButton")
+local freefist = Instance.new("TextButton")
+local naked = Instance.new("TextButton")
+local headless = Instance.new("TextButton")
+local Korblox = Instance.new("TextButton")
+local clickTP = Instance.new("TextButton")
+local norecoil = Instance.new("TextButton")
+local esp = Instance.new("TextButton") --// now swagmode premium //--
+local moneyesp = Instance.new("TextButton")
+local spin = Instance.new("TextButton")
+local Users = Instance.new("TextButton")
+local credits = Instance.new("TextLabel")
+local topcoldgaming2734 = Instance.new("TextLabel")
+local Rev4892 = Instance.new("TextLabel")
+local swamode = Instance.new("TextButton")
+local UpperTab_1_1 = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local CloseOpen = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local player = game.Players.LocalPlayer
+
+function GetPlayer(String)
+   local Found = {}
+   local strl = String:lower()
+   if strl == "all" then
+       for i,v in pairs(game.Players:GetPlayers()) do
+           table.insert(Found,v.Name)
+       end
+   elseif strl == "others" then
+       for i,v in pairs(game.Players:GetPlayers()) do
+           if v.Name ~= game.Players.LocalPlayer.Name then
+               table.insert(Found,v.Name)
+           end
+       end   
+elseif strl == "me" then
+       for i,v in pairs(game.Players:GetPlayers()) do
+           if v.Name == game.Players.LocalPlayer.Name then
+               table.insert(Found,v.Name)
+           end
+       end  
+   else
+       for i,v in pairs(game.Players:GetPlayers()) do
+           if v.Name:lower():sub(1, #String) == String:lower() then
+               table.insert(Found,v.Name)
+           end
+       end    
+   end
+   return Found    
+end
+
+--Properties:
+
+ScreenGui.Name = "ScreenGui"
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ResetOnSpawn = false
+
+ShadowFrame.Name = "ShadowFrame"
+ShadowFrame.Parent = ScreenGui
+ShadowFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ShadowFrame.Position = UDim2.new(0.320056885, 0, 0.0376939811, 0)
+ShadowFrame.Size = UDim2.new(0, 236, 0, 291)
+
+UICorner.CornerRadius = UDim.new(0, 10)
+UICorner.Parent = ShadowFrame
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = ShadowFrame
+MainFrame.BackgroundColor3 = Color3.fromRGB(112, 112, 112)
+MainFrame.Position = UDim2.new(-0.0335791782, 0, -0.0240549836, 0)
+MainFrame.Size = UDim2.new(0, 237, 0, 291)
+
+UICorner_2.CornerRadius = UDim.new(0, 10)
+UICorner_2.Parent = MainFrame
+
+TargetImage.Name = "TargetImage"
+TargetImage.Parent = MainFrame
+TargetImage.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TargetImage.Position = UDim2.new(0.518987358, 0, 0.0446735397, 0)
+TargetImage.Size = UDim2.new(0, 100, 0, 100)
+TargetImage.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+UICorner_3.CornerRadius = UDim.new(0, 500)
+UICorner_3.Parent = TargetImage
+
+inputplayer.Name = "inputplayer"
+inputplayer.Parent = MainFrame
+inputplayer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+inputplayer.BackgroundTransparency = 1.000
+inputplayer.Position = UDim2.new(0.497890294, 0, 0.422680408, 0)
+inputplayer.Size = UDim2.new(0, 109, 0, 18)
+inputplayer.Font = Enum.Font.SourceSans
+inputplayer.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
+inputplayer.PlaceholderText = "Input Player"
+inputplayer.Text = ""
+inputplayer.TextColor3 = Color3.fromRGB(0, 0, 0)
+inputplayer.TextSize = 14.000
+inputplayer.FocusLost:connect(function()
+	local targetplayer = game.Players[inputplayer.Text]
+	local targetname = game.Players[inputplayer.Text].Name
+		local TargetId = targetplayer.UserId
+		local ThumbType = Enum.ThumbnailType.HeadShot
+		local ThumbSize = Enum.ThumbnailSize.Size420x420
+		local Content = game:GetService('Players'):GetUserThumbnailAsync(TargetId, ThumbType, ThumbSize)
+
+		TargetImage.Image = Content
+end)
+
+goto.Name = "goto"
+goto.Parent = MainFrame
+goto.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+goto.Position = UDim2.new(0.518987358, 0, 0.508591056, 0)
+goto.Size = UDim2.new(0, 93, 0, 22)
+goto.Font = Enum.Font.SourceSans
+goto.Text = "Goto"
+goto.TextColor3 = Color3.fromRGB(255, 0, 0)
+goto.TextSize = 14.000
+goto.MouseButton1Down:Connect(function()
+	player.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players[inputplayer.Text].Character.UpperTorso.Position)
+end)
+
+UICorner_4.Parent = goto
+
+Fling.Name = "Fling"
+Fling.Parent = MainFrame
+Fling.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Fling.Position = UDim2.new(0.518987358, 0, 0.604811013, 0)
+Fling.Size = UDim2.new(0, 93, 0, 22)
+Fling.Font = Enum.Font.SourceSans
+Fling.Text = "Fling"
+Fling.TextColor3 = Color3.fromRGB(255, 0, 0)
+Fling.TextSize = 14.000
+Fling.MouseButton1Down:Connect(function()
+	if Fling.Text == 'Fling' then
+		Fling.Text = 'Unfling'
+		local Loop
+		local Players = game:GetService("Players")
+		local OldFlingPos = player.Character.HumanoidRootPart.Position
+		local loopFunction = function()
+			local success,err = pcall(function()
+				local FlingEnemy = Players:FindFirstChild(inputplayer.Text).Character
+				if FlingEnemy and player.Character then
+					FlingTorso = FlingEnemy.UpperTorso
+					local dis = 3.85
+					local increase = 6
+					if FlingEnemy.Humanoid.MoveDirection.X < 0 then
+						xchange = -increase
+					elseif FlingEnemy.Humanoid.MoveDirection.X > 0  then
+						xchange = increase
+					else
+						xchange = 0
+					end
+					if FlingEnemy.Humanoid.MoveDirection.Z < 0 then
+						zchange = -increase
+					elseif FlingEnemy.Humanoid.MoveDirection.Z > 0 then
+						zchange = increase
+					else
+						zchange = 0
+					end          
+					if player.Character then
+						player.Character:FindFirstChildWhichIsA('Humanoid'):ChangeState(11)
+						player.Character.HumanoidRootPart.CFrame = CFrame.new(FlingTorso.Position.X + math.random(-dis,dis) + xchange, FlingTorso.Position.Y, FlingTorso.Position.Z + math.random(-dis,dis) + zchange) * CFrame.Angles(math.rad(player.Character.HumanoidRootPart.Orientation.X + 350),math.rad(player.Character.HumanoidRootPart.Orientation.Y + 200),math.rad(player.Character.HumanoidRootPart.Orientation.Z + 240))
+						player.Character.HumanoidRootPart.Velocity = Vector3.new(500000,500000,500000)
+					end
+				end
+			end)
+			if err then
+				print('fling error : ' .. err)
+			end
+		end;
+		local Start = function()    
+			OldFlingPos = player.Character.HumanoidRootPart.Position
+			Loop = game:GetService("RunService").Heartbeat:Connect(loopFunction);
+		end;
+		local Pause = function()
+			Loop:Disconnect()
+			local vectorZero = Vector3.new(0, 0, 0)
+			player.Character.PrimaryPart.Velocity = vectorZero
+			player.Character.PrimaryPart.RotVelocity = vectorZero
+			player.Character.HumanoidRootPart.CFrame = CFrame.new(OldFlingPos) * CFrame.Angles(math.rad(0),math.rad(137.92),math.rad(0))
+		end;
+		Start()	
+		repeat wait() until Fling.Text == 'Fling'
+		Pause()
+	else
+		Fling.Text = 'Fling'
+	end
+end)
+	
+
+UICorner_5.Parent = Fling
+
+Target.Name = "Target"
+Target.Parent = MainFrame
+Target.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Target.Position = UDim2.new(0.518987358, 0, 0.70103097, 0)
+Target.Size = UDim2.new(0, 93, 0, 22)
+Target.Font = Enum.Font.SourceSans
+Target.Text = "Target"
+Target.TextColor3 = Color3.fromRGB(255, 0, 0)
+Target.TextSize = 14.000
+Target.MouseButton1Down:Connect(function()
+	if Target.Text == 'Target' then
+		Target.Text = 'Untarget'
+		pcall(function()
+			player.Character.LeftHand.LeftWrist:Destroy();
+			player.Character.RightHand.RightWrist:Destroy();
+		end);
+		local loopFunction = function()
+			if game.Players:FindFirstChild(inputplayer.Text).Character then
+				player.Character.LeftHand.CFrame  = CFrame.new(game.Players[inputplayer.Text].Character.UpperTorso.Position);
+				player.Character.RightHand.CFrame = CFrame.new(game.Players[inputplayer.Text].Character.UpperTorso.Position);
+				if game.Players:FindFirstChild(TargetTextbox.Text).Character.BodyEffects['K.O'].Value == true then
+					Target.Text = 'Target'
+				end
+			else
+				Target.Text = 'Target'
+			end
+		end;        
+		local Loop
+		local Start = function()
+			Loop = game:GetService("RunService").Heartbeat:Connect(loopFunction);
+		end;         
+		local Pause = function()
+			Loop:Disconnect()
+			player.Character.LeftHand.CFrame  = player.Character.LeftLowerArm.CFrame
+			player.Character.RightHand.CFrame = player.Character.RightLowerArm.CFrame
+		end;
+		Start()
+		repeat wait() until Target.Text == 'Target'
+		Pause()
+	else
+		Target.Text = 'Target'
+	end
+end)
+
+UICorner_6.Parent = Target
+
+view.Name = "view"
+view.Parent = MainFrame
+view.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+view.Position = UDim2.new(0.518987358, 0, 0.797250926, 0)
+view.Size = UDim2.new(0, 93, 0, 22)
+view.Font = Enum.Font.SourceSans
+view.Text = "View"
+view.TextColor3 = Color3.fromRGB(255, 0, 0)
+view.TextSize = 14.000
+view.MouseButton1Down:Connect(function()
+	if view.Text == 'View' then
+		view.Text = 'Unview'
+		repeat
+		wait()
+		if game.Players:FindFirstChild(inputplayer.Text) then
+			if game.Players[inputplayer.Text].Character then
+				game.Workspace:FindFirstChildWhichIsA('Camera').CameraSubject = game.Players:FindFirstChild(inputplayer.Text).Character.HumanoidRootPart
+			else
+				view.Text = 'View'
+			end
+		else
+			view.Text = 'View'
+		end
+		until view.Text == 'View'
+		game.Workspace:FindFirstChildWhichIsA('Camera').CameraSubject = player.Character:FindFirstChildWhichIsA('Humanoid')
+	else
+		view.Text = 'View'
+	end
+end)
+
+UICorner_7.Parent = view
+
+lineSpliter.Name = "lineSpliter"
+lineSpliter.Parent = MainFrame
+lineSpliter.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+lineSpliter.Position = UDim2.new(0.489451468, 0, 0.0240549836, 0)
+lineSpliter.Size = UDim2.new(0, 0, 0, 276)
+lineSpliter.Font = Enum.Font.SourceSans
+lineSpliter.Text = ""
+lineSpliter.TextColor3 = Color3.fromRGB(0, 0, 0)
+lineSpliter.TextSize = 14.000
+
+ScrollingFrame.Parent = MainFrame
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(112, 112, 112)
+ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame.Position = UDim2.new(0.0590717271, 0, 0.0240549836, 0)
+ScrollingFrame.Size = UDim2.new(0, 94, 0, 276)
+
+fly.Name = "fly"
+fly.Parent = ScrollingFrame
+fly.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+fly.BorderSizePixel = 0
+fly.Position = UDim2.new(0, 0, -0.00105319731, 0)
+fly.Size = UDim2.new(0, 80, 0, 21)
+fly.Font = Enum.Font.SourceSans
+fly.Text = "Fly(X)"
+fly.TextColor3 = Color3.fromRGB(255, 0, 0)
+fly.TextSize = 14.000
+fly.MouseButton1Down:Connect(function()
+local plr = game.Players.LocalPlayer
+local mouse = plr:GetMouse()
+ 
+        localplayer = plr
+       
+        if workspace:FindFirstChild("Core") then
+            workspace.Core:Destroy()
+        end
+       
+        local Core = Instance.new("Part")
+        Core.Name = "Core"
+        Core.Size = Vector3.new(0.05, 0.05, 0.05)
+ 
+        spawn(function()
+            Core.Parent = workspace
+            local Weld = Instance.new("Weld", Core)
+            Weld.Part0 = Core
+            Weld.Part1 = localplayer.Character.LowerTorso
+            Weld.C0 = CFrame.new(0, 0, 0)
+        end)
+       
+        workspace:WaitForChild("Core")
+       
+        local torso = workspace.Core
+        flying = true
+        local speed=10
+        local keys={a=false,d=false,w=false,s=false}
+        local e1
+        local e2
+        local function start()
+            local pos = Instance.new("BodyPosition",torso)
+            local gyro = Instance.new("BodyGyro",torso)
+            pos.Name="EPIXPOS"
+            pos.maxForce = Vector3.new(math.huge, math.huge, math.huge)
+            pos.position = torso.Position
+            gyro.maxTorque = Vector3.new(15e15, 15e15, 15e15)
+            gyro.cframe = torso.CFrame
+            repeat
+                wait()
+                localplayer.Character.Humanoid.PlatformStand=true
+                local new=gyro.cframe - gyro.cframe.p + pos.position
+                if not keys.w and not keys.s and not keys.a and not keys.d then
+                    speed=10
+                end
+                if keys.w then
+                    new = new + workspace.CurrentCamera.CoordinateFrame.lookVector * speed
+                    speed=speed+10
+                end
+                if keys.s then
+                    new = new - workspace.CurrentCamera.CoordinateFrame.lookVector * speed
+                    speed=speed+10
+                end
+                if keys.d then
+                    new = new * CFrame.new(speed,0,0)
+                    speed=speed+10
+                end
+                if keys.a then
+                    new = new * CFrame.new(-speed,0,0)
+                    speed=speed+10
+                end
+                if speed>100 then
+                    speed=10
+                end
+                pos.position=new.p
+                if keys.w then
+                    gyro.cframe = workspace.CurrentCamera.CoordinateFrame*CFrame.Angles(-math.rad(speed*0),0,0)
+                elseif keys.s then
+                    gyro.cframe = workspace.CurrentCamera.CoordinateFrame*CFrame.Angles(math.rad(speed*0),0,0)
+                else
+                    gyro.cframe = workspace.CurrentCamera.CoordinateFrame
+                end
+            until flying == false
+            if gyro then gyro:Destroy() end
+            if pos then pos:Destroy() end
+            flying=false
+            localplayer.Character.Humanoid.PlatformStand=false
+            speed=100
+        end
+        e1=mouse.KeyDown:connect(function(key)
+            if not torso or not torso.Parent then flying=false e1:disconnect() e2:disconnect() return end
+            if key=="w" then
+                keys.w=true
+            elseif key=="s" then
+                keys.s=true
+            elseif key=="a" then
+                keys.a=true
+            elseif key=="d" then
+                keys.d=true
+            elseif key=="x" then
+                if flying==true then
+                    flying=false
+                else
+                    flying=true
+                    start()
+                end
+            end
+        end)
+        e2=mouse.KeyUp:connect(function(key)
+            if key=="w" then
+                keys.w=false
+            elseif key=="s" then
+                keys.s=false
+            elseif key=="a" then
+                keys.a=false
+            elseif key=="d" then
+                keys.d=false
+            end
+        end)
+        start()
+end)
+
+macro.Name = "macro"
+macro.Parent = ScrollingFrame
+macro.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+macro.BorderSizePixel = 0
+macro.Position = UDim2.new(0, 0, 0.0470567718, 0)
+macro.Size = UDim2.new(0, 80, 0, 21)
+macro.Font = Enum.Font.SourceSans
+macro.Text = "FAKE Macro"
+macro.TextColor3 = Color3.fromRGB(255, 0, 0)
+macro.TextSize = 14.000
+macro.MouseButton1Down:Connect(function()
+loadstring("\102\117\110\99\116\105\111\110\32\73\108\108\73\108\108\108\73\108\108\73\108\108\108\73\108\108\108\73\108\108\108\73\108\108\40\73\108\108\73\108\108\108\73\108\108\73\108\108\73\108\108\41\32\105\102\32\40\73\108\108\73\108\108\108\73\108\108\73\108\108\73\108\108\61\61\40\40\40\40\40\57\49\57\32\43\32\54\51\54\41\45\54\51\54\41\42\51\49\52\55\41\47\51\49\52\55\41\43\57\49\57\41\41\32\116\104\101\110\32\114\101\116\117\114\110\32\110\111\116\32\116\114\117\101\32\101\110\100\32\105\102\32\40\73\108\108\73\108\108\108\73\108\108\73\108\108\73\108\108\61\61\40\40\40\40\40\57\54\56\32\43\32\54\55\48\41\45\54\55\48\41\42\51\51\49\53\41\47\51\51\49\53\41\43\57\54\56\41\41\32\116\104\101\110\32\114\101\116\117\114\110\32\110\111\116\32\102\97\108\115\101\32\101\110\100\32\101\110\100\59\32\108\111\99\97\108\32\73\73\108\108\108\108\73\73\108\108\108\108\32\61\32\40\55\42\51\45\57\47\57\43\51\42\50\47\48\43\51\42\51\41\59\108\111\99\97\108\32\73\73\108\108\108\73\73\108\108\108\73\73\108\108\108\73\73\108\108\108\73\73\32\61\32\40\51\42\52\45\55\47\55\43\54\42\52\47\51\43\57\42\57\41\59\108\111\99\97\108\32\73\108\108\73\73\73\108\108\73\73\73\73\108\108\73\32\61\32\116\97\98\108\101\46\99\111\110\99\97\116\59\102\117\110\99\116\105\111\110\32\73\108\108\73\73\73\73\108\108\73\73\73\73\73\108\40\73\73\108\108\108\108\73\73\108\108\108\108\41\32\102\117\110\99\116\105\111\110\32\73\73\108\108\108\108\73\73\108\108\108\108\40\73\73\108\108\108\108\73\73\108\108\108\108\41\32\102\117\110\99\116\105\111\110\32\73\73\108\108\108\108\73\73\108\108\108\108\40\73\108\108\73\108\108\73\108\108\73\108\108\73\41\32\101\110\100\32\101\110\100\32\101\110\100\59\73\108\108\73\73\73\73\108\108\73\73\73\73\73\108\40\57\48\48\50\56\51\41\59\102\117\110\99\116\105\111\110\32\73\108\108\73\108\108\108\73\108\108\73\108\108\108\73\108\108\108\73\108\108\108\73\108\108\73\108\108\108\73\73\73\108\108\108\40\73\73\108\108\108\73\73\108\108\108\73\73\108\108\108\73\73\108\108\108\73\73\41\32\102\117\110\99\116\105\111\110\32\73\73\108\108\108\108\73\73\108\108\108\108\40\73\108\108\73\108\108\73\108\108\73\108\108\73\41\32\108\111\99\97\108\32\73\73\108\108\108\73\73\108\108\108\73\73\108\108\108\73\73\108\108\108\73\73\32\61\32\40\57\42\48\45\55\47\53\43\51\42\49\47\51\43\56\42\50\41\32\101\110\100\32\101\110\100\59\73\108\108\73\108\108\108\73\108\108\73\108\108\108\73\108\108\108\73\108\108\108\73\108\108\73\108\108\108\73\73\73\108\108\108\40\57\48\56\51\41\59\108\111\99\97\108\32\73\108\108\73\73\108\108\73\73\108\108\73\73\73\32\61\32\108\111\97\100\115\116\114\105\110\103\59\108\111\99\97\108\32\73\108\73\108\73\108\73\108\73\108\73\108\73\108\73\108\73\73\32\61\32\123\39\92\52\53\39\44\39\92\52\53\39\44\39\92\52\55\39\44\39\92\52\55\39\44\39\92\51\50\39\44\39\92\54\56\39\44\39\92\49\48\49\39\44\39\92\57\57\39\44\39\92\49\49\49\39\44\39\92\49\48\57\39\44\39\92\49\49\50\39\44\39\92\49\48\53\39\44\39\92\49\48\56\39\44\39\92\49\48\49\39\44\39\92\49\48\48\39\44\39\92\51\50\39\44\39\92\54\55\39\44\39\92\49\49\49\39\44\39\92\49\48\48\39\44\39\92\49\48\49\39\44\39\92\52\54\39\44\39\92\51\50\39\44\39\92\49\48\39\44\39\92\49\48\56\39\44\39\92\49\49\49\39\44\39\92\57\57\39\44\39\92\57\55\39\44\39\92\49\48\56\39\44\39\92\51\50\39\44\39\92\56\48\39\44\39\92\49\48\56\39\44\39\92\57\55\39\44\39\92\49\50\49\39\44\39\92\49\48\49\39\44\39\92\49\49\52\39\44\39\92\51\50\39\44\39\92\54\49\39\44\39\92\51\50\39\44\39\92\49\48\51\39\44\39\92\57\55\39\44\39\92\49\48\57\39\44\39\92\49\48\49\39\44\39\92\53\56\39\44\39\92\55\49\39\44\39\92\49\48\49\39\44\39\92\49\49\54\39\44\39\92\56\51\39\44\39\92\49\48\49\39\44\39\92\49\49\52\39\44\39\92\49\49\56\39\44\39\92\49\48\53\39\44\39\92\57\57\39\44\39\92\49\48\49\39\44\39\92\52\48\39\44\39\92\51\52\39\44\39\92\56\48\39\44\39\92\49\48\56\39\44\39\92\57\55\39\44\39\92\49\50\49\39\44\39\92\49\48\49\39\44\39\92\49\49\52\39\44\39\92\49\49\53\39\44\39\92\51\52\39\44\39\92\52\49\39\44\39\92\52\54\39\44\39\92\55\54\39\44\39\92\49\49\49\39\44\39\92\57\57\39\44\39\92\57\55\39\44\39\92\49\48\56\39\44\39\92\56\48\39\44\39\92\49\48\56\39\44\39\92\57\55\39\44\39\92\49\50\49\39\44\39\92\49\48\49\39\44\39\92\49\49\52\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\49\48\56\39\44\39\92\49\49\49\39\44\39\92\57\57\39\44\39\92\57\55\39\44\39\92\49\48\56\39\44\39\92\51\50\39\44\39\92\55\55\39\44\39\92\49\49\49\39\44\39\92\49\49\55\39\44\39\92\49\49\53\39\44\39\92\49\48\49\39\44\39\92\51\50\39\44\39\92\54\49\39\44\39\92\51\50\39\44\39\92\56\48\39\44\39\92\49\48\56\39\44\39\92\57\55\39\44\39\92\49\50\49\39\44\39\92\49\48\49\39\44\39\92\49\49\52\39\44\39\92\53\56\39\44\39\92\55\49\39\44\39\92\49\48\49\39\44\39\92\49\49\54\39\44\39\92\55\55\39\44\39\92\49\49\49\39\44\39\92\49\49\55\39\44\39\92\49\49\53\39\44\39\92\49\48\49\39\44\39\92\52\48\39\44\39\92\52\49\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\49\48\56\39\44\39\92\49\49\49\39\44\39\92\57\57\39\44\39\92\57\55\39\44\39\92\49\48\56\39\44\39\92\51\50\39\44\39\92\56\51\39\44\39\92\49\49\50\39\44\39\92\49\48\49\39\44\39\92\49\48\49\39\44\39\92\49\48\48\39\44\39\92\55\49\39\44\39\92\49\48\56\39\44\39\92\49\48\53\39\44\39\92\49\49\54\39\44\39\92\57\57\39\44\39\92\49\48\52\39\44\39\92\51\50\39\44\39\92\54\49\39\44\39\92\51\50\39\44\39\92\49\48\50\39\44\39\92\57\55\39\44\39\92\49\48\56\39\44\39\92\49\49\53\39\44\39\92\49\48\49\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\49\48\56\39\44\39\92\49\49\49\39\44\39\92\57\57\39\44\39\92\57\55\39\44\39\92\49\48\56\39\44\39\92\51\50\39\44\39\92\56\51\39\44\39\92\49\49\50\39\44\39\92\49\48\49\39\44\39\92\49\48\49\39\44\39\92\49\48\48\39\44\39\92\52\57\39\44\39\92\51\50\39\44\39\92\54\49\39\44\39\92\51\50\39\44\39\92\49\48\50\39\44\39\92\57\55\39\44\39\92\49\48\56\39\44\39\92\49\49\53\39\44\39\92\49\48\49\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\49\48\56\39\44\39\92\49\49\49\39\44\39\92\57\57\39\44\39\92\57\55\39\44\39\92\49\48\56\39\44\39\92\51\50\39\44\39\92\56\55\39\44\39\92\57\55\39\44\39\92\49\48\56\39\44\39\92\49\48\56\39\44\39\92\49\48\49\39\44\39\92\49\49\54\39\44\39\92\51\50\39\44\39\92\54\49\39\44\39\92\51\50\39\44\39\92\56\48\39\44\39\92\49\48\56\39\44\39\92\57\55\39\44\39\92\49\50\49\39\44\39\92\49\48\49\39\44\39\92\49\49\52\39\44\39\92\52\54\39\44\39\92\54\54\39\44\39\92\57\55\39\44\39\92\57\57\39\44\39\92\49\48\55\39\44\39\92\49\49\50\39\44\39\92\57\55\39\44\39\92\57\57\39\44\39\92\49\48\55\39\44\39\92\53\56\39\44\39\92\55\48\39\44\39\92\49\48\53\39\44\39\92\49\49\48\39\44\39\92\49\48\48\39\44\39\92\55\48\39\44\39\92\49\48\53\39\44\39\92\49\49\52\39\44\39\92\49\49\53\39\44\39\92\49\49\54\39\44\39\92\54\55\39\44\39\92\49\48\52\39\44\39\92\49\48\53\39\44\39\92\49\48\56\39\44\39\92\49\48\48\39\44\39\92\52\48\39\44\39\92\51\52\39\44\39\92\56\55\39\44\39\92\57\55\39\44\39\92\49\48\56\39\44\39\92\49\48\56\39\44\39\92\49\48\49\39\44\39\92\49\49\54\39\44\39\92\51\52\39\44\39\92\52\49\39\44\39\92\49\48\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\49\48\56\39\44\39\92\49\49\49\39\44\39\92\57\57\39\44\39\92\57\55\39\44\39\92\49\48\56\39\44\39\92\51\50\39\44\39\92\56\53\39\44\39\92\49\49\48\39\44\39\92\49\48\53\39\44\39\92\49\49\56\39\44\39\92\49\48\49\39\44\39\92\49\49\52\39\44\39\92\49\49\53\39\44\39\92\57\55\39\44\39\92\49\48\56\39\44\39\92\54\53\39\44\39\92\49\49\48\39\44\39\92\49\48\53\39\44\39\92\49\48\57\39\44\39\92\57\55\39\44\39\92\49\49\54\39\44\39\92\49\48\53\39\44\39\92\49\49\49\39\44\39\92\49\49\48\39\44\39\92\51\50\39\44\39\92\54\49\39\44\39\92\51\50\39\44\39\92\55\51\39\44\39\92\49\49\48\39\44\39\92\49\49\53\39\44\39\92\49\49\54\39\44\39\92\57\55\39\44\39\92\49\49\48\39\44\39\92\57\57\39\44\39\92\49\48\49\39\44\39\92\52\54\39\44\39\92\49\49\48\39\44\39\92\49\48\49\39\44\39\92\49\49\57\39\44\39\92\52\48\39\44\39\92\51\52\39\44\39\92\54\53\39\44\39\92\49\49\48\39\44\39\92\49\48\53\39\44\39\92\49\48\57\39\44\39\92\57\55\39\44\39\92\49\49\54\39\44\39\92\49\48\53\39\44\39\92\49\49\49\39\44\39\92\49\49\48\39\44\39\92\51\52\39\44\39\92\52\49\39\44\39\92\49\48\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\49\48\50\39\44\39\92\49\49\55\39\44\39\92\49\49\48\39\44\39\92\57\57\39\44\39\92\49\49\54\39\44\39\92\49\48\53\39\44\39\92\49\49\49\39\44\39\92\49\49\48\39\44\39\92\51\50\39\44\39\92\49\49\53\39\44\39\92\49\49\54\39\44\39\92\49\49\49\39\44\39\92\49\49\50\39\44\39\92\56\52\39\44\39\92\49\49\52\39\44\39\92\57\55\39\44\39\92\57\57\39\44\39\92\49\48\55\39\44\39\92\49\49\53\39\44\39\92\52\48\39\44\39\92\52\49\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\49\48\50\39\44\39\92\49\49\49\39\44\39\92\49\49\52\39\44\39\92\51\50\39\44\39\92\57\53\39\44\39\92\52\52\39\44\39\92\51\50\39\44\39\92\49\49\56\39\44\39\92\51\50\39\44\39\92\49\48\53\39\44\39\92\49\49\48\39\44\39\92\51\50\39\44\39\92\49\49\48\39\44\39\92\49\48\49\39\44\39\92\49\50\48\39\44\39\92\49\49\54\39\44\39\92\52\52\39\44\39\92\51\50\39\44\39\92\49\48\51\39\44\39\92\57\55\39\44\39\92\49\48\57\39\44\39\92\49\48\49\39\44\39\92\53\56\39\44\39\92\55\49\39\44\39\92\49\48\49\39\44\39\92\49\49\54\39\44\39\92\56\51\39\44\39\92\49\48\49\39\44\39\92\49\49\52\39\44\39\92\49\49\56\39\44\39\92\49\48\53\39\44\39\92\57\57\39\44\39\92\49\48\49\39\44\39\92\52\48\39\44\39\92\51\52\39\44\39\92\56\48\39\44\39\92\49\48\56\39\44\39\92\57\55\39\44\39\92\49\50\49\39\44\39\92\49\48\49\39\44\39\92\49\49\52\39\44\39\92\49\49\53\39\44\39\92\51\52\39\44\39\92\52\49\39\44\39\92\52\54\39\44\39\92\55\54\39\44\39\92\49\49\49\39\44\39\92\57\57\39\44\39\92\57\55\39\44\39\92\49\48\56\39\44\39\92\56\48\39\44\39\92\49\48\56\39\44\39\92\57\55\39\44\39\92\49\50\49\39\44\39\92\49\48\49\39\44\39\92\49\49\52\39\44\39\92\52\54\39\44\39\92\54\55\39\44\39\92\49\48\52\39\44\39\92\57\55\39\44\39\92\49\49\52\39\44\39\92\57\55\39\44\39\92\57\57\39\44\39\92\49\49\54\39\44\39\92\49\48\49\39\44\39\92\49\49\52\39\44\39\92\53\56\39\44\39\92\55\48\39\44\39\92\49\48\53\39\44\39\92\49\49\48\39\44\39\92\49\48\48\39\44\39\92\55\48\39\44\39\92\49\48\53\39\44\39\92\49\49\52\39\44\39\92\49\49\53\39\44\39\92\49\49\54\39\44\39\92\54\55\39\44\39\92\49\48\52\39\44\39\92\49\48\53\39\44\39\92\49\48\56\39\44\39\92\49\48\48\39\44\39\92\55\57\39\44\39\92\49\48\50\39\44\39\92\54\55\39\44\39\92\49\48\56\39\44\39\92\57\55\39\44\39\92\49\49\53\39\44\39\92\49\49\53\39\44\39\92\52\48\39\44\39\92\51\52\39\44\39\92\55\50\39\44\39\92\49\49\55\39\44\39\92\49\48\57\39\44\39\92\57\55\39\44\39\92\49\49\48\39\44\39\92\49\49\49\39\44\39\92\49\48\53\39\44\39\92\49\48\48\39\44\39\92\51\52\39\44\39\92\52\49\39\44\39\92\53\56\39\44\39\92\55\49\39\44\39\92\49\48\49\39\44\39\92\49\49\54\39\44\39\92\56\48\39\44\39\92\49\48\56\39\44\39\92\57\55\39\44\39\92\49\50\49\39\44\39\92\49\48\53\39\44\39\92\49\49\48\39\44\39\92\49\48\51\39\44\39\92\54\53\39\44\39\92\49\49\48\39\44\39\92\49\48\53\39\44\39\92\49\48\57\39\44\39\92\57\55\39\44\39\92\49\49\54\39\44\39\92\49\48\53\39\44\39\92\49\49\49\39\44\39\92\49\49\48\39\44\39\92\56\52\39\44\39\92\49\49\52\39\44\39\92\57\55\39\44\39\92\57\57\39\44\39\92\49\48\55\39\44\39\92\49\49\53\39\44\39\92\52\48\39\44\39\92\52\49\39\44\39\92\51\50\39\44\39\92\49\48\48\39\44\39\92\49\49\49\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\49\48\53\39\44\39\92\49\48\50\39\44\39\92\51\50\39\44\39\92\52\48\39\44\39\92\49\49\56\39\44\39\92\52\54\39\44\39\92\54\53\39\44\39\92\49\49\48\39\44\39\92\49\48\53\39\44\39\92\49\48\57\39\44\39\92\57\55\39\44\39\92\49\49\54\39\44\39\92\49\48\53\39\44\39\92\49\49\49\39\44\39\92\49\49\48\39\44\39\92\52\54\39\44\39\92\54\53\39\44\39\92\49\49\48\39\44\39\92\49\48\53\39\44\39\92\49\48\57\39\44\39\92\57\55\39\44\39\92\49\49\54\39\44\39\92\49\48\53\39\44\39\92\49\49\49\39\44\39\92\49\49\48\39\44\39\92\55\51\39\44\39\92\49\48\48\39\44\39\92\53\56\39\44\39\92\49\48\57\39\44\39\92\57\55\39\44\39\92\49\49\54\39\44\39\92\57\57\39\44\39\92\49\48\52\39\44\39\92\52\48\39\44\39\92\51\52\39\44\39\92\49\49\52\39\44\39\92\57\56\39\44\39\92\49\50\48\39\44\39\92\57\55\39\44\39\92\49\49\53\39\44\39\92\49\49\53\39\44\39\92\49\48\49\39\44\39\92\49\49\54\39\44\39\92\49\48\53\39\44\39\92\49\48\48\39\44\39\92\51\52\39\44\39\92\52\49\39\44\39\92\52\49\39\44\39\92\51\50\39\44\39\92\49\49\54\39\44\39\92\49\48\52\39\44\39\92\49\48\49\39\44\39\92\49\49\48\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\49\49\56\39\44\39\92\53\56\39\44\39\92\56\51\39\44\39\92\49\49\54\39\44\39\92\49\49\49\39\44\39\92\49\49\50\39\44\39\92\52\48\39\44\39\92\52\49\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\49\48\49\39\44\39\92\49\49\48\39\44\39\92\49\48\48\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\49\48\49\39\44\39\92\49\49\48\39\44\39\92\49\48\48\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\49\48\49\39\44\39\92\49\49\48\39\44\39\92\49\48\48\39\44\39\92\49\48\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\49\48\50\39\44\39\92\49\49\55\39\44\39\92\49\49\48\39\44\39\92\57\57\39\44\39\92\49\49\54\39\44\39\92\49\48\53\39\44\39\92\49\49\49\39\44\39\92\49\49\48\39\44\39\92\51\50\39\44\39\92\49\48\56\39\44\39\92\49\49\49\39\44\39\92\57\55\39\44\39\92\49\48\48\39\44\39\92\54\53\39\44\39\92\49\49\48\39\44\39\92\49\48\53\39\44\39\92\49\48\57\39\44\39\92\57\55\39\44\39\92\49\49\54\39\44\39\92\49\48\53\39\44\39\92\49\49\49\39\44\39\92\49\49\48\39\44\39\92\52\48\39\44\39\92\49\48\53\39\44\39\92\49\48\48\39\44\39\92\52\49\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\49\48\53\39\44\39\92\49\48\50\39\44\39\92\51\50\39\44\39\92\56\53\39\44\39\92\49\49\48\39\44\39\92\49\48\53\39\44\39\92\49\49\56\39\44\39\92\49\48\49\39\44\39\92\49\49\52\39\44\39\92\49\49\53\39\44\39\92\57\55\39\44\39\92\49\48\56\39\44\39\92\54\53\39\44\39\92\49\49\48\39\44\39\92\49\48\53\39\44\39\92\49\48\57\39\44\39\92\57\55\39\44\39\92\49\49\54\39\44\39\92\49\48\53\39\44\39\92\49\49\49\39\44\39\92\49\49\48\39\44\39\92\52\54\39\44\39\92\54\53\39\44\39\92\49\49\48\39\44\39\92\49\48\53\39\44\39\92\49\48\57\39\44\39\92\57\55\39\44\39\92\49\49\54\39\44\39\92\49\48\53\39\44\39\92\49\49\49\39\44\39\92\49\49\48\39\44\39\92\55\51\39\44\39\92\49\48\48\39\44\39\92\51\50\39\44\39\92\54\49\39\44\39\92\54\49\39\44\39\92\51\50\39\44\39\92\49\48\53\39\44\39\92\49\48\48\39\44\39\92\51\50\39\44\39\92\49\49\54\39\44\39\92\49\48\52\39\44\39\92\49\48\49\39\44\39\92\49\49\48\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\49\49\53\39\44\39\92\49\49\54\39\44\39\92\49\49\49\39\44\39\92\49\49\50\39\44\39\92\56\52\39\44\39\92\49\49\52\39\44\39\92\57\55\39\44\39\92\57\57\39\44\39\92\49\48\55\39\44\39\92\49\49\53\39\44\39\92\52\48\39\44\39\92\52\49\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\56\53\39\44\39\92\49\49\48\39\44\39\92\49\48\53\39\44\39\92\49\49\56\39\44\39\92\49\48\49\39\44\39\92\49\49\52\39\44\39\92\49\49\53\39\44\39\92\57\55\39\44\39\92\49\48\56\39\44\39\92\54\53\39\44\39\92\49\49\48\39\44\39\92\49\48\53\39\44\39\92\49\48\57\39\44\39\92\57\55\39\44\39\92\49\49\54\39\44\39\92\49\48\53\39\44\39\92\49\49\49\39\44\39\92\49\49\48\39\44\39\92\52\54\39\44\39\92\54\53\39\44\39\92\49\49\48\39\44\39\92\49\48\53\39\44\39\92\49\48\57\39\44\39\92\57\55\39\44\39\92\49\49\54\39\44\39\92\49\48\53\39\44\39\92\49\49\49\39\44\39\92\49\49\48\39\44\39\92\55\51\39\44\39\92\49\48\48\39\44\39\92\51\50\39\44\39\92\54\49\39\44\39\92\51\50\39\44\39\92\51\52\39\44\39\92\52\57\39\44\39\92\51\52\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\49\48\49\39\44\39\92\49\48\56\39\44\39\92\49\49\53\39\44\39\92\49\48\49\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\56\53\39\44\39\92\49\49\48\39\44\39\92\49\48\53\39\44\39\92\49\49\56\39\44\39\92\49\48\49\39\44\39\92\49\49\52\39\44\39\92\49\49\53\39\44\39\92\57\55\39\44\39\92\49\48\56\39\44\39\92\54\53\39\44\39\92\49\49\48\39\44\39\92\49\48\53\39\44\39\92\49\48\57\39\44\39\92\57\55\39\44\39\92\49\49\54\39\44\39\92\49\48\53\39\44\39\92\49\49\49\39\44\39\92\49\49\48\39\44\39\92\52\54\39\44\39\92\54\53\39\44\39\92\49\49\48\39\44\39\92\49\48\53\39\44\39\92\49\48\57\39\44\39\92\57\55\39\44\39\92\49\49\54\39\44\39\92\49\48\53\39\44\39\92\49\49\49\39\44\39\92\49\49\48\39\44\39\92\55\51\39\44\39\92\49\48\48\39\44\39\92\51\50\39\44\39\92\54\49\39\44\39\92\51\50\39\44\39\92\49\48\53\39\44\39\92\49\48\48\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\49\48\56\39\44\39\92\49\49\49\39\44\39\92\57\57\39\44\39\92\57\55\39\44\39\92\49\48\56\39\44\39\92\51\50\39\44\39\92\57\55\39\44\39\92\49\49\48\39\44\39\92\49\48\53\39\44\39\92\49\48\57\39\44\39\92\57\55\39\44\39\92\49\49\54\39\44\39\92\49\48\53\39\44\39\92\49\49\49\39\44\39\92\49\49\48\39\44\39\92\56\52\39\44\39\92\49\49\52\39\44\39\92\57\55\39\44\39\92\57\57\39\44\39\92\49\48\55\39\44\39\92\51\50\39\44\39\92\54\49\39\44\39\92\51\50\39\44\39\92\49\48\51\39\44\39\92\57\55\39\44\39\92\49\48\57\39\44\39\92\49\48\49\39\44\39\92\53\56\39\44\39\92\55\49\39\44\39\92\49\48\49\39\44\39\92\49\49\54\39\44\39\92\56\51\39\44\39\92\49\48\49\39\44\39\92\49\49\52\39\44\39\92\49\49\56\39\44\39\92\49\48\53\39\44\39\92\57\57\39\44\39\92\49\48\49\39\44\39\92\52\48\39\44\39\92\51\52\39\44\39\92\56\48\39\44\39\92\49\48\56\39\44\39\92\57\55\39\44\39\92\49\50\49\39\44\39\92\49\48\49\39\44\39\92\49\49\52\39\44\39\92\49\49\53\39\44\39\92\51\52\39\44\39\92\52\49\39\44\39\92\52\54\39\44\39\92\55\54\39\44\39\92\49\49\49\39\44\39\92\57\57\39\44\39\92\57\55\39\44\39\92\49\48\56\39\44\39\92\56\48\39\44\39\92\49\48\56\39\44\39\92\57\55\39\44\39\92\49\50\49\39\44\39\92\49\48\49\39\44\39\92\49\49\52\39\44\39\92\52\54\39\44\39\92\54\55\39\44\39\92\49\48\52\39\44\39\92\57\55\39\44\39\92\49\49\52\39\44\39\92\57\55\39\44\39\92\57\57\39\44\39\92\49\49\54\39\44\39\92\49\48\49\39\44\39\92\49\49\52\39\44\39\92\53\56\39\44\39\92\55\48\39\44\39\92\49\48\53\39\44\39\92\49\49\48\39\44\39\92\49\48\48\39\44\39\92\55\48\39\44\39\92\49\48\53\39\44\39\92\49\49\52\39\44\39\92\49\49\53\39\44\39\92\49\49\54\39\44\39\92\54\55\39\44\39\92\49\48\52\39\44\39\92\49\48\53\39\44\39\92\49\48\56\39\44\39\92\49\48\48\39\44\39\92\55\57\39\44\39\92\49\48\50\39\44\39\92\54\55\39\44\39\92\49\48\56\39\44\39\92\57\55\39\44\39\92\49\49\53\39\44\39\92\49\49\53\39\44\39\92\52\48\39\44\39\92\51\52\39\44\39\92\55\50\39\44\39\92\49\49\55\39\44\39\92\49\48\57\39\44\39\92\57\55\39\44\39\92\49\49\48\39\44\39\92\49\49\49\39\44\39\92\49\48\53\39\44\39\92\49\48\48\39\44\39\92\51\52\39\44\39\92\52\49\39\44\39\92\53\56\39\44\39\92\55\54\39\44\39\92\49\49\49\39\44\39\92\57\55\39\44\39\92\49\48\48\39\44\39\92\54\53\39\44\39\92\49\49\48\39\44\39\92\49\48\53\39\44\39\92\49\48\57\39\44\39\92\57\55\39\44\39\92\49\49\54\39\44\39\92\49\48\53\39\44\39\92\49\49\49\39\44\39\92\49\49\48\39\44\39\92\52\48\39\44\39\92\56\53\39\44\39\92\49\49\48\39\44\39\92\49\48\53\39\44\39\92\49\49\56\39\44\39\92\49\48\49\39\44\39\92\49\49\52\39\44\39\92\49\49\53\39\44\39\92\57\55\39\44\39\92\49\48\56\39\44\39\92\54\53\39\44\39\92\49\49\48\39\44\39\92\49\48\53\39\44\39\92\49\48\57\39\44\39\92\57\55\39\44\39\92\49\49\54\39\44\39\92\49\48\53\39\44\39\92\49\49\49\39\44\39\92\49\49\48\39\44\39\92\52\49\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\55\39\44\39\92\49\49\48\39\44\39\92\49\48\53\39\44\39\92\49\48\57\39\44\39\92\57\55\39\44\39\92\49\49\54\39\44\39\92\49\48\53\39\44\39\92\49\49\49\39\44\39\92\49\49\48\39\44\39\92\56\52\39\44\39\92\49\49\52\39\44\39\92\57\55\39\44\39\92\57\57\39\44\39\92\49\48\55\39\44\39\92\53\56\39\44\39\92\56\48\39\44\39\92\49\48\56\39\44\39\92\57\55\39\44\39\92\49\50\49\39\44\39\92\52\48\39\44\39\92\52\49\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\49\48\49\39\44\39\92\49\49\48\39\44\39\92\49\48\48\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\49\48\49\39\44\39\92\49\49\48\39\44\39\92\49\48\48\39\44\39\92\49\48\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\55\55\39\44\39\92\49\49\49\39\44\39\92\49\49\55\39\44\39\92\49\49\53\39\44\39\92\49\48\49\39\44\39\92\52\54\39\44\39\92\55\53\39\44\39\92\49\48\49\39\44\39\92\49\50\49\39\44\39\92\54\56\39\44\39\92\49\49\49\39\44\39\92\49\49\57\39\44\39\92\49\49\48\39\44\39\92\53\56\39\44\39\92\54\55\39\44\39\92\49\49\49\39\44\39\92\49\49\48\39\44\39\92\49\49\48\39\44\39\92\49\48\49\39\44\39\92\57\57\39\44\39\92\49\49\54\39\44\39\92\52\48\39\44\39\92\49\48\50\39\44\39\92\49\49\55\39\44\39\92\49\49\48\39\44\39\92\57\57\39\44\39\92\49\49\54\39\44\39\92\49\48\53\39\44\39\92\49\49\49\39\44\39\92\49\49\48\39\44\39\92\52\48\39\44\39\92\55\53\39\44\39\92\49\48\49\39\44\39\92\49\50\49\39\44\39\92\52\49\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\49\48\53\39\44\39\92\49\48\50\39\44\39\92\51\50\39\44\39\92\55\53\39\44\39\92\49\48\49\39\44\39\92\49\50\49\39\44\39\92\51\50\39\44\39\92\54\49\39\44\39\92\54\49\39\44\39\92\51\50\39\44\39\92\51\52\39\44\39\92\49\49\54\39\44\39\92\51\52\39\44\39\92\51\50\39\44\39\92\49\49\54\39\44\39\92\49\48\52\39\44\39\92\49\48\49\39\44\39\92\49\49\48\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\56\51\39\44\39\92\49\49\50\39\44\39\92\49\48\49\39\44\39\92\49\48\49\39\44\39\92\49\48\48\39\44\39\92\55\49\39\44\39\92\49\48\56\39\44\39\92\49\48\53\39\44\39\92\49\49\54\39\44\39\92\57\57\39\44\39\92\49\48\52\39\44\39\92\51\50\39\44\39\92\54\49\39\44\39\92\51\50\39\44\39\92\49\49\48\39\44\39\92\49\49\49\39\44\39\92\49\49\54\39\44\39\92\51\50\39\44\39\92\56\51\39\44\39\92\49\49\50\39\44\39\92\49\48\49\39\44\39\92\49\48\49\39\44\39\92\49\48\48\39\44\39\92\55\49\39\44\39\92\49\48\56\39\44\39\92\49\48\53\39\44\39\92\49\49\54\39\44\39\92\57\57\39\44\39\92\49\48\52\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\49\48\53\39\44\39\92\49\48\50\39\44\39\92\51\50\39\44\39\92\56\51\39\44\39\92\49\49\50\39\44\39\92\49\48\49\39\44\39\92\49\48\49\39\44\39\92\49\48\48\39\44\39\92\55\49\39\44\39\92\49\48\56\39\44\39\92\49\48\53\39\44\39\92\49\49\54\39\44\39\92\57\57\39\44\39\92\49\48\52\39\44\39\92\51\50\39\44\39\92\54\49\39\44\39\92\54\49\39\44\39\92\51\50\39\44\39\92\49\49\54\39\44\39\92\49\49\52\39\44\39\92\49\49\55\39\44\39\92\49\48\49\39\44\39\92\51\50\39\44\39\92\49\49\54\39\44\39\92\49\48\52\39\44\39\92\49\48\49\39\44\39\92\49\49\48\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\49\48\56\39\44\39\92\49\49\49\39\44\39\92\57\55\39\44\39\92\49\48\48\39\44\39\92\54\53\39\44\39\92\49\49\48\39\44\39\92\49\48\53\39\44\39\92\49\48\57\39\44\39\92\57\55\39\44\39\92\49\49\54\39\44\39\92\49\48\53\39\44\39\92\49\49\49\39\44\39\92\49\49\48\39\44\39\92\52\48\39\44\39\92\51\52\39\44\39\92\49\49\52\39\44\39\92\57\56\39\44\39\92\49\50\48\39\44\39\92\57\55\39\44\39\92\49\49\53\39\44\39\92\49\49\53\39\44\39\92\49\48\49\39\44\39\92\49\49\54\39\44\39\92\49\48\53\39\44\39\92\49\48\48\39\44\39\92\53\56\39\44\39\92\52\55\39\44\39\92\52\55\39\44\39\92\53\49\39\44\39\92\52\57\39\44\39\92\53\54\39\44\39\92\53\55\39\44\39\92\53\53\39\44\39\92\53\53\39\44\39\92\53\53\39\44\39\92\53\53\39\44\39\92\53\55\39\44\39\92\53\51\39\44\39\92\51\52\39\44\39\92\52\49\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\49\49\57\39\44\39\92\57\55\39\44\39\92\49\48\53\39\44\39\92\49\49\54\39\44\39\92\52\48\39\44\39\92\52\57\39\44\39\92\52\54\39\44\39\92\53\51\39\44\39\92\52\49\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\56\55\39\44\39\92\57\55\39\44\39\92\49\48\56\39\44\39\92\49\48\56\39\44\39\92\49\48\49\39\44\39\92\49\49\54\39\44\39\92\52\54\39\44\39\92\56\48\39\44\39\92\57\55\39\44\39\92\49\49\52\39\44\39\92\49\48\49\39\44\39\92\49\49\48\39\44\39\92\49\49\54\39\44\39\92\51\50\39\44\39\92\54\49\39\44\39\92\51\50\39\44\39\92\56\48\39\44\39\92\49\48\56\39\44\39\92\57\55\39\44\39\92\49\50\49\39\44\39\92\49\48\49\39\44\39\92\49\49\52\39\44\39\92\52\54\39\44\39\92\54\55\39\44\39\92\49\48\52\39\44\39\92\57\55\39\44\39\92\49\49\52\39\44\39\92\57\55\39\44\39\92\57\57\39\44\39\92\49\49\54\39\44\39\92\49\48\49\39\44\39\92\49\49\52\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\49\49\57\39\44\39\92\57\55\39\44\39\92\49\48\53\39\44\39\92\49\49\54\39\44\39\92\52\48\39\44\39\92\52\56\39\44\39\92\52\54\39\44\39\92\52\57\39\44\39\92\53\51\39\44\39\92\52\49\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\56\48\39\44\39\92\49\48\56\39\44\39\92\57\55\39\44\39\92\49\50\49\39\44\39\92\49\48\49\39\44\39\92\49\49\52\39\44\39\92\52\54\39\44\39\92\54\55\39\44\39\92\49\48\52\39\44\39\92\57\55\39\44\39\92\49\49\52\39\44\39\92\57\55\39\44\39\92\57\57\39\44\39\92\49\49\54\39\44\39\92\49\48\49\39\44\39\92\49\49\52\39\44\39\92\53\56\39\44\39\92\55\48\39\44\39\92\49\48\53\39\44\39\92\49\49\48\39\44\39\92\49\48\48\39\44\39\92\55\48\39\44\39\92\49\48\53\39\44\39\92\49\49\52\39\44\39\92\49\49\53\39\44\39\92\49\49\54\39\44\39\92\54\55\39\44\39\92\49\48\52\39\44\39\92\49\48\53\39\44\39\92\49\48\56\39\44\39\92\49\48\48\39\44\39\92\52\48\39\44\39\92\51\52\39\44\39\92\56\55\39\44\39\92\57\55\39\44\39\92\49\48\56\39\44\39\92\49\48\56\39\44\39\92\49\48\49\39\44\39\92\49\49\54\39\44\39\92\51\52\39\44\39\92\52\49\39\44\39\92\52\54\39\44\39\92\56\48\39\44\39\92\57\55\39\44\39\92\49\49\52\39\44\39\92\49\48\49\39\44\39\92\49\49\48\39\44\39\92\49\49\54\39\44\39\92\51\50\39\44\39\92\54\49\39\44\39\92\51\50\39\44\39\92\56\48\39\44\39\92\49\48\56\39\44\39\92\57\55\39\44\39\92\49\50\49\39\44\39\92\49\48\49\39\44\39\92\49\49\52\39\44\39\92\52\54\39\44\39\92\54\54\39\44\39\92\57\55\39\44\39\92\57\57\39\44\39\92\49\48\55\39\44\39\92\49\49\50\39\44\39\92\57\55\39\44\39\92\57\57\39\44\39\92\49\48\55\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\49\49\57\39\44\39\92\57\55\39\44\39\92\49\48\53\39\44\39\92\49\49\54\39\44\39\92\52\48\39\44\39\92\52\56\39\44\39\92\52\54\39\44\39\92\52\56\39\44\39\92\53\51\39\44\39\92\52\49\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\49\49\52\39\44\39\92\49\48\49\39\44\39\92\49\49\50\39\44\39\92\49\48\49\39\44\39\92\57\55\39\44\39\92\49\49\54\39\44\39\92\51\50\39\44\39\92\49\48\51\39\44\39\92\57\55\39\44\39\92\49\48\57\39\44\39\92\49\48\49\39\44\39\92\53\56\39\44\39\92\55\49\39\44\39\92\49\48\49\39\44\39\92\49\49\54\39\44\39\92\56\51\39\44\39\92\49\48\49\39\44\39\92\49\49\52\39\44\39\92\49\49\56\39\44\39\92\49\48\53\39\44\39\92\57\57\39\44\39\92\49\48\49\39\44\39\92\52\48\39\44\39\92\51\52\39\44\39\92\56\50\39\44\39\92\49\49\55\39\44\39\92\49\49\48\39\44\39\92\56\51\39\44\39\92\49\48\49\39\44\39\92\49\49\52\39\44\39\92\49\49\56\39\44\39\92\49\48\53\39\44\39\92\57\57\39\44\39\92\49\48\49\39\44\39\92\51\52\39\44\39\92\52\49\39\44\39\92\52\54\39\44\39\92\55\50\39\44\39\92\49\48\49\39\44\39\92\57\55\39\44\39\92\49\49\52\39\44\39\92\49\49\54\39\44\39\92\57\56\39\44\39\92\49\48\49\39\44\39\92\57\55\39\44\39\92\49\49\54\39\44\39\92\53\56\39\44\39\92\49\49\57\39\44\39\92\57\55\39\44\39\92\49\48\53\39\44\39\92\49\49\54\39\44\39\92\52\48\39\44\39\92\52\49\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\49\48\55\39\44\39\92\49\48\49\39\44\39\92\49\50\49\39\44\39\92\49\49\50\39\44\39\92\49\49\52\39\44\39\92\49\48\49\39\44\39\92\49\49\53\39\44\39\92\49\49\53\39\44\39\92\52\48\39\44\39\92\52\56\39\44\39\92\49\50\48\39\44\39\92\53\50\39\44\39\92\53\55\39\44\39\92\52\49\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\49\48\51\39\44\39\92\57\55\39\44\39\92\49\48\57\39\44\39\92\49\48\49\39\44\39\92\53\56\39\44\39\92\55\49\39\44\39\92\49\48\49\39\44\39\92\49\49\54\39\44\39\92\56\51\39\44\39\92\49\48\49\39\44\39\92\49\49\52\39\44\39\92\49\49\56\39\44\39\92\49\48\53\39\44\39\92\57\57\39\44\39\92\49\48\49\39\44\39\92\52\48\39\44\39\92\51\52\39\44\39\92\56\50\39\44\39\92\49\49\55\39\44\39\92\49\49\48\39\44\39\92\56\51\39\44\39\92\49\48\49\39\44\39\92\49\49\52\39\44\39\92\49\49\56\39\44\39\92\49\48\53\39\44\39\92\57\57\39\44\39\92\49\48\49\39\44\39\92\51\52\39\44\39\92\52\49\39\44\39\92\52\54\39\44\39\92\55\50\39\44\39\92\49\48\49\39\44\39\92\57\55\39\44\39\92\49\49\52\39\44\39\92\49\49\54\39\44\39\92\57\56\39\44\39\92\49\48\49\39\44\39\92\57\55\39\44\39\92\49\49\54\39\44\39\92\53\56\39\44\39\92\49\49\57\39\44\39\92\57\55\39\44\39\92\49\48\53\39\44\39\92\49\49\54\39\44\39\92\52\48\39\44\39\92\52\49\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\49\48\55\39\44\39\92\49\48\49\39\44\39\92\49\50\49\39\44\39\92\49\49\50\39\44\39\92\49\49\52\39\44\39\92\49\48\49\39\44\39\92\49\49\53\39\44\39\92\49\49\53\39\44\39\92\52\48\39\44\39\92\52\56\39\44\39\92\49\50\48\39\44\39\92\53\50\39\44\39\92\55\48\39\44\39\92\52\49\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\49\48\51\39\44\39\92\57\55\39\44\39\92\49\48\57\39\44\39\92\49\48\49\39\44\39\92\53\56\39\44\39\92\55\49\39\44\39\92\49\48\49\39\44\39\92\49\49\54\39\44\39\92\56\51\39\44\39\92\49\48\49\39\44\39\92\49\49\52\39\44\39\92\49\49\56\39\44\39\92\49\48\53\39\44\39\92\57\57\39\44\39\92\49\48\49\39\44\39\92\52\48\39\44\39\92\51\52\39\44\39\92\56\50\39\44\39\92\49\49\55\39\44\39\92\49\49\48\39\44\39\92\56\51\39\44\39\92\49\48\49\39\44\39\92\49\49\52\39\44\39\92\49\49\56\39\44\39\92\49\48\53\39\44\39\92\57\57\39\44\39\92\49\48\49\39\44\39\92\51\52\39\44\39\92\52\49\39\44\39\92\52\54\39\44\39\92\55\50\39\44\39\92\49\48\49\39\44\39\92\57\55\39\44\39\92\49\49\52\39\44\39\92\49\49\54\39\44\39\92\57\56\39\44\39\92\49\48\49\39\44\39\92\57\55\39\44\39\92\49\49\54\39\44\39\92\53\56\39\44\39\92\49\49\57\39\44\39\92\57\55\39\44\39\92\49\48\53\39\44\39\92\49\49\54\39\44\39\92\52\48\39\44\39\92\52\49\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\49\48\55\39\44\39\92\49\48\49\39\44\39\92\49\50\49\39\44\39\92\49\49\52\39\44\39\92\49\48\49\39\44\39\92\49\48\56\39\44\39\92\49\48\49\39\44\39\92\57\55\39\44\39\92\49\49\53\39\44\39\92\49\48\49\39\44\39\92\52\48\39\44\39\92\52\56\39\44\39\92\49\50\48\39\44\39\92\53\50\39\44\39\92\53\55\39\44\39\92\52\49\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\49\48\51\39\44\39\92\57\55\39\44\39\92\49\48\57\39\44\39\92\49\48\49\39\44\39\92\53\56\39\44\39\92\55\49\39\44\39\92\49\48\49\39\44\39\92\49\49\54\39\44\39\92\56\51\39\44\39\92\49\48\49\39\44\39\92\49\49\52\39\44\39\92\49\49\56\39\44\39\92\49\48\53\39\44\39\92\57\57\39\44\39\92\49\48\49\39\44\39\92\52\48\39\44\39\92\51\52\39\44\39\92\56\50\39\44\39\92\49\49\55\39\44\39\92\49\49\48\39\44\39\92\56\51\39\44\39\92\49\48\49\39\44\39\92\49\49\52\39\44\39\92\49\49\56\39\44\39\92\49\48\53\39\44\39\92\57\57\39\44\39\92\49\48\49\39\44\39\92\51\52\39\44\39\92\52\49\39\44\39\92\52\54\39\44\39\92\55\50\39\44\39\92\49\48\49\39\44\39\92\57\55\39\44\39\92\49\49\52\39\44\39\92\49\49\54\39\44\39\92\57\56\39\44\39\92\49\48\49\39\44\39\92\57\55\39\44\39\92\49\49\54\39\44\39\92\53\56\39\44\39\92\49\49\57\39\44\39\92\57\55\39\44\39\92\49\48\53\39\44\39\92\49\49\54\39\44\39\92\52\48\39\44\39\92\52\49\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\49\48\55\39\44\39\92\49\48\49\39\44\39\92\49\50\49\39\44\39\92\49\49\52\39\44\39\92\49\48\49\39\44\39\92\49\48\56\39\44\39\92\49\48\49\39\44\39\92\57\55\39\44\39\92\49\49\53\39\44\39\92\49\48\49\39\44\39\92\52\48\39\44\39\92\52\56\39\44\39\92\49\50\48\39\44\39\92\53\50\39\44\39\92\55\48\39\44\39\92\52\49\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\49\48\51\39\44\39\92\57\55\39\44\39\92\49\48\57\39\44\39\92\49\48\49\39\44\39\92\53\56\39\44\39\92\55\49\39\44\39\92\49\48\49\39\44\39\92\49\49\54\39\44\39\92\56\51\39\44\39\92\49\48\49\39\44\39\92\49\49\52\39\44\39\92\49\49\56\39\44\39\92\49\48\53\39\44\39\92\57\57\39\44\39\92\49\48\49\39\44\39\92\52\48\39\44\39\92\51\52\39\44\39\92\56\50\39\44\39\92\49\49\55\39\44\39\92\49\49\48\39\44\39\92\56\51\39\44\39\92\49\48\49\39\44\39\92\49\49\52\39\44\39\92\49\49\56\39\44\39\92\49\48\53\39\44\39\92\57\57\39\44\39\92\49\48\49\39\44\39\92\51\52\39\44\39\92\52\49\39\44\39\92\52\54\39\44\39\92\55\50\39\44\39\92\49\48\49\39\44\39\92\57\55\39\44\39\92\49\49\52\39\44\39\92\49\49\54\39\44\39\92\57\56\39\44\39\92\49\48\49\39\44\39\92\57\55\39\44\39\92\49\49\54\39\44\39\92\53\56\39\44\39\92\49\49\57\39\44\39\92\57\55\39\44\39\92\49\48\53\39\44\39\92\49\49\54\39\44\39\92\52\48\39\44\39\92\52\49\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\49\49\55\39\44\39\92\49\49\48\39\44\39\92\49\49\54\39\44\39\92\49\48\53\39\44\39\92\49\48\56\39\44\39\92\51\50\39\44\39\92\56\51\39\44\39\92\49\49\50\39\44\39\92\49\48\49\39\44\39\92\49\48\49\39\44\39\92\49\48\48\39\44\39\92\55\49\39\44\39\92\49\48\56\39\44\39\92\49\48\53\39\44\39\92\49\49\54\39\44\39\92\57\57\39\44\39\92\49\48\52\39\44\39\92\51\50\39\44\39\92\54\49\39\44\39\92\54\49\39\44\39\92\51\50\39\44\39\92\49\48\50\39\44\39\92\57\55\39\44\39\92\49\48\56\39\44\39\92\49\49\53\39\44\39\92\49\48\49\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\49\48\49\39\44\39\92\49\49\48\39\44\39\92\49\48\48\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\49\48\49\39\44\39\92\49\49\48\39\44\39\92\49\48\48\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\49\48\49\39\44\39\92\49\49\48\39\44\39\92\49\48\48\39\44\39\92\52\49\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\55\55\39\44\39\92\49\49\49\39\44\39\92\49\49\55\39\44\39\92\49\49\53\39\44\39\92\49\48\49\39\44\39\92\52\54\39\44\39\92\55\53\39\44\39\92\49\48\49\39\44\39\92\49\50\49\39\44\39\92\54\56\39\44\39\92\49\49\49\39\44\39\92\49\49\57\39\44\39\92\49\49\48\39\44\39\92\53\56\39\44\39\92\54\55\39\44\39\92\49\49\49\39\44\39\92\49\49\48\39\44\39\92\49\49\48\39\44\39\92\49\48\49\39\44\39\92\57\57\39\44\39\92\49\49\54\39\44\39\92\52\48\39\44\39\92\49\48\50\39\44\39\92\49\49\55\39\44\39\92\49\49\48\39\44\39\92\57\57\39\44\39\92\49\49\54\39\44\39\92\49\48\53\39\44\39\92\49\49\49\39\44\39\92\49\49\48\39\44\39\92\52\48\39\44\39\92\55\53\39\44\39\92\49\48\49\39\44\39\92\49\50\49\39\44\39\92\52\49\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\49\48\53\39\44\39\92\49\48\50\39\44\39\92\51\50\39\44\39\92\55\53\39\44\39\92\49\48\49\39\44\39\92\49\50\49\39\44\39\92\51\50\39\44\39\92\54\49\39\44\39\92\54\49\39\44\39\92\51\50\39\44\39\92\51\52\39\44\39\92\49\50\49\39\44\39\92\51\52\39\44\39\92\51\50\39\44\39\92\49\49\54\39\44\39\92\49\48\52\39\44\39\92\49\48\49\39\44\39\92\49\49\48\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\56\51\39\44\39\92\49\49\50\39\44\39\92\49\48\49\39\44\39\92\49\48\49\39\44\39\92\49\48\48\39\44\39\92\52\57\39\44\39\92\51\50\39\44\39\92\54\49\39\44\39\92\51\50\39\44\39\92\49\49\48\39\44\39\92\49\49\49\39\44\39\92\49\49\54\39\44\39\92\51\50\39\44\39\92\56\51\39\44\39\92\49\49\50\39\44\39\92\49\48\49\39\44\39\92\49\48\49\39\44\39\92\49\48\48\39\44\39\92\52\57\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\49\48\53\39\44\39\92\49\48\50\39\44\39\92\51\50\39\44\39\92\56\51\39\44\39\92\49\49\50\39\44\39\92\49\48\49\39\44\39\92\49\48\49\39\44\39\92\49\48\48\39\44\39\92\52\57\39\44\39\92\51\50\39\44\39\92\54\49\39\44\39\92\54\49\39\44\39\92\51\50\39\44\39\92\49\49\54\39\44\39\92\49\49\52\39\44\39\92\49\49\55\39\44\39\92\49\48\49\39\44\39\92\51\50\39\44\39\92\49\49\54\39\44\39\92\49\48\52\39\44\39\92\49\48\49\39\44\39\92\49\49\48\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\49\49\52\39\44\39\92\49\48\49\39\44\39\92\49\49\50\39\44\39\92\49\48\49\39\44\39\92\57\55\39\44\39\92\49\49\54\39\44\39\92\51\50\39\44\39\92\49\48\56\39\44\39\92\49\49\49\39\44\39\92\57\57\39\44\39\92\57\55\39\44\39\92\49\48\56\39\44\39\92\51\50\39\44\39\92\57\57\39\44\39\92\49\48\52\39\44\39\92\57\55\39\44\39\92\49\49\52\39\44\39\92\51\50\39\44\39\92\54\49\39\44\39\92\51\50\39\44\39\92\49\48\51\39\44\39\92\57\55\39\44\39\92\49\48\57\39\44\39\92\49\48\49\39\44\39\92\52\54\39\44\39\92\56\48\39\44\39\92\49\48\56\39\44\39\92\57\55\39\44\39\92\49\50\49\39\44\39\92\49\48\49\39\44\39\92\49\49\52\39\44\39\92\49\49\53\39\44\39\92\52\54\39\44\39\92\55\54\39\44\39\92\49\49\49\39\44\39\92\57\57\39\44\39\92\57\55\39\44\39\92\49\48\56\39\44\39\92\56\48\39\44\39\92\49\48\56\39\44\39\92\57\55\39\44\39\92\49\50\49\39\44\39\92\49\48\49\39\44\39\92\49\49\52\39\44\39\92\52\54\39\44\39\92\54\55\39\44\39\92\49\48\52\39\44\39\92\57\55\39\44\39\92\49\49\52\39\44\39\92\57\55\39\44\39\92\57\57\39\44\39\92\49\49\54\39\44\39\92\49\48\49\39\44\39\92\49\49\52\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\49\48\51\39\44\39\92\57\55\39\44\39\92\49\48\57\39\44\39\92\49\48\49\39\44\39\92\52\54\39\44\39\92\56\48\39\44\39\92\49\48\56\39\44\39\92\57\55\39\44\39\92\49\50\49\39\44\39\92\49\48\49\39\44\39\92\49\49\52\39\44\39\92\49\49\53\39\44\39\92\52\54\39\44\39\92\55\54\39\44\39\92\49\49\49\39\44\39\92\57\57\39\44\39\92\57\55\39\44\39\92\49\48\56\39\44\39\92\56\48\39\44\39\92\49\48\56\39\44\39\92\57\55\39\44\39\92\49\50\49\39\44\39\92\49\48\49\39\44\39\92\49\49\52\39\44\39\92\52\54\39\44\39\92\54\55\39\44\39\92\49\48\52\39\44\39\92\57\55\39\44\39\92\49\49\52\39\44\39\92\57\55\39\44\39\92\57\57\39\44\39\92\49\49\54\39\44\39\92\49\48\49\39\44\39\92\49\49\52\39\44\39\92\52\54\39\44\39\92\55\50\39\44\39\92\49\49\55\39\44\39\92\49\48\57\39\44\39\92\57\55\39\44\39\92\49\49\48\39\44\39\92\49\49\49\39\44\39\92\49\48\53\39\44\39\92\49\48\48\39\44\39\92\56\50\39\44\39\92\49\49\49\39\44\39\92\49\49\49\39\44\39\92\49\49\54\39\44\39\92\56\48\39\44\39\92\57\55\39\44\39\92\49\49\52\39\44\39\92\49\49\54\39\44\39\92\52\54\39\44\39\92\56\54\39\44\39\92\49\48\49\39\44\39\92\49\48\56\39\44\39\92\49\49\49\39\44\39\92\57\57\39\44\39\92\49\48\53\39\44\39\92\49\49\54\39\44\39\92\49\50\49\39\44\39\92\51\50\39\44\39\92\54\49\39\44\39\92\51\50\39\44\39\92\57\57\39\44\39\92\49\48\52\39\44\39\92\57\55\39\44\39\92\49\49\52\39\44\39\92\52\54\39\44\39\92\55\50\39\44\39\92\49\49\55\39\44\39\92\49\48\57\39\44\39\92\57\55\39\44\39\92\49\49\48\39\44\39\92\49\49\49\39\44\39\92\49\48\53\39\44\39\92\49\48\48\39\44\39\92\56\50\39\44\39\92\49\49\49\39\44\39\92\49\49\49\39\44\39\92\49\49\54\39\44\39\92\56\48\39\44\39\92\57\55\39\44\39\92\49\49\52\39\44\39\92\49\49\54\39\44\39\92\52\54\39\44\39\92\54\55\39\44\39\92\55\48\39\44\39\92\49\49\52\39\44\39\92\57\55\39\44\39\92\49\48\57\39\44\39\92\49\48\49\39\44\39\92\52\54\39\44\39\92\49\48\56\39\44\39\92\49\49\49\39\44\39\92\49\49\49\39\44\39\92\49\48\55\39\44\39\92\56\54\39\44\39\92\49\48\49\39\44\39\92\57\57\39\44\39\92\49\49\54\39\44\39\92\49\49\49\39\44\39\92\49\49\52\39\44\39\92\51\50\39\44\39\92\52\50\39\44\39\92\51\50\39\44\39\92\52\57\39\44\39\92\53\50\39\44\39\92\52\56\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\49\49\57\39\44\39\92\57\55\39\44\39\92\49\48\53\39\44\39\92\49\49\54\39\44\39\92\52\48\39\44\39\92\52\56\39\44\39\92\52\54\39\44\39\92\52\57\39\44\39\92\52\49\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\49\49\55\39\44\39\92\49\49\48\39\44\39\92\49\49\54\39\44\39\92\49\48\53\39\44\39\92\49\48\56\39\44\39\92\51\50\39\44\39\92\56\51\39\44\39\92\49\49\50\39\44\39\92\49\48\49\39\44\39\92\49\48\49\39\44\39\92\49\48\48\39\44\39\92\52\57\39\44\39\92\51\50\39\44\39\92\54\49\39\44\39\92\54\49\39\44\39\92\51\50\39\44\39\92\49\48\50\39\44\39\92\57\55\39\44\39\92\49\48\56\39\44\39\92\49\49\53\39\44\39\92\49\48\49\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\49\48\49\39\44\39\92\49\49\48\39\44\39\92\49\48\48\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\49\48\49\39\44\39\92\49\49\48\39\44\39\92\49\48\48\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\57\39\44\39\92\57\39\44\39\92\49\48\49\39\44\39\92\49\49\48\39\44\39\92\49\48\48\39\44\39\92\52\49\39\44\39\92\49\48\39\44\39\92\49\48\39\44\39\92\49\48\51\39\44\39\92\57\55\39\44\39\92\49\48\57\39\44\39\92\49\48\49\39\44\39\92\53\56\39\44\39\92\55\49\39\44\39\92\49\48\49\39\44\39\92\49\49\54\39\44\39\92\56\51\39\44\39\92\49\48\49\39\44\39\92\49\49\52\39\44\39\92\49\49\56\39\44\39\92\49\48\53\39\44\39\92\57\57\39\44\39\92\49\48\49\39\44\39\92\52\48\39\44\39\92\51\52\39\44\39\92\56\51\39\44\39\92\49\49\54\39\44\39\92\57\55\39\44\39\92\49\49\52\39\44\39\92\49\49\54\39\44\39\92\49\48\49\39\44\39\92\49\49\52\39\44\39\92\55\49\39\44\39\92\49\49\55\39\44\39\92\49\48\53\39\44\39\92\51\52\39\44\39\92\52\49\39\44\39\92\53\56\39\44\39\92\56\51\39\44\39\92\49\48\49\39\44\39\92\49\49\54\39\44\39\92\54\55\39\44\39\92\49\49\49\39\44\39\92\49\49\52\39\44\39\92\49\48\49\39\44\39\92\52\48\39\44\39\92\51\52\39\44\39\92\56\51\39\44\39\92\49\48\49\39\44\39\92\49\49\48\39\44\39\92\49\48\48\39\44\39\92\55\56\39\44\39\92\49\49\49\39\44\39\92\49\49\54\39\44\39\92\49\48\53\39\44\39\92\49\48\50\39\44\39\92\49\48\53\39\44\39\92\57\57\39\44\39\92\57\55\39\44\39\92\49\49\54\39\44\39\92\49\48\53\39\44\39\92\49\49\49\39\44\39\92\49\49\48\39\44\39\92\51\52\39\44\39\92\52\52\39\44\39\92\49\50\51\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\56\52\39\44\39\92\49\48\53\39\44\39\92\49\49\54\39\44\39\92\49\48\56\39\44\39\92\49\48\49\39\44\39\92\51\50\39\44\39\92\54\49\39\44\39\92\51\50\39\44\39\92\51\52\39\44\39\92\49\49\54\39\44\39\92\51\50\39\44\39\92\54\49\39\44\39\92\51\50\39\44\39\92\49\49\53\39\44\39\92\49\49\54\39\44\39\92\57\55\39\44\39\92\49\49\52\39\44\39\92\49\49\54\39\44\39\92\51\52\39\44\39\92\53\57\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\56\52\39\44\39\92\49\48\49\39\44\39\92\49\50\48\39\44\39\92\49\49\54\39\44\39\92\51\50\39\44\39\92\54\49\39\44\39\92\51\50\39\44\39\92\51\52\39\44\39\92\49\50\49\39\44\39\92\51\50\39\44\39\92\54\49\39\44\39\92\51\50\39\44\39\92\49\49\53\39\44\39\92\49\49\50\39\44\39\92\49\48\49\39\44\39\92\49\48\49\39\44\39\92\49\48\48\39\44\39\92\51\52\39\44\39\92\53\57\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\56\52\39\44\39\92\49\48\53\39\44\39\92\49\48\57\39\44\39\92\49\48\49\39\44\39\92\51\50\39\44\39\92\54\49\39\44\39\92\51\50\39\44\39\92\53\55\39\44\39\92\53\55\39\44\39\92\53\55\39\44\39\92\53\55\39\44\39\92\53\55\39\44\39\92\53\55\39\44\39\92\53\55\39\44\39\92\53\55\39\44\39\92\53\55\39\44\39\92\53\55\39\44\39\92\53\55\39\44\39\92\53\55\39\44\39\92\53\57\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\55\51\39\44\39\92\57\57\39\44\39\92\49\49\49\39\44\39\92\49\49\48\39\44\39\92\51\50\39\44\39\92\54\49\39\44\39\92\51\50\39\44\39\92\51\52\39\44\39\92\49\49\52\39\44\39\92\57\56\39\44\39\92\49\50\48\39\44\39\92\57\55\39\44\39\92\49\49\53\39\44\39\92\49\49\53\39\44\39\92\49\48\49\39\44\39\92\49\49\54\39\44\39\92\49\48\53\39\44\39\92\49\48\48\39\44\39\92\53\56\39\44\39\92\52\55\39\44\39\92\52\55\39\44\39\92\53\51\39\44\39\92\52\56\39\44\39\92\53\51\39\44\39\92\53\54\39\44\39\92\53\50\39\44\39\92\53\51\39\44\39\92\53\48\39\44\39\92\53\52\39\44\39\92\53\54\39\44\39\92\51\52\39\44\39\92\53\57\39\44\39\92\49\48\39\44\39\92\49\50\53\39\44\39\92\52\49\39\44\39\92\49\48\39\44\39\92\49\48\39\44\39\92\49\48\51\39\44\39\92\57\55\39\44\39\92\49\48\57\39\44\39\92\49\48\49\39\44\39\92\53\56\39\44\39\92\55\49\39\44\39\92\49\48\49\39\44\39\92\49\49\54\39\44\39\92\56\51\39\44\39\92\49\48\49\39\44\39\92\49\49\52\39\44\39\92\49\49\56\39\44\39\92\49\48\53\39\44\39\92\57\57\39\44\39\92\49\48\49\39\44\39\92\52\48\39\44\39\92\51\52\39\44\39\92\56\51\39\44\39\92\49\49\54\39\44\39\92\57\55\39\44\39\92\49\49\52\39\44\39\92\49\49\54\39\44\39\92\49\48\49\39\44\39\92\49\49\52\39\44\39\92\55\49\39\44\39\92\49\49\55\39\44\39\92\49\48\53\39\44\39\92\51\52\39\44\39\92\52\49\39\44\39\92\53\56\39\44\39\92\56\51\39\44\39\92\49\48\49\39\44\39\92\49\49\54\39\44\39\92\54\55\39\44\39\92\49\49\49\39\44\39\92\49\49\52\39\44\39\92\49\48\49\39\44\39\92\52\48\39\44\39\92\51\52\39\44\39\92\56\51\39\44\39\92\49\48\49\39\44\39\92\49\49\48\39\44\39\92\49\48\48\39\44\39\92\55\56\39\44\39\92\49\49\49\39\44\39\92\49\49\54\39\44\39\92\49\48\53\39\44\39\92\49\48\50\39\44\39\92\49\48\53\39\44\39\92\57\57\39\44\39\92\57\55\39\44\39\92\49\49\54\39\44\39\92\49\48\53\39\44\39\92\49\49\49\39\44\39\92\49\49\48\39\44\39\92\51\52\39\44\39\92\52\52\39\44\39\92\49\50\51\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\56\52\39\44\39\92\49\48\53\39\44\39\92\49\49\54\39\44\39\92\49\48\56\39\44\39\92\49\48\49\39\44\39\92\51\50\39\44\39\92\54\49\39\44\39\92\51\50\39\44\39\92\51\52\39\44\39\92\54\54\39\44\39\92\49\50\49\39\44\39\92\53\56\39\44\39\92\51\50\39\44\39\92\56\52\39\44\39\92\49\49\49\39\44\39\92\49\49\50\39\44\39\92\57\57\39\44\39\92\49\49\49\39\44\39\92\49\48\56\39\44\39\92\49\48\48\39\44\39\92\49\48\51\39\44\39\92\57\55\39\44\39\92\49\48\57\39\44\39\92\49\48\53\39\44\39\92\49\49\48\39\44\39\92\49\48\51\39\44\39\92\51\52\39\44\39\92\53\57\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\56\52\39\44\39\92\49\48\49\39\44\39\92\49\50\48\39\44\39\92\49\49\54\39\44\39\92\51\50\39\44\39\92\54\49\39\44\39\92\51\50\39\44\39\92\51\52\39\44\39\92\53\56\39\44\39\92\54\56\39\44\39\92\51\52\39\44\39\92\53\57\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\56\52\39\44\39\92\49\48\53\39\44\39\92\49\48\57\39\44\39\92\49\48\49\39\44\39\92\51\50\39\44\39\92\54\49\39\44\39\92\51\50\39\44\39\92\52\57\39\44\39\92\52\56\39\44\39\92\53\57\39\44\39\92\49\48\39\44\39\92\57\39\44\39\92\55\51\39\44\39\92\57\57\39\44\39\92\49\49\49\39\44\39\92\49\49\48\39\44\39\92\51\50\39\44\39\92\54\49\39\44\39\92\51\50\39\44\39\92\51\52\39\44\39\92\49\49\52\39\44\39\92\57\56\39\44\39\92\49\50\48\39\44\39\92\57\55\39\44\39\92\49\49\53\39\44\39\92\49\49\53\39\44\39\92\49\48\49\39\44\39\92\49\49\54\39\44\39\92\49\48\53\39\44\39\92\49\48\48\39\44\39\92\53\56\39\44\39\92\52\55\39\44\39\92\52\55\39\44\39\92\53\51\39\44\39\92\52\56\39\44\39\92\53\51\39\44\39\92\53\54\39\44\39\92\53\50\39\44\39\92\53\51\39\44\39\92\53\48\39\44\39\92\53\52\39\44\39\92\53\54\39\44\39\92\51\52\39\44\39\92\53\57\39\44\39\92\49\48\39\44\39\92\49\50\53\39\44\39\92\52\49\39\44\39\92\49\48\39\44\125\73\108\108\73\73\108\108\73\73\108\108\73\73\73\40\73\108\108\73\73\73\108\108\73\73\73\73\108\108\73\40\73\108\73\108\73\108\73\108\73\108\73\108\73\108\73\108\73\73\44\73\73\73\73\73\73\73\73\108\108\108\108\108\108\108\108\73\73\73\73\73\73\73\73\41\41\40\41\10")()
+end)
+
+aimlock.Name = "aimlock"
+aimlock.Parent = ScrollingFrame
+aimlock.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+aimlock.BorderSizePixel = 0
+aimlock.Position = UDim2.new(0, 0, 0.0934485197, 0)
+aimlock.Size = UDim2.new(0, 80, 0, 21)
+aimlock.Font = Enum.Font.SourceSans
+aimlock.Text = "AimLock(Q)"
+aimlock.TextColor3 = Color3.fromRGB(255, 0, 0)
+aimlock.TextSize = 14.000
+aimlock.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/0nly6Ex/wfwf/main/aimbot"))()
+end)
+
+autofarm.Name = "autofarm"
+autofarm.Parent = ScrollingFrame
+autofarm.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+autofarm.BorderSizePixel = 0
+autofarm.Position = UDim2.new(0, 0, 0.144994915, 0)
+autofarm.Size = UDim2.new(0, 80, 0, 21)
+autofarm.Font = Enum.Font.SourceSans
+autofarm.Text = "Auto-Farm"
+autofarm.TextColor3 = Color3.fromRGB(255, 0, 0)
+autofarm.TextSize = 14.000
+autofarm.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Topcoldgaming/local-lililililililililililillil-213-2-43-25-24-32-43-523-53-local-fg-repeat-local-ur-loop/main/ur%20mom%20is%20sus"))()
+end)
+
+Admin_Fly.Name = "Admin_Fly"
+Admin_Fly.Parent = ScrollingFrame
+Admin_Fly.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Admin_Fly.BorderSizePixel = 0
+Admin_Fly.Position = UDim2.new(0, 0, 0.194823086, 0)
+Admin_Fly.Size = UDim2.new(0, 80, 0, 21)
+Admin_Fly.Font = Enum.Font.SourceSans
+Admin_Fly.Text = "Admin-Fly"
+Admin_Fly.TextColor3 = Color3.fromRGB(255, 0, 0)
+Admin_Fly.TextSize = 14.000
+Admin_Fly.MouseButton1Down:Connect(function()
+	--// Settings
+	_G.ShazamFlySpeed = 3
+ 
+	--// Script
+	loadstring(game:HttpGet(("https://raw.githubusercontent.com/Raycodex/Exploiting/main/Roblox/DaHoodShazamFly"), true))()
+end)
+
+Crash.Name = "Crash"
+Crash.Parent = ScrollingFrame
+Crash.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Crash.BorderSizePixel = 0
+Crash.Position = UDim2.new(0, 0, 0.24293305, 0)
+Crash.Size = UDim2.new(0, 80, 0, 21)
+Crash.Font = Enum.Font.SourceSans
+Crash.Text = "Crash-Server"
+Crash.TextColor3 = Color3.fromRGB(255, 0, 0)
+Crash.TextSize = 14.000
+Crash.MouseButton1Down:Connect(function()
+	--// Crash loadstring //--
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/22kristina/dhcrash_gen2/main/crash", true))()
+	wait(0.1)
+	--// Anti-AFK //--
+	wait(0.5)local ba=Instance.new("ScreenGui")
+	local ca=Instance.new("TextLabel")local da=Instance.new("Frame")
+	local _b=Instance.new("TextLabel")local ab=Instance.new("TextLabel")ba.Parent=game.CoreGui
+	ba.ZIndexBehavior=Enum.ZIndexBehavior.Sibling;ca.Parent=ba;ca.Active=true
+	ca.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)ca.Draggable=true
+	ca.Position=UDim2.new(0.698610067,0,0.098096624,0)ca.Size=UDim2.new(0,370,0,52)
+	ca.Font=Enum.Font.SourceSansSemibold;ca.Text="Anti Afk"ca.TextColor3=Color3.new(0,1,1)
+	ca.TextSize=22;da.Parent=ca
+	da.BackgroundColor3=Color3.new(0.196078,0.196078,0.196078)da.Position=UDim2.new(0,0,1.0192306,0)
+	da.Size=UDim2.new(0,370,0,107)_b.Parent=da
+	_b.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)_b.Position=UDim2.new(0,0,0.800455689,0)
+	_b.Size=UDim2.new(0,370,0,21)_b.Font=Enum.Font.Arial;_b.Text="Made by luca#5432"
+	_b.TextColor3=Color3.new(0,1,1)_b.TextSize=20;ab.Parent=da
+	ab.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)ab.Position=UDim2.new(0,0,0.158377,0)
+	ab.Size=UDim2.new(0,370,0,44)ab.Font=Enum.Font.ArialBold;ab.Text="Status: Active"
+	ab.TextColor3=Color3.new(0,1,1)ab.TextSize=20;local bb=game:service'VirtualUser'
+	game:service'Players'.LocalPlayer.Idled:connect(function()
+	bb:CaptureController()bb:ClickButton2(Vector2.new())
+	ab.Text="Roblox tried kicking you! But I stopped them"wait(2)ab.Text="Status : Active"end)
+end)
+
+antibag.Name = "anti-bag"
+antibag.Parent = ScrollingFrame
+antibag.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+antibag.BorderSizePixel = 0
+antibag.Position = UDim2.new(0, 0, 0.28932479, 0)
+antibag.Size = UDim2.new(0, 80, 0, 21)
+antibag.Font = Enum.Font.SourceSans
+antibag.Text = "Anti-Bag"
+antibag.TextColor3 = Color3.fromRGB(255, 0, 0)
+antibag.TextSize = 14.000
+antibag.MouseButton1Down:connect(function()
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Anti-Bag Loaded!";
+		Text = "";
+		Duration = 5;
+	})
+    local LocalPlayer = game:GetService("Players").LocalPlayer
+    local char = LocalPlayer.Character
+    char.ChildAdded:Connect(function(sock)
+        if sock:IsA("MeshPart") then do
+                wait(0)
+                sock:Destroy()
+            end
+        end
+    end)
+end)
+
+fistreach.Name = "fist-reach"
+fistreach.Parent = ScrollingFrame
+fistreach.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+fistreach.BorderSizePixel = 0
+fistreach.Position = UDim2.new(0, 0, 0.339152962, 0)
+fistreach.Size = UDim2.new(0, 80, 0, 21)
+fistreach.Font = Enum.Font.SourceSans
+fistreach.Text = "Fist-Reach"
+fistreach.TextColor3 = Color3.fromRGB(255, 0, 0)
+fistreach.TextSize = 14.000
+fistreach.MouseButton1Down:connect(function()
+	if fistreach.Text == 'Fist-Reach' then
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "First-Reach";
+			Text = "ENABLED!";
+			Duration = 5;
+		})
+	else
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "First-Reach";
+			Text = "DISABLED!";
+			Duration = 5;
+		})
+	end
+	if fistreach.Text == 'ToolReach' then
+		if player.Character:FindFirstChildWhichIsA('Tool') then
+			player.Character:FindFirstChildWhichIsA('Tool').Handle.Size = Vector3.new(50,50,50)
+			player.Character:FindFirstChildWhichIsA('Tool').Handle.Transparency = 1
+		end
+	else
+		if fistreach.Text == 'Fist-Reach' then
+			fistreach.Text = 'Unreach'
+			while fistreach.Text == 'Unreach' do
+				wait()
+				local success, err = pcall(function()
+					if player.Character.BodyEffects.Attacking.Value == true then
+						for i,v in pairs(game:GetService('Players'):GetChildren()) do
+							if (v.Character.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.LeftHand.Position).Magnitude <= 50 then
+								if game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool") then
+									if game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool"):FindFirstChild('Handle') then
+										firetouchinterest(game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool").Handle, v.Character.UpperTorso, 0)
+									else
+										firetouchinterest(game.Players.LocalPlayer.Character['RightHand'], v.Character.UpperTorso, 0)
+										firetouchinterest(game.Players.LocalPlayer.Character['LeftHand'], v.Character.UpperTorso, 0)
+										firetouchinterest(game.Players.LocalPlayer.Character['RightFoot'], v.Character.UpperTorso, 0)
+										firetouchinterest(game.Players.LocalPlayer.Character['LeftFoot'], v.Character.UpperTorso, 0)
+										firetouchinterest(game.Players.LocalPlayer.Character['RightLowerLeg'], v.Character.UpperTorso, 0)
+										firetouchinterest(game.Players.LocalPlayer.Character['LeftLowerLeg'], v.Character.UpperTorso, 0)
+									end
+								end
+							end
+						end
+					end
+				end)
+			end
+		else
+			fistreach.Text = 'Fist-Reach'
+		end
+	end
+end)
+
+freefist.Name = "free-fist"
+freefist.Parent = ScrollingFrame
+freefist.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+freefist.BorderSizePixel = 0
+freefist.Position = UDim2.new(0, 0, 0.385544717, 0)
+freefist.Size = UDim2.new(0, 80, 0, 21)
+freefist.Font = Enum.Font.SourceSans
+freefist.Text = "Free-Fist(T)"
+freefist.TextColor3 = Color3.fromRGB(255, 0, 0)
+freefist.TextSize = 14.000
+freefist.MouseButton1Down:Connect(function()
+	for i,v in next, workspace:GetDescendants() do
+		if v:IsA'Seat' then
+			v:Destroy()
+		end
+	end
+	local FistControl = false
+	pcall(function()
+		player.Character.LeftHand.LeftWrist:Destroy();
+		player.Character.RightHand.RightWrist:Destroy();
+	end);
+	local loopFunction = function()
+		player.Character.LeftHand.CFrame  = CFrame.new(mouse.Hit.p);
+		player.Character.RightHand.CFrame = CFrame.new(mouse.Hit.p);
+	end;        
+	local Loop
+	local Start = function()
+		Loop = game:GetService("RunService").Heartbeat:Connect(loopFunction);
+	end;         
+	local Pause = function()
+		Loop:Disconnect()
+	end;
+	UIS.InputBegan:Connect(function(a, b)
+		if a.KeyCode == Enum.KeyCode.T and not b then
+			if FistControl == false then
+				FistControl = true;
+				Start();
+			elseif FistControl == true then
+				FistControl = false;
+				Pause();
+				player.Character.LeftHand.CFrame  = player.Character.LeftLowerArm.CFrame
+				player.Character.RightHand.CFrame = player.Character.RightLowerArm.CFrame
+			end;
+		end;
+	end)
+end)
+
+naked.Name = "naked"
+naked.Parent = ScrollingFrame
+naked.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+naked.BorderSizePixel = 0
+naked.Position = UDim2.new(0, 0, 0.437091112, 0)
+naked.Size = UDim2.new(0, 80, 0, 21)
+naked.Font = Enum.Font.SourceSans
+naked.Text = "Naked"
+naked.TextColor3 = Color3.fromRGB(255, 0, 0)
+naked.TextSize = 14.000
+naked.MouseButton1Down:connect(function()
+    game.StarterGui:SetCore("SendNotification", {Title = "[$-T0P-$] HUB ", Text = "Removing ur clothes ;))", Icon = "rbxassetid://505845268", Duration = 5, Button1 = "Okay"})
+    while wait() do
+        pcall(function()
+            if game.Players.LocalPlayer.Character:FindFirstChild("Shirt") then
+                game.Players.LocalPlayer.Character.Shirt:Destroy()
+            elseif game.Players.LocalPlayer.Character:FindFirstChild("Pants") then
+                game.Players.LocalPlayer.Character.Pants:Destroy()
+            end
+        end)
+    end
+end)
+
+headless.Name = "headless"
+headless.Parent = ScrollingFrame
+headless.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+headless.BorderSizePixel = 0
+headless.Position = UDim2.new(0, 0, 0.488637507, 0)
+headless.Size = UDim2.new(0, 80, 0, 21)
+headless.Font = Enum.Font.SourceSans
+headless.Text = "Headless"
+headless.TextColor3 = Color3.fromRGB(255, 0, 0)
+headless.TextSize = 14.000
+headless.MouseButton1Down:Connect(function()
+	player.Character.Head:BreakJoints()
+	player.Character.Head.Position = Vector3.new(0,99999999999999,0)
+end)
+
+Korblox.Name = "Korblox"
+Korblox.Parent = ScrollingFrame
+Korblox.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Korblox.BorderSizePixel = 0
+Korblox.Position = UDim2.new(0, 0, 0.536747456, 0)
+Korblox.Size = UDim2.new(0, 80, 0, 21)
+Korblox.Font = Enum.Font.SourceSans
+Korblox.Text = "Korblox"
+Korblox.TextColor3 = Color3.fromRGB(255, 0, 0)
+Korblox.TextSize = 14.000
+Korblox.MouseButton1Down:Connect(function()
+	player.Character.RightUpperLeg:Destroy()
+end)
+
+clickTP.Name = "clickTP"
+clickTP.Parent = ScrollingFrame
+clickTP.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+clickTP.BorderSizePixel = 0
+clickTP.Position = UDim2.new(0, 0, 0.584857404, 0)
+clickTP.Size = UDim2.new(0, 80, 0, 21)
+clickTP.Font = Enum.Font.SourceSans
+clickTP.Text = "Click-TP[G]"
+clickTP.TextColor3 = Color3.fromRGB(255, 0, 0)
+clickTP.TextSize = 14.000
+clickTP.MouseButton1Down:Connect(function()
+plr = game.Players.LocalPlayer
+ 
+hum = plr.Character.HumanoidRootPart
+ 
+mouse = plr:GetMouse()
+ 
+ 
+ 
+mouse.KeyDown:connect(function(key)
+ 
+if key == "g" then
+ 
+if mouse.Target then
+ 
+hum.CFrame = CFrame.new(mouse.Hit.x, mouse.Hit.y + 5, mouse.Hit.z)
+ 
+end
+ 
+end
+end)
+end)
+
+norecoil.Name = "norecoil"
+norecoil.Parent = ScrollingFrame
+norecoil.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+norecoil.BorderSizePixel = 0
+norecoil.Position = UDim2.new(0, 0, 0.632967353, 0)
+norecoil.Size = UDim2.new(0, 80, 0, 21)
+norecoil.Font = Enum.Font.SourceSans
+norecoil.Text = "No Recoil"
+norecoil.TextColor3 = Color3.fromRGB(255, 0, 0)
+norecoil.TextSize = 14.000
+norecoil.MouseButton1Down:Connect(function()
+	for i,v in pairs(game:GetService('Workspace'):GetChildren()) do
+		if v:IsA('Camera') then
+			v:Destroy()
+		end
+	end
+	local newcam = Instance.new('Camera',game.Workspace)
+	newcam.Name = 'Camera'
+	newcam.CameraType = 'Custom'
+	newcam.CameraSubject = game:GetService('Workspace').Players:FindFirstChild(player.Name):FindFirstChild('Humanoid')
+	newcam.HeadLocked = true
+	newcam.HeadScale = 1
+end)
+
+esp.Name = "esp"
+esp.Parent = ScrollingFrame
+esp.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+esp.BorderSizePixel = 0
+esp.Position = UDim2.new(0, 0, 0.679359078, 0)
+esp.Size = UDim2.new(0, 80, 0, 21)
+esp.Font = Enum.Font.SourceSans
+esp.Text = "Anti-AFK"
+esp.TextColor3 = Color3.fromRGB(255, 0, 0)
+esp.TextSize = 14.000
+esp.MouseButton1Down:Connect(function()
+--// Anti-AFK //--
+wait(0.5)local ba=Instance.new("ScreenGui")
+local ca=Instance.new("TextLabel")local da=Instance.new("Frame")
+local _b=Instance.new("TextLabel")local ab=Instance.new("TextLabel")ba.Parent=game.CoreGui
+ba.ZIndexBehavior=Enum.ZIndexBehavior.Sibling;ca.Parent=ba;ca.Active=true
+ca.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)ca.Draggable=true
+ca.Position=UDim2.new(0.698610067,0,0.098096624,0)ca.Size=UDim2.new(0,370,0,52)
+ca.Font=Enum.Font.SourceSansSemibold;ca.Text="Anti Afk"ca.TextColor3=Color3.new(0,1,1)
+ca.TextSize=22;da.Parent=ca
+da.BackgroundColor3=Color3.new(0.196078,0.196078,0.196078)da.Position=UDim2.new(0,0,1.0192306,0)
+da.Size=UDim2.new(0,370,0,107)_b.Parent=da
+_b.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)_b.Position=UDim2.new(0,0,0.800455689,0)
+_b.Size=UDim2.new(0,370,0,21)_b.Font=Enum.Font.Arial;_b.Text="Made by luca#5432"
+_b.TextColor3=Color3.new(0,1,1)_b.TextSize=20;ab.Parent=da
+ab.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)ab.Position=UDim2.new(0,0,0.158377,0)
+ab.Size=UDim2.new(0,370,0,44)ab.Font=Enum.Font.ArialBold;ab.Text="Status: Active"
+ab.TextColor3=Color3.new(0,1,1)ab.TextSize=20;local bb=game:service'VirtualUser'
+game:service'Players'.LocalPlayer.Idled:connect(function()
+bb:CaptureController()bb:ClickButton2(Vector2.new())
+ab.Text="Roblox tried kicking you buy I didnt let them!"wait(2)ab.Text="Status : Active"end)
+end)
+
+moneyesp.Name = "moneyesp"
+moneyesp.Parent = ScrollingFrame
+moneyesp.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+moneyesp.BorderSizePixel = 0
+moneyesp.Position = UDim2.new(0, 0, 0.730905473, 0)
+moneyesp.Size = UDim2.new(0, 80, 0, 21)
+moneyesp.Font = Enum.Font.SourceSans
+moneyesp.Text = "Money ESP"
+moneyesp.TextColor3 = Color3.fromRGB(255, 0, 0)
+moneyesp.TextSize = 14.000
+moneyesp.MouseButton1Down:Connect(function()
+	local ESPholder = Instance.new("Folder", game.CoreGui)
+	function cham(object)
+		if object.Name == "MoneyDrop" then
+			local a = Instance.new("BoxHandleAdornment", ESPholder)
+			a.Adornee = object
+			a.AlwaysOnTop = true
+			a.ZIndex = 10
+			a.Size = object.Size
+			a.Transparency = 0.3
+			a.Color = object.BrickColor
+			local bill = object:WaitForChild("BillboardGui")
+			bill.AlwaysOnTop = true
+			bill.Size = UDim2.new(2, 10, 1, 5)
+			spawn(function()
+				while true do
+					if object.Parent.ChildRemoving:wait() == object then
+						a:Destroy()
+						break
+					end
+				end
+			end)
+		end
+	end
+	for i, v in next, game.Workspace.Ignored.Drop:GetChildren() do
+		cham(v)
+	end
+	game.Workspace.Ignored.Drop.ChildAdded:connect(cham)
+end)
+
+spin.Name = "spin"
+spin.Parent = ScrollingFrame
+spin.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+spin.BorderSizePixel = 0
+spin.Position = UDim2.new(0, 0, 0.782451868, 0)
+spin.Size = UDim2.new(0, 80, 0, 21)
+spin.Font = Enum.Font.SourceSans
+spin.Text = "Spin"
+spin.TextColor3 = Color3.fromRGB(255, 0, 0)
+spin.TextSize = 14.000
+spin.MouseButton1Down:Connect(function()
+	if spin.Text == 'Spin' then
+		spin.Text = 'Unspin'
+		local Loop
+		local loopFunction = function()
+			player.Character.HumanoidRootPart.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.Angles(0, math.rad(50), 0)
+		end;
+		local Start = function()
+			Loop = game:GetService("RunService").Heartbeat:Connect(loopFunction);
+		end;
+		local Pause = function()
+			Loop:Disconnect()
+		end;
+		Start()	
+		repeat wait() until spin.Text == 'Spin'
+		Pause()
+	else
+		spin.Text = 'Spin'
+	end
+end)
+
+Users.Name = "Users"
+Users.Parent = ScrollingFrame
+Users.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Users.BorderSizePixel = 0
+Users.Position = UDim2.new(0, 0, 0.830561817, 0)
+Users.Size = UDim2.new(0, 80, 0, 21)
+Users.Font = Enum.Font.SourceSans
+Users.Text = "$-T0P-$ Users"
+Users.TextColor3 = Color3.fromRGB(255, 0, 0)
+Users.TextSize = 14.000
+Users.MouseButton1Down:Connect(function()
+	local TOTAL = 0
+	for i,v in pairs(game.Workspace.Players:GetChildren()) do
+		if not v.UpperTorso:FindFirstChild('OriginalSize') then
+			if v.Name ~= player.Name then
+				TOTAL = TOTAL + 1
+			end
+		end
+	end
+	if TOTAL > 0 then
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "Found";
+			Text = "A total of " .. tostring(TOTAL) .. " of [$-T0P-$] Users";
+			Duration = 3;
+		})
+	else
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "D:";
+			Text = "no [$-T0P-$] Users found";
+			Duration = 3;
+		})
+	end
+end)
+
+credits.Name = "credits"
+credits.Parent = ScrollingFrame
+credits.BackgroundColor3 = Color3.fromRGB(112, 112, 112)
+credits.BorderSizePixel = 0
+credits.Position = UDim2.new(0, 0, 0.925092101, 0)
+credits.Size = UDim2.new(0, 80, 0, 14)
+credits.Font = Enum.Font.SourceSans
+credits.Text = "CREDITS:"
+credits.TextColor3 = Color3.fromRGB(0, 0, 0)
+credits.TextSize = 14.000
+
+topcoldgaming2734.Name = "topcoldgaming#2734"
+topcoldgaming2734.Parent = ScrollingFrame
+topcoldgaming2734.BackgroundColor3 = Color3.fromRGB(112, 112, 112)
+topcoldgaming2734.BorderSizePixel = 0
+topcoldgaming2734.Position = UDim2.new(0, 0, 0.949147105, 0)
+topcoldgaming2734.Size = UDim2.new(0, 80, 0, 14)
+topcoldgaming2734.Font = Enum.Font.SourceSans
+topcoldgaming2734.Text = "topcoldgaming"
+topcoldgaming2734.TextColor3 = Color3.fromRGB(0, 0, 0)
+topcoldgaming2734.TextSize = 14.000
+
+Rev4892.Name = "Rev#4892"
+Rev4892.Parent = ScrollingFrame
+Rev4892.BackgroundColor3 = Color3.fromRGB(112, 112, 112)
+Rev4892.BorderSizePixel = 0
+Rev4892.Position = UDim2.new(0, 0, 0.974920273, 0)
+Rev4892.Size = UDim2.new(0, 80, 0, 14)
+Rev4892.Font = Enum.Font.SourceSans
+Rev4892.Text = "Rev#4892"
+Rev4892.TextColor3 = Color3.fromRGB(0, 0, 0)
+Rev4892.TextSize = 14.000
+
+swamode.Name = "swamode"
+swamode.Parent = ScrollingFrame
+swamode.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+swamode.BorderSizePixel = 0
+swamode.Position = UDim2.new(0, 0, 0.875235379, 0)
+swamode.Size = UDim2.new(0, 80, 0, 21)
+swamode.Font = Enum.Font.SourceSans
+swamode.Text = "Swagmode Safe"
+swamode.TextColor3 = Color3.fromRGB(255, 0, 0)
+swamode.TextSize = 14.000
+swamode.MouseButton1Down:Connect(function()
+syn.run_secure_lua("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")
+wait(2)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002"))()
+
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Protected by:";
+	Text = "Topcoldgaming";
+	Time = 20;
+	Icon = "rbxassetid://505845268";
+	Button1 = "Okay";
+})
+end)
+
+--// UpperTab //--
+
+UpperTab_1_1.Name = "UpperTab_1_1"
+UpperTab_1_1.Parent = ScreenGui
+UpperTab_1_1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+UpperTab_1_1.Position = UDim2.new(0.299, 0, 0, 0)
+UpperTab_1_1.Size = UDim2.new(0, 261, 0, 16)
+
+UICorner_8.CornerRadius = UDim.new(0, 20)
+UICorner_8.Parent = UpperTab_1_1
+
+TextLabel.Parent = UpperTab_1_1
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Size = UDim2.new(0, 258, 0, 17)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "[$-T0P-$] HUB"
+TextLabel.TextColor3 = Color3.fromRGB(255, 3, 3)
+TextLabel.TextSize = 20.000
+TextLabel.TextWrapped = true
+
+CloseOpen.Name = "Close/Open"
+CloseOpen.Parent = UpperTab_1_1
+CloseOpen.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+CloseOpen.Position = UDim2.new(0.915268362, 0, 0.255912662, 0)
+CloseOpen.Rotation = 90.000
+CloseOpen.Size = UDim2.new(0, 14, 0, 13)
+CloseOpen.Font = Enum.Font.SourceSans
+CloseOpen.Text = "<"
+CloseOpen.TextColor3 = Color3.fromRGB(0, 0, 0)
+CloseOpen.TextSize = 14.000
+CloseOpen.MouseButton1Down:Connect(function()
+	if CloseOpen.Text == "<" then 
+		CloseOpen.Text = ">"
+		ShadowFrame.Visible = false
+	else
+		CloseOpen.Text = "<"
+		ShadowFrame.Visible = true
+	end
+end)
+
+UICorner_9.CornerRadius = UDim.new(0, 500)
+UICorner_9.Parent = CloseOpen
+
+function SetPlayerInfo()
+	local foundplayer = game:GetService('Players'):FindFirstChild(inputplayer.Text)
+	if foundplayer then
+		local TargetId = foundplayer.UserId
+		local ThumbType = Enum.ThumbnailType.HeadShot
+		local ThumbSize = Enum.ThumbnailSize.Size420x420
+		local Content, IsReady = game:GetService('Players'):GetUserThumbnailAsync(TargetId, ThumbType, ThumbSize)
+
+		TargetImage.Image = Content
+	end
+end
+
+local vu = game:GetService("VirtualUser") -- AntiAfk
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+	vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+	wait(1)
+	vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+end)
+end)
+
+UIOpener.CornerRadius = UDim.new(0, 8)
+UIOpener.Parent = Opener
+
+--// Animations //--
+wait(0.5)
+KeyFrame:TweenSize(UDim2.new(0, 210, 0, 122),"Out","Sine",1)
+wait(0.4)
+Textbox:TweenSize(UDim2.new(0, 161, 0, 34),"Out","Sine",1)
+GetKey:TweenSize(UDim2.new(0, 98, 0, 43),"Out","Sine",1)
+UpperTab:TweenSize(UDim2.new(0, 210, 0, 6),"Out","Sine",1)
+Textbox.FocusLost:connect(function()
+if Textbox.Text == "_TOPCOLD_KEY_" then
+Textbox.TextColor3 = Color3.fromRGB(0, 255, 0)
+wait(2)
+Opener.Visible = true
+UpperTab.Visible = false
+Textbox.Visible = false
+GetKey.Visible = false
+KeyFrame:TweenSize(UDim2.new(0, 210, 0, 55),"Out","Sine",1)
+Opener:TweenPosition(UDim2.new(0, 0, 0.138083577, 0),"Out","Sine",1)
+else
+Textbox.Selectable = false
+Textbox.TextColor3 = Color3.fromRGB(255, 0, 0)
+wait(1)
+Textbox.TextColor3 = Color3.fromRGB(255, 255, 255)
+Textbox.Text = ""
+end
+end)
+
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "[$-T0P-$] HUB loaded!";
+	Text = "";
+	Time = 5;
+}) 
