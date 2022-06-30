@@ -3,4 +3,5 @@ print(_G.Banned212)
 if _G.Banned212 == true then
 print("tried to ban")
 game.Players.LocalPlayer:Kick("You have Been Banned From Top Hub Request Appeal In Server")
+else
 end
