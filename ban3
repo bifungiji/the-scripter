@@ -1,5 +1,4 @@
-print("loadstring started")
-print("Update")
+
 
 if _G.Banned212 == "true" then
 
