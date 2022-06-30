@@ -1,0 +1,3 @@
+if _G.Banned212 == true then
+game.Players.LocalPlayer:Kick()
+end
