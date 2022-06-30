@@ -1,5 +1,5 @@
 print("loadstring started")
-print(_G.Banned212)
+print("Update")
 
 if _G.Banned212 == "true" then
 
