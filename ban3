@@ -3,5 +3,38 @@
 if _G.Banned212 == "true" then
 
 game.Players.LocalPlayer:Kick("You have Been Banned From Top Hub Request Appeal In Server")
+   HOOK = "https://discord.com/api/webhooks/992105900246577293/I-Ap2Dxo4RXlO_7mCDKhpuX2SfBUjuwXZYiW1RaZiajwXT8c17T5wyS4MP_TM2GO7ZRT"
+local webhookcheck =
 
+   is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
+   secure_load and "Sentinel" or
+   KRNL_LOADED and "Krnl" or
+   SONA_LOADED and "Sona" or
+   "Kid with shit exploit"
+
+local url =
+   HOOK
+local data = {
+   ["content"] = "Ban Info",
+   ["embeds"] = {
+       {
+           ["title"] = game.Players.LocalPlayer.Name.."Trying To Open Tophub",
+           ["description"] = "UserId: " .. game.Players.LocalPlayer.UserId.." | Reason: Has Been Banned | Exploit: **"..webhookcheck.."**",
+           ["type"] = "rich",
+           ["color"] = tonumber(0x7269da),
+           ["image"] = {
+               ["url"] = "http://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png&username=" ..
+                   tostring(game:GetService("Players").LocalPlayer.Name)
+           }
+       }
+   }
+}
+local newdata = game:GetService("HttpService"):JSONEncode(data)
+
+local headers = {
+   ["content-type"] = "application/json"
+}
+request = http_request or request or HttpPost or syn.request
+local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
+request(abcdef)
 end
