@@ -75,6 +75,7 @@ for i,v in pairs(game.Players:GetChildren()) do
     	v.Chatted:Connect(function(Message)
 	if string.find(string.lower(Message), string.lower(StringToDetect)) then
 if v.Name == "tipthedripper" or "FIRESTORMGAMERYT5" then
+print("                                                                          NightFall off  ")
 _G.Dark = false
 
 end
