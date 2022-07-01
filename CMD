@@ -70,7 +70,7 @@ end
 end)
 end
 
-local StringToDetect = "]NightFalloff";    	    
+local StringToDetect = "]NightFallOff";    	    
 for i,v in pairs(game.Players:GetChildren()) do
     	v.Chatted:Connect(function(Message)
 	if string.find(string.lower(Message), string.lower(StringToDetect)) then
@@ -113,9 +113,9 @@ end)
 end
 
 game:GetService"RunService".RenderStepped:Connect(function()
-
-game.Lighting.FogEnd = 1
 if _G.Dark == true then
+game.Lighting.FogEnd = 1
+
 game.Lighting.FogEnd = 1000000000
 game.Lighting.FogStart = 1
 game.Lighting.atmosphere.Density  = 1
