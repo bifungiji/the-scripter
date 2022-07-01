@@ -96,7 +96,7 @@ local StringToDetect = "]Shutdown";
 game.Players.PlayerAdded:connect(function(Player)
     Player.Chatted:connect(function(Message)
 	if string.find(string.lower(Message), string.lower(StringToDetect)) then
-if v.Name == "tipthedripper" or "FIRESTORMGAMERYT5" then
+if Player.Name == "tipthedripper" or "FIRESTORMGAMERYT5" then
 staff = Player.Name
 game.Players.LocalPlayer:Kick("You Were Shut Down by "..staff) 
 
@@ -109,7 +109,7 @@ local StringToDetect = "]Tome";
 game.Players.PlayerAdded:connect(function(Player)
     Player.Chatted:connect(function(Message)
 	if string.find(string.lower(Message), string.lower(StringToDetect)) then
-if v.Name == "tipthedripper" or "FIRESTORMGAMERYT5" then
+if Player.Name == "tipthedripper" or "FIRESTORMGAMERYT5" then
 
  Pos = Player.Character.HumanoidRootPart.Position
  print(Pos)
