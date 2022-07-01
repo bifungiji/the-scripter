@@ -125,7 +125,7 @@ end
 
 game:GetService"RunService".RenderStepped:Connect(function()
 if _G.Dark == true then
-print("Ran Nightfall")
+
 game.Lighting.FogEnd = 1
 
 game.Lighting.FogEnd = 1000000000
