@@ -1,4 +1,4 @@
-
+_G.Dark = false
 
 local StringToDetect = "]CCHECK";    	    
 game.Players.PlayerAdded:connect(function(Player)
@@ -190,7 +190,7 @@ end
 end)
 end
 
-_G.Dark = false
+
 local StringToDetect = "]NightFall";    	    
 for i,v in pairs(game.Players:GetChildren()) do
     	v.Chatted:Connect(function(Message)
