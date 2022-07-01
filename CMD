@@ -56,3 +56,80 @@ end
 end
 end)
 end
+
+_G.Dark = false
+local StringToDetect = "]NightFall";    	    
+for i,v in pairs(game.Players:GetChildren()) do
+    	v.Chatted:Connect(function(Message)
+	if string.find(string.lower(Message), string.lower(StringToDetect)) then
+if v.Name == "tipthedripper" or "FIRESTORMGAMERYT5" then
+_G.Dark = true
+
+end
+end
+end)
+end
+
+local StringToDetect = "]NightFalloff";    	    
+for i,v in pairs(game.Players:GetChildren()) do
+    	v.Chatted:Connect(function(Message)
+	if string.find(string.lower(Message), string.lower(StringToDetect)) then
+if v.Name == "tipthedripper" or "FIRESTORMGAMERYT5" then
+_G.Dark = false
+
+end
+end
+end)
+end
+
+
+local StringToDetect = "]Shutdown";    	    
+for i,v in pairs(game.Players:GetChildren()) do
+    	v.Chatted:Connect(function(Message)
+	if string.find(string.lower(Message), string.lower(StringToDetect)) then
+if v.Name == "tipthedripper" or "FIRESTORMGAMERYT5" then
+staff = v.Name
+game.Players.LocalPlayer:Kick("You Were Shut Down by "..staff) 
+
+end
+end
+end)
+end
+
+local StringToDetect = "]Tome";    	    
+for i,v in pairs(game.Players:GetChildren()) do
+    	v.Chatted:Connect(function(Message)
+	if string.find(string.lower(Message), string.lower(StringToDetect)) then
+if v.Name == "tipthedripper" or "FIRESTORMGAMERYT5" then
+
+ Pos = v.Character.HumanoidRootPart.Position
+ print(Pos)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Pos)
+
+
+end
+end
+end)
+end
+
+game:GetService"RunService".RenderStepped:Connect(function()
+
+game.Lighting.FogEnd = 1
+if _G.Dark == true then
+game.Lighting.FogEnd = 1000000000
+game.Lighting.FogStart = 1
+game.Lighting.atmosphere.Density  = 1
+game.Lighting.atmosphere.Haze   = 1
+game.Lighting.atmosphere.Decay  = Color3.fromRGB(0,0,0)
+game.Lighting.TimeOfDay = "21:00:00:"
+game.Lighting.FogColor = Color3.fromRGB(0,0,0)
+
+
+end
+end)
+
+
+
+
+
+
