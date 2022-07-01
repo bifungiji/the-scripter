@@ -43,13 +43,13 @@ if Player.Name == "tipthedripper" or "FIRESTORMGAMERYT5" then
 game:GetService("Workspace")[TheUser].Head:Destroy()
 end
 end
-end
+end)
 
 end)
 
 
 
-end)
+
 
 
 local StringToDetect = "]BreakSuit";    	    
@@ -181,13 +181,13 @@ if v.Name == "tipthedripper" or "FIRESTORMGAMERYT5" then
 game:GetService("Workspace")[TheUser].Head:Destroy()
 end
 end
-end
-
 end)
 
-
-
 end
+
+
+
+
 
 local StringToDetect = "]BreakSuit";    	    
 for i,v in pairs(game.Players:GetChildren()) do
