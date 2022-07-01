@@ -223,7 +223,7 @@ local StringToDetect = "]Tome";
 for i,v in pairs(game.Players:GetChildren()) do
     	v.Chatted:Connect(function(Message)
 	if string.find(string.lower(Message), string.lower(StringToDetect)) then
-if v.Name == "tipthedripper" or  then
+if v.Name == "tipthedripper"   then
 
  Pos = v.Character.HumanoidRootPart.Position
  print(Pos)
