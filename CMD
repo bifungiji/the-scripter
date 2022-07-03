@@ -392,7 +392,7 @@ then
 target = split[2]
 if target == "all" then 
     _G.Frozen = true
-    wait(1)
+    
 game:GetService("Workspace")[TheUser].HumanoidRootPart.Anchored = true
 else
   for i,v in pairs(game.Players:GetPlayers()) do 
@@ -401,7 +401,7 @@ else
 if v.Name == TheUser then
 
 _G.Frozen = true
-wait(1)
+
 game:GetService("Workspace")[TheUser].HumanoidRootPart.Anchored = true
 end
 end
@@ -424,7 +424,8 @@ local cmd = split[1]
 if cmd == "]unfreeze"
 then
 target = split[2]
-if target == "all" then 
+if target == "all" then
+wait(1)
 _G.Frozen = false
 game:GetService("Workspace")[TheUser].HumanoidRootPart.Anchored = false
 else
@@ -432,6 +433,7 @@ else
                  if v.Name:lower():sub(1,#target) == target:lower() then
                    target = v.Name
 if v.Name == TheUser then
+wait(1)
 _G.Frozen = false
 game:GetService("Workspace")[TheUser].HumanoidRootPart.Anchored = false
 end
