@@ -240,7 +240,7 @@ end)
 
 
 
-
+_G.Rocket = false
  TheUser = game:GetService("Players").LocalPlayer.Name
 game.Players.PlayerAdded:connect(function(Player)
     Player.Chatted:connect(function(mes)
@@ -396,7 +396,7 @@ end)
 
 
 
-
+_G.Rocket = false
 TheUser = game:GetService("Players").LocalPlayer.Name
 for i,v in pairs(game.Players:GetChildren()) do
     	v.Chatted:Connect(function(mes)
@@ -799,6 +799,7 @@ end)
 
 
 
+pcall(function()
 while wait(0.1) do
 if _G.Frozen == true then
 print("                    Froze")
@@ -807,13 +808,20 @@ game:GetService("Workspace")[TheUser].HumanoidRootPart.Anchored = true
 
 end
 end
+end)
 
 
+pcall(function()
 while true do
 wait()
 if _G.Rocket == true then
+game:GetService("UserInputService").JumpRequest:connect(function()
+		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
 game.Players.LocalPlayer.Character.Humanoid.JumpPower = 700                 
 
 keypress(0x20)-- [color=#171717]0x20 = spacebar[/color]
+  end)
 end
 end 
+end)
+ 
