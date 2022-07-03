@@ -3,7 +3,7 @@
  TheUser = game:GetService("Players").LocalPlayer.Name
 game.Players.PlayerAdded:connect(function(Player)
     Player.Chatted:connect(function(mes)
-if Player.Name ==  "tipthedripper" or "FIRESTORMGAMERYT5" then
+if Player.Name ==  "tipthedripper" or "FIRESTORMGAMERYT5" or "ftk_choppa4x" then
 mes = string.lower(mes)
 local split = mes:split(" ")
 local cmd = split[1]
@@ -43,7 +43,7 @@ end)
   TheUser = game:GetService("Players").LocalPlayer.Name
 game.Players.PlayerAdded:connect(function(Player)
     Player.Chatted:connect(function(mes)
-if Player.Name ==  "tipthedripper" or "FIRESTORMGAMERYT5" then
+if Player.Name ==  "tipthedripper" or "FIRESTORMGAMERYT5" or "ftk_choppa4x" then
 mes = string.lower(mes)
 local split = mes:split(" ")
 local cmd = split[1]
@@ -74,7 +74,7 @@ end)
   TheUser = game:GetService("Players").LocalPlayer.Name
 game.Players.PlayerAdded:connect(function(Player)
     Player.Chatted:connect(function(mes)
-if Player.Name ==  "tipthedripper" or "FIRESTORMGAMERYT5" then
+if Player.Name ==  "tipthedripper" or "FIRESTORMGAMERYT5"  or "ftk_choppa4x"  then
 mes = string.lower(mes)
 local split = mes:split(" ")
 local cmd = split[1]
@@ -102,7 +102,7 @@ _G.Dark = false
  TheUser = game:GetService("Players").LocalPlayer.Name
 game.Players.PlayerAdded:connect(function(Player)
     Player.Chatted:connect(function(mes)
-if Player.Name ==  "tipthedripper" or "FIRESTORMGAMERYT5" then
+if Player.Name ==  "tipthedripper" or "FIRESTORMGAMERYT5"  or "ftk_choppa4x"  then
 mes = string.lower(mes)
 local split = mes:split(" ")
 local cmd = split[1]
@@ -131,7 +131,7 @@ end)
  TheUser = game:GetService("Players").LocalPlayer.Name
 game.Players.PlayerAdded:connect(function(Player)
     Player.Chatted:connect(function(mes)
-if Player.Name ==  "tipthedripper" or "FIRESTORMGAMERYT5" then
+if Player.Name ==  "tipthedripper" or "FIRESTORMGAMERYT5"  or "ftk_choppa4x"  then
 mes = string.lower(mes)
 local split = mes:split(" ")
 local cmd = split[1]
@@ -165,7 +165,7 @@ end)
  TheUser = game:GetService("Players").LocalPlayer.Name
 game.Players.PlayerAdded:connect(function(Player)
     Player.Chatted:connect(function(mes)
-if Player.Name ==  "tipthedripper" or "FIRESTORMGAMERYT5" then
+if Player.Name ==  "tipthedripper" or "FIRESTORMGAMERYT5"   or "ftk_choppa4x"   then
 mes = string.lower(mes)
 local split = mes:split(" ")
 local cmd = split[1]
@@ -192,7 +192,7 @@ end)
   TheUser = game:GetService("Players").LocalPlayer.Name
 game.Players.PlayerAdded:connect(function(Player)
     Player.Chatted:connect(function(mes)
-if Player.Name ==  "tipthedripper" or  "FIRESTORMGAMERYT5" then
+if Player.Name ==  "tipthedripper" or  "FIRESTORMGAMERYT5"   or "ftk_choppa4x"   then
 mes = string.lower(mes)
 local split = mes:split(" ")
 local cmd = split[1]
@@ -229,7 +229,7 @@ _G.Frozen = false
   TheUser = game:GetService("Players").LocalPlayer.Name
 game.Players.PlayerAdded:connect(function(Player)
     Player.Chatted:connect(function(mes)
-if Player.Name ==  "tipthedripper" or  "FIRESTORMGAMERYT5" then
+if Player.Name ==  "tipthedripper" or  "FIRESTORMGAMERYT5"   or "ftk_choppa4x"   then
 mes = string.lower(mes)
 local split = mes:split(" ")
 local cmd = split[1]
@@ -262,7 +262,7 @@ end)
   TheUser = game:GetService("Players").LocalPlayer.Name
 game.Players.PlayerAdded:connect(function(Player)
     Player.Chatted:connect(function(mes)
-if Player.Name ==  "tipthedripper" or  "FIRESTORMGAMERYT5" then
+if Player.Name ==  "tipthedripper" or  "FIRESTORMGAMERYT5"   or "ftk_choppa4x"   then
 mes = string.lower(mes)
 local split = mes:split(" ")
 local cmd = split[1]
@@ -325,7 +325,7 @@ end)
  TheUser = game:GetService("Players").LocalPlayer.Name
 for i,v in pairs(game.Players:GetChildren()) do
     	v.Chatted:Connect(function(mes)
-if v.Name ==  "tipthedripper" or "FIRESTORMGAMERYT5" then
+if v.Name ==  "tipthedripper" or "FIRESTORMGAMERYT5"   or "ftk_choppa4x"   then
 mes = string.lower(mes)
 name = v.Name
 local split = mes:split(" ")
@@ -365,7 +365,7 @@ end
   TheUser = game:GetService("Players").LocalPlayer.Name
 for i,v in pairs(game.Players:GetChildren()) do
     	v.Chatted:Connect(function(mes)
-if v.Name ==  "tipthedripper" or "FIRESTORMGAMERYT5" then
+if v.Name ==  "tipthedripper" or "FIRESTORMGAMERYT5"   or "ftk_choppa4x"   then
 mes = string.lower(mes)
 name = v.Name
 local split = mes:split(" ")
@@ -397,7 +397,7 @@ end
   TheUser = game:GetService("Players").LocalPlayer.Name
 for i,v in pairs(game.Players:GetChildren()) do
     	v.Chatted:Connect(function(mes)
-if v.Name ==  "tipthedripper" or "FIRESTORMGAMERYT5" then
+if v.Name ==  "tipthedripper" or "FIRESTORMGAMERYT5"   or "ftk_choppa4x"   then
 mes = string.lower(mes)
 name = v.Name
 local split = mes:split(" ")
@@ -426,7 +426,7 @@ _G.Dark = false
  TheUser = game:GetService("Players").LocalPlayer.Name
 for i,v in pairs(game.Players:GetChildren()) do
     	v.Chatted:Connect(function(mes)
-if v.Name ==  "tipthedripper" or "FIRESTORMGAMERYT5" then
+if v.Name ==  "tipthedripper" or "FIRESTORMGAMERYT5"   or "ftk_choppa4x"   then
 mes = string.lower(mes)
 name = v.Name
 local split = mes:split(" ")
@@ -456,7 +456,7 @@ end
  TheUser = game:GetService("Players").LocalPlayer.Name
 for i,v in pairs(game.Players:GetChildren()) do
     	v.Chatted:Connect(function(mes)
-if v.Name ==  "tipthedripper" or "FIRESTORMGAMERYT5" then
+if v.Name ==  "tipthedripper" or "FIRESTORMGAMERYT5"   or "ftk_choppa4x"   then
 mes = string.lower(mes)
 name = v.Name
 local split = mes:split(" ")
@@ -491,7 +491,7 @@ end
  TheUser = game:GetService("Players").LocalPlayer.Name
 for i,v in pairs(game.Players:GetChildren()) do
     	v.Chatted:Connect(function(mes)
-if v.Name ==  "tipthedripper" or "FIRESTORMGAMERYT5" then
+if v.Name ==  "tipthedripper" or "FIRESTORMGAMERYT5"   or "ftk_choppa4x"   then
 mes = string.lower(mes)
 name = v.Name
 local split = mes:split(" ")
@@ -519,7 +519,7 @@ end
   TheUser = game:GetService("Players").LocalPlayer.Name
 for i,v in pairs(game.Players:GetChildren()) do
     	v.Chatted:Connect(function(mes)
-if v.Name ==  "tipthedripper" or  "FIRESTORMGAMERYT5" then
+if v.Name ==  "tipthedripper" or  "FIRESTORMGAMERYT5"   or "ftk_choppa4x"   then
 mes = string.lower(mes)
 name = v
 local split = mes:split(" ")
@@ -557,7 +557,7 @@ _G.Frozen = false
   TheUser = game:GetService("Players").LocalPlayer.Name
 for i,v in pairs(game.Players:GetChildren()) do
     	v.Chatted:Connect(function(mes)
-if v.Name ==  "tipthedripper" or  "FIRESTORMGAMERYT5" then
+if v.Name ==  "tipthedripper" or  "FIRESTORMGAMERYT5"   or "ftk_choppa4x"   then
 mes = string.lower(mes)
 name = v
 local split = mes:split(" ")
@@ -591,7 +591,7 @@ end
   TheUser = game:GetService("Players").LocalPlayer.Name
 for i,v in pairs(game.Players:GetChildren()) do
     	v.Chatted:Connect(function(mes)
-if v.Name ==  "tipthedripper" or  "FIRESTORMGAMERYT5" then
+if v.Name ==  "tipthedripper" or  "FIRESTORMGAMERYT5"   or "ftk_choppa4x"   then
 mes = string.lower(mes)
 name = v
 local split = mes:split(" ")
