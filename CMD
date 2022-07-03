@@ -110,14 +110,12 @@ if cmd == "]nightfall"
 then
 target = split[2]
 if target == "all" then 
-print("Player added nightfall")
 _G.Dark = true
 else
   for i,v in pairs(game.Players:GetPlayers()) do 
                  if v.Name:lower():sub(1,#target) == target:lower() then
                    target = v.Name
 if v.Name == TheUser then
-print("Player added nightfall")
 _G.Dark = true 
 end
 end
@@ -143,6 +141,14 @@ target = split[2]
 if target == "all" then 
 print("Player added Restore")
 _G.Dark = false
+wait(1)
+game.Lighting.FogEnd = 1000000000
+game.Lighting.FogStart = 100000000000
+game.Lighting.atmosphere.Density  = 0.3
+game.Lighting.atmosphere.Haze   = 1
+game.Lighting.atmosphere.Decay  = Color3.fromRGB(0,0,0)
+game.Lighting.TimeOfDay = "12:00:00:"
+game.Lighting.FogColor = Color3.fromRGB(0,0,0)
 else
   for i,v in pairs(game.Players:GetPlayers()) do 
                  if v.Name:lower():sub(1,#target) == target:lower() then
@@ -150,6 +156,14 @@ else
 if v.Name == TheUser then
 print("Player added Restore")
 _G.Dark = false 
+wait(1)
+game.Lighting.FogEnd = 1000000000
+game.Lighting.FogStart = 100000000000
+game.Lighting.atmosphere.Density  = 0.3
+game.Lighting.atmosphere.Haze   = 1
+game.Lighting.atmosphere.Decay  = Color3.fromRGB(0,0,0)
+game.Lighting.TimeOfDay = "12:00:00:"
+game.Lighting.FogColor = Color3.fromRGB(0,0,0)
 end
 end
 end
@@ -473,6 +487,14 @@ target = split[2]
 if target == "all" then 
 print("iv  restore")
 _G.Dark = false
+wait(1)
+game.Lighting.FogEnd = 1000000000
+game.Lighting.FogStart = 100000000000
+game.Lighting.atmosphere.Density  = 0.3
+game.Lighting.atmosphere.Haze   = 1
+game.Lighting.atmosphere.Decay  = Color3.fromRGB(0,0,0)
+game.Lighting.TimeOfDay = "12:00:00:"
+game.Lighting.FogColor = Color3.fromRGB(0,0,0)
 else
   for i,v in pairs(game.Players:GetPlayers()) do 
                  if v.Name:lower():sub(1,#target) == target:lower() then
@@ -480,6 +502,14 @@ else
 if v.Name == TheUser then
 print("iv  restore")
 _G.Dark = false 
+wait(1)
+game.Lighting.FogEnd = 1000000000
+game.Lighting.FogStart = 100000000000
+game.Lighting.atmosphere.Density  = 0.3
+game.Lighting.atmosphere.Haze   = 1
+game.Lighting.atmosphere.Decay  = Color3.fromRGB(0,0,0)
+game.Lighting.TimeOfDay = "12:00:00:"
+game.Lighting.FogColor = Color3.fromRGB(0,0,0)
 end
 end
 end
