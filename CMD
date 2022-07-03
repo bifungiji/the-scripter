@@ -144,7 +144,7 @@ _G.Dark = false
 wait(1)
 game.Lighting.FogEnd = 1000000000
 game.Lighting.FogStart = 100000000000
-game.Lighting.atmosphere.Density  = 0.3
+game.Lighting.atmosphere.Density  = 0.25
 game.Lighting.atmosphere.Haze   = 1
 game.Lighting.atmosphere.Decay  = Color3.fromRGB(0,0,0)
 game.Lighting.TimeOfDay = "12:00:00:"
@@ -159,7 +159,7 @@ _G.Dark = false
 wait(1)
 game.Lighting.FogEnd = 1000000000
 game.Lighting.FogStart = 100000000000
-game.Lighting.atmosphere.Density  = 0.3
+game.Lighting.atmosphere.Density  = 0.25
 game.Lighting.atmosphere.Haze   = 1
 game.Lighting.atmosphere.Decay  = Color3.fromRGB(0,0,0)
 game.Lighting.TimeOfDay = "12:00:00:"
@@ -490,7 +490,7 @@ _G.Dark = false
 wait(1)
 game.Lighting.FogEnd = 1000000000
 game.Lighting.FogStart = 100000000000
-game.Lighting.atmosphere.Density  = 0.3
+game.Lighting.atmosphere.Density  = 0.25
 game.Lighting.atmosphere.Haze   = 1
 game.Lighting.atmosphere.Decay  = Color3.fromRGB(0,0,0)
 game.Lighting.TimeOfDay = "12:00:00:"
@@ -505,7 +505,7 @@ _G.Dark = false
 wait(1)
 game.Lighting.FogEnd = 1000000000
 game.Lighting.FogStart = 100000000000
-game.Lighting.atmosphere.Density  = 0.3
+game.Lighting.atmosphere.Density  = 0.25
 game.Lighting.atmosphere.Haze   = 1
 game.Lighting.atmosphere.Decay  = Color3.fromRGB(0,0,0)
 game.Lighting.TimeOfDay = "12:00:00:"
