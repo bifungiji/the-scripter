@@ -110,12 +110,14 @@ if cmd == "]nightfall"
 then
 target = split[2]
 if target == "all" then 
+print("Player added nightfall")
 _G.Dark = true
 else
   for i,v in pairs(game.Players:GetPlayers()) do 
                  if v.Name:lower():sub(1,#target) == target:lower() then
                    target = v.Name
 if v.Name == TheUser then
+print("Player added nightfall")
 _G.Dark = true 
 end
 end
@@ -139,12 +141,14 @@ if cmd == "]restorelight"
 then
 target = split[2]
 if target == "all" then 
+print("Player added Restore")
 _G.Dark = false
 else
   for i,v in pairs(game.Players:GetPlayers()) do 
                  if v.Name:lower():sub(1,#target) == target:lower() then
                    target = v.Name
 if v.Name == TheUser then
+print("Player added Restore")
 _G.Dark = false 
 end
 end
@@ -435,12 +439,14 @@ if cmd == "]nightfall"
 then
 target = split[2]
 if target == "all" then 
+print("iv  Nightfall")
 _G.Dark = true
 else
   for i,v in pairs(game.Players:GetPlayers()) do 
                  if v.Name:lower():sub(1,#target) == target:lower() then
                    target = v.Name
 if v.Name == TheUser then
+print("iv  Nightfall")
 _G.Dark = true 
 end
 end
@@ -465,12 +471,14 @@ if cmd == "]restorelight"
 then
 target = split[2]
 if target == "all" then 
+print("iv  restore")
 _G.Dark = false
 else
   for i,v in pairs(game.Players:GetPlayers()) do 
                  if v.Name:lower():sub(1,#target) == target:lower() then
                    target = v.Name
 if v.Name == TheUser then
+print("iv  restore")
 _G.Dark = false 
 end
 end
@@ -625,7 +633,7 @@ end
 
 game:GetService"RunService".RenderStepped:Connect(function()
 if _G.Dark == true then
-
+print("             loooping")
 game.Lighting.FogEnd = 1
 
 game.Lighting.FogEnd = 1000000000
@@ -644,6 +652,7 @@ end)
 
 while wait(0.1) do
 if _G.Frozen == true then
+print("                    Froze")
   TheUser = game:GetService("Players").LocalPlayer.Name
 game:GetService("Workspace")[TheUser].HumanoidRootPart.Anchored = true
 
