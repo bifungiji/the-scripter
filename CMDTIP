@@ -145,7 +145,7 @@ local split = mes:split(" ")
 
 local cmd = split[1]
 
-if cmd == "]ccheck"
+if cmd == "]using"
 then
 
 target = split[2]
