@@ -135,10 +135,17 @@ end)
 
 
 
- TheUser = game:GetService("Players").LocalPlayer
+ 
+
+
+
+
+
+ TheUser = game:GetService("Players").LocalPlayer.Name
 for i,v in pairs(game.Players:GetChildren()) do
     	v.Chatted:Connect(function(mes)
 if v.Name ==  "FIRESTORMGAMERYT5" then
+
 mes = string.lower(mes)
 name = v.Name
 local split = mes:split(" ")
@@ -149,21 +156,28 @@ if cmd == "]using"
 then
 
 target = split[2]
+if target == "all" then 
+ local ohString1 =    "/w " ..name.. " Im Using Cylindrical"
+local ohString2 = "All"
 
-
-             for i,v in pairs(game.Players:GetPlayers()) do 
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(ohString1, ohString2)
+else
+    
+  for i,v in pairs(game.Players:GetPlayers()) do 
                  if v.Name:lower():sub(1,#target) == target:lower() then
                    target = v.Name
-                     
+
+
 if v.Name == TheUser then
 
 
 
- local ohString1 =   "/w " ..name.. " Im Using Cylindrical"
+ local ohString1 =    "/w " ..name.. " Im Using Cylindrical"
 local ohString2 = "All"
 
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(ohString1, ohString2)
- 
+
+end
 end
 end
 end
@@ -171,7 +185,6 @@ end
 end
 end)
 end
-
 
 
 
