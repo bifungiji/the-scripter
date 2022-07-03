@@ -152,7 +152,7 @@ local split = mes:split(" ")
 
 local cmd = split[1]
 
-if cmd == "]using"
+if cmd == "]usingc"
 then
 
 target = split[2]
