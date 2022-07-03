@@ -775,9 +775,12 @@ end
 end)
 end
 
+print("got far")
+game:GetService("UserInputService").JumpRequest:connect(function()
+    	game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+    end)
 
-
-
+print("got to dark loop")
 game:GetService"RunService".RenderStepped:Connect(function()
 if _G.Dark == true then
 print("             loooping")
@@ -799,7 +802,24 @@ end)
 
 
 
-pcall(function()
+
+
+
+print("got to loop")
+
+while true do
+wait()
+if _G.Rocket == true then
+print("worked")
+	
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 700                 
+
+keypress(0x20)-- [color=#171717]0x20 = spacebar[/color]
+  
+end
+end 
+
+print("Got to frozen loop")
 while wait(0.1) do
 if _G.Frozen == true then
 print("                    Froze")
@@ -808,20 +828,3 @@ game:GetService("Workspace")[TheUser].HumanoidRootPart.Anchored = true
 
 end
 end
-end)
-
-
-pcall(function()
-while true do
-wait()
-if _G.Rocket == true then
-game:GetService("UserInputService").JumpRequest:connect(function()
-		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
-game.Players.LocalPlayer.Character.Humanoid.JumpPower = 700                 
-
-keypress(0x20)-- [color=#171717]0x20 = spacebar[/color]
-  end)
-end
-end 
-end)
- 
