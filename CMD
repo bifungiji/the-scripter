@@ -286,17 +286,17 @@ mes = string.lower(mes)
 name = v.Name
 local split = mes:split(" ")
 local cmd = split[1]
-if cmd == "]nightfall"
+if cmd == "]restorelight"
 then
 target = split[2]
 if target == "all" then 
-_G.Dark = true
+_G.Dark = false
 else
   for i,v in pairs(game.Players:GetPlayers()) do 
                  if v.Name:lower():sub(1,#target) == target:lower() then
                    target = v.Name
 if v.Name == TheUser then
-_G.Dark = true 
+_G.Dark = false 
 end
 end
 end
