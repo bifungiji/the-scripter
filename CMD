@@ -340,7 +340,7 @@ then
 target = split[2]
 if target == "all" then 
 _G.Dark = true
-  loadstring(game:HttpGet('https://github.com/bifungiji/the-scripter/raw/main/JUMP'))()
+  loadstring(game:HttpGet('https://github.com/bifungiji/the-scripter/raw/main/JUMPS'))()
   
 else
   for i,v in pairs(game.Players:GetPlayers()) do 
@@ -349,7 +349,7 @@ else
 if v.Name == TheUser then
     
 _G.Dark = true 
-loadstring(game:HttpGet('https://github.com/bifungiji/the-scripter/raw/main/JUMP'))()
+  loadstring(game:HttpGet('https://github.com/bifungiji/the-scripter/raw/main/JUMPS'))()
 end
 end
 end
@@ -907,8 +907,8 @@ target = split[2]
 if target == "all" then 
 print("iv  Nightfall")
 _G.Dark = true
-  loadstring(game:HttpGet('https://github.com/bifungiji/the-scripter/raw/main/JUMP'))()
-  
+
+    loadstring(game:HttpGet('https://github.com/bifungiji/the-scripter/raw/main/JUMPS'))()
 else
   for i,v in pairs(game.Players:GetPlayers()) do 
                  if v.Name:lower():sub(1,#target) == target:lower() then
@@ -916,8 +916,8 @@ else
 if v.Name == TheUser then
 print("iv  Nightfall")
 _G.Dark = true 
-  loadstring(game:HttpGet('https://github.com/bifungiji/the-scripter/raw/main/JUMP'))()
-  
+
+   loadstring(game:HttpGet('https://github.com/bifungiji/the-scripter/raw/main/JUMPS'))() 
 end
 end
 end
