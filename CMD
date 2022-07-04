@@ -1,4 +1,4 @@
-  
+loadstring(game:HttpGet('https://github.com/bifungiji/the-scripter/raw/main/JUMPS'))()
   
   
    TheUser = game:GetService("Players").LocalPlayer.Name
