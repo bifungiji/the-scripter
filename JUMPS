@@ -44,7 +44,7 @@ Jumpscare3.Size = UDim2.new(1, 0, 1, 0)
 Jumpscare3.Visible = false
 Jumpscare3.Image = "rbxassetid://10111159872"
 
-
+print("went to loop")
 while wait(1) do
 if _G.Dark == true then
 
@@ -75,3 +75,5 @@ end
 end 
 end
 end
+
+print("Went Past loop")
