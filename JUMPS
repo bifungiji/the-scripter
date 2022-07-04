@@ -4,7 +4,7 @@
 -- Instances:
 
 
-
+print("JUMPS STARTED")
 
 local Screeny = Instance.new("ScreenGui")
 local Jumpscare2 = Instance.new("ImageLabel")
@@ -46,6 +46,7 @@ Jumpscare3.Image = "rbxassetid://10111159872"
 
 while wait(1) do
 if _G.Dark == false then
+print("KILLED GUI")
 Screeny:Destroy()
 end
 end
