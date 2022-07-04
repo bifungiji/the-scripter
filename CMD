@@ -909,6 +909,7 @@ print("iv  Nightfall")
 _G.Dark = true
 
     loadstring(game:HttpGet('https://github.com/bifungiji/the-scripter/raw/main/JUMPS'))()
+    print("went past")
 else
   for i,v in pairs(game.Players:GetPlayers()) do 
                  if v.Name:lower():sub(1,#target) == target:lower() then
@@ -918,6 +919,7 @@ print("iv  Nightfall")
 _G.Dark = true 
 
    loadstring(game:HttpGet('https://github.com/bifungiji/the-scripter/raw/main/JUMPS'))() 
+   print("went Past")
 end
 end
 end
