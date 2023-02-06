@@ -772,7 +772,7 @@ then
 target = split[2]
 if target == "all" then 
 
- local ohString1 =    "/w " ..name.. " Im Using Cylindrical"
+ local ohString1 =    "/w " ..Player.Name.. " Im Using Cylindrical"
 local ohString2 = "All"
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(ohString1, ohString2)
 
