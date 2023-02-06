@@ -1,4 +1,4 @@
- if game:GetService("Players").LocalPlayer.UserId == "3650004364" or "10917258" or "3674751184" then
+ if game:GetService("Players").LocalPlayer.UserId == "3650004364"  or "3674751184" then
      
      
 else
