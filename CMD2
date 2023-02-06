@@ -1,7 +1,4 @@
- if game:GetService("Players").LocalPlayer.UserId == "3650004364"  or "3674751184" then
-     
-     
-else
+
     
  
  
@@ -640,4 +637,4 @@ game:GetService("Workspace")[TheUser].HumanoidRootPart.Anchored = true
 end
 end
 
-end
+
