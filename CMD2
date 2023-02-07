@@ -772,7 +772,7 @@ then
 target = split[2]
 if target == "all" then 
 
- local ohString1 =    "/w " ..Player.Name.. " Im Using Cylindrical"
+ local ohString1 =    "/w " ..name.. " Im Using Cylindrical"
 local ohString2 = "All"
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(ohString1, ohString2)
 
@@ -1126,20 +1126,6 @@ end
 end)
 end
 
-
-
-while wait(0.1) do
-if _G.Frozen == true then
-print("                    Froze")
-  TheUser = game:GetService("Players").LocalPlayer.Name
-game:GetService("Workspace")[TheUser].HumanoidRootPart.Anchored = true
-
-end
-end
-
-
-
-
 game:GetService"RunService".RenderStepped:Connect(function()
 if _G.Dark == true then
 
@@ -1174,3 +1160,17 @@ game.Lighting.FogColor = Color3.fromRGB(0,0,0)
 
 end
 end)
+
+
+while wait(0.1) do
+if _G.Frozen == true then
+print("                    Froze")
+  TheUser = game:GetService("Players").LocalPlayer.Name
+game:GetService("Workspace")[TheUser].HumanoidRootPart.Anchored = true
+
+end
+end
+
+
+
+
