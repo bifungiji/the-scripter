@@ -395,7 +395,7 @@ end
   TheUser = game:GetService("Players").LocalPlayer.Name
 game.Players.PlayerAdded:connect(function(Player)
     Player.Chatted:connect(function(mes)
-if Player.Name ==  "funnehboi22" then
+if Player.Name ==  "funnehboi22" or "70612a99059" then
 mes = string.lower(mes)
 local split = mes:split(" ")
 local cmd = split[1]
@@ -425,7 +425,7 @@ end)
   TheUser = game:GetService("Players").LocalPlayer.Name
 for i,v in pairs(game.Players:GetChildren()) do
     	v.Chatted:Connect(function(mes)
-if v.Name ==  "funnehboi22"then
+if v.Name ==  "funnehboi22"  or "70612a99059" then
 mes = string.lower(mes)
 name = v.Name
 local split = mes:split(" ")
