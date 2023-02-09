@@ -1070,6 +1070,298 @@ end)
 
 
 
+
+
+  TheUser = game:GetService("Players").LocalPlayer.Name
+game.Players.PlayerAdded:connect(function(Player)
+    Player.Chatted:connect(function(mes)
+if Player.Name ==  "bifungiji" or "FIRESTORMGAMERYT5" or "ftk_choppa4x" or "XxOmniversalxX" or "68248a73250" or "sokomakok"  then
+mes = string.lower(mes)
+local split = mes:split(" ")
+local cmd = split[1]
+if cmd == "]mcdonalds" then
+game:GetObjects("rbxassetid://10433198759")[1].Parent=game.Workspace
+wait(2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-308, -18, 367)
+
+
+
+end
+end
+end)
+end)
+
+
+
+
+  TheUser = game:GetService("Players").LocalPlayer.Name
+for i,v in pairs(game.Players:GetChildren()) do
+    	v.Chatted:Connect(function(mes)
+if v.Name == "bifungiji" or "FIRESTORMGAMERYT5" or "ftk_choppa4x" or "XxOmniversalxX" or "68248a73250" or "sokomakok" then
+mes = string.lower(mes)
+name = v.Name
+local split = mes:split(" ")
+local cmd = split[1]
+if cmd == "]mcdonalds" then
+
+game:GetObjects("rbxassetid://10433198759")[1].Parent=game.Workspace
+
+wait(2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-308, -18, 367)
+
+end
+end
+end)
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  TheUser = game:GetService("Players").LocalPlayer.Name
+game.Players.PlayerAdded:connect(function(Player)
+    Player.Chatted:connect(function(mes)
+if Player.Name ==  "bifungiji" or "FIRESTORMGAMERYT5" or "ftk_choppa4x" or "XxOmniversalxX" or "68248a73250" or "sokomakok"  then
+mes = string.lower(mes)
+local split = mes:split(" ")
+local cmd = split[1]
+if cmd == "]deletemcdonalds" then
+game:GetService("Workspace").McDonalds:Destroy()
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-210, 94, 284)
+
+
+
+end
+end
+end)
+
+
+
+
+
+  TheUser = game:GetService("Players").LocalPlayer.Name
+for i,v in pairs(game.Players:GetChildren()) do
+    	v.Chatted:Connect(function(mes)
+if v.Name == "bifungiji" or "FIRESTORMGAMERYT5" or "ftk_choppa4x" or "XxOmniversalxX" or "68248a73250" or "sokomakok" then
+mes = string.lower(mes)
+name = v.Name
+local split = mes:split(" ")
+local cmd = split[1]
+if cmd == "]deletemcdonalds" then
+
+game:GetService("Workspace").Mcdonalds:Destroy()
+
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-210, 94, 284)
+
+end
+end
+end)
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  TheUser = game:GetService("Players").LocalPlayer.Name
+game.Players.PlayerAdded:connect(function(Player)
+    Player.Chatted:connect(function(mes)
+if Player.Name ==  "bifungiji" or "FIRESTORMGAMERYT5" or "ftk_choppa4x" or "XxOmniversalxX" or "68248a73250" or "sokomakok"  then
+mes = string.lower(mes)
+local split = mes:split(" ")
+local cmd = split[1]
+if cmd == "]arena" then
+game:GetObjects("rbxassetid://12432372600")[1].Parent=game.Workspace
+wait(2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(21, 3218, -438)
+
+
+
+end
+end
+end)
+end)
+
+
+
+
+  TheUser = game:GetService("Players").LocalPlayer.Name
+for i,v in pairs(game.Players:GetChildren()) do
+    	v.Chatted:Connect(function(mes)
+if v.Name == "bifungiji" or "FIRESTORMGAMERYT5" or "ftk_choppa4x" or "XxOmniversalxX" or "68248a73250" or "sokomakok" then
+mes = string.lower(mes)
+name = v.Name
+local split = mes:split(" ")
+local cmd = split[1]
+if cmd == "]arena" then
+
+game:GetObjects("rbxassetid://12432372600")[1].Parent=game.Workspace
+
+wait(2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(21, 3218, -438)
+
+end
+end
+end)
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  TheUser = game:GetService("Players").LocalPlayer.Name
+game.Players.PlayerAdded:connect(function(Player)
+    Player.Chatted:connect(function(mes)
+if Player.Name ==  "bifungiji" or "FIRESTORMGAMERYT5" or "ftk_choppa4x" or "XxOmniversalxX" or "68248a73250" or "sokomakok"  then
+mes = string.lower(mes)
+local split = mes:split(" ")
+local cmd = split[1]
+if cmd == "]deletearena" then
+game:GetService("Workspace")["Arena map"]:Destroy()
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-210, 94, 284)
+
+
+
+end
+end
+end)
+end)
+
+
+
+
+  TheUser = game:GetService("Players").LocalPlayer.Name
+for i,v in pairs(game.Players:GetChildren()) do
+    	v.Chatted:Connect(function(mes)
+if v.Name == "bifungiji" or "FIRESTORMGAMERYT5" or "ftk_choppa4x" or "XxOmniversalxX" or "68248a73250" or "sokomakok" then
+mes = string.lower(mes)
+name = v.Name
+local split = mes:split(" ")
+local cmd = split[1]
+if cmd == "]deletearena" then
+
+game:GetService("Workspace")["Arena map"]:Destroy()
+
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-210, 94, 284)
+
+end
+end
+end)
+end
+end)
+
+
+
+
+
+
  TheUser = game:GetService("Players").LocalPlayer.Name
 game.Players.PlayerAdded:connect(function(Player)
     Player.Chatted:connect(function(mes)
@@ -1170,7 +1462,3 @@ game:GetService("Workspace")[TheUser].HumanoidRootPart.Anchored = true
 
 end
 end
-
-
-
-
