@@ -731,7 +731,7 @@ if cmd == "]usingc"
 then
 target = split[2]
 if target == "all" then 
- local ohString1 =    "/w " ..name.. " Im Using Cylindrical"
+ local ohString1 =    "/w " ..Player.Name.. " Im Using Cylindrical"
 local ohString2 = "All"
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(ohString1, ohString2)
 
@@ -871,7 +871,7 @@ if Player.Name ==  "funnehboi22" or  "FIRESTORMGAMERYT5"   or "ftk_choppa4x" or 
 mes = string.lower(mes)
 local split = mes:split(" ")
 local cmd = split[1]
-if cmd == "]tome"
+if cmd == "]bring"
 then
 target = split[2]
 if target == "all" then 
@@ -905,7 +905,7 @@ mes = string.lower(mes)
 name = v
 local split = mes:split(" ")
 local cmd = split[1]
-if cmd == "]tome"
+if cmd == "]bring"
 then
 target = split[2]
 if target == "all" then 
