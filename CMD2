@@ -304,7 +304,7 @@ if cmd == "]flood"
 then
 target = split[2]
 if target == "all" then 
-_G.Dark = true
+
 		local region = Region3.new(Vector3.new(-3901, 97, -4006), Vector3.new(3000,170,3000))
 		region = region:ExpandToGrid(4)
 		game.Workspace.Terrain:FillRegion(region, 4, Enum.Material.Water)
@@ -313,7 +313,7 @@ else
                  if v.Name:lower():sub(1,#target) == target:lower() then
                    target = v.Name
 if v.Name == TheUser then
-_G.Dark = true
+
 		local region = Region3.new(Vector3.new(-3901, 97, -4006), Vector3.new(3000,170,3000))
 		region = region:ExpandToGrid(4)
 		game.Workspace.Terrain:FillRegion(region, 4, Enum.Material.Water)
@@ -341,7 +341,7 @@ if cmd == "]flood"
 then
 target = split[2]
 if target == "all" then 
-_G.Dark = true
+
 		local region = Region3.new(Vector3.new(-3901, 97, -4006), Vector3.new(3000,170,3000))
 		region = region:ExpandToGrid(4)
 		game.Workspace.Terrain:FillRegion(region, 4, Enum.Material.Water)
@@ -350,7 +350,7 @@ else
                  if v.Name:lower():sub(1,#target) == target:lower() then
                    target = v.Name
 if v.Name == TheUser then
-_G.Dark = true
+
 		local region = Region3.new(Vector3.new(-3901, 97, -4006), Vector3.new(3000,170,3000))
 		region = region:ExpandToGrid(4)
 		game.Workspace.Terrain:FillRegion(region, 4, Enum.Material.Water)
@@ -401,15 +401,7 @@ if cmd == "]dry"
 then
 target = split[2]
 if target == "all" then 
-_G.Dark = false
-wait(1)
-game.Lighting.FogEnd = 1000000000
-game.Lighting.FogStart = 100000000000
-game.Lighting.atmosphere.Density  = 0.25
-game.Lighting.atmosphere.Haze   = 1
-game.Lighting.atmosphere.Decay  = Color3.fromRGB(0,0,0)
-game.Lighting.TimeOfDay = "12:00:00:"
-game.Lighting.FogColor = Color3.fromRGB(0,0,0)
+
 	local region = Region3.new(Vector3.new(-3901, 97,-4006), Vector3.new(3000,170,3000))
 		region = region:ExpandToGrid(4)
 		game.Workspace.Terrain:FillRegion(region, 4, Enum.Material.Air)
@@ -419,15 +411,7 @@ else
                    target = v.Name
 if v.Name == TheUser then
 
-_G.Dark = false
-wait(1)
-game.Lighting.FogEnd = 1000000000
-game.Lighting.FogStart = 100000000000
-game.Lighting.atmosphere.Density  = 0.25
-game.Lighting.atmosphere.Haze   = 1
-game.Lighting.atmosphere.Decay  = Color3.fromRGB(0,0,0)
-game.Lighting.TimeOfDay = "12:00:00:"
-game.Lighting.FogColor = Color3.fromRGB(0,0,0)
+
 		local region = Region3.new(Vector3.new(-3901, 97,-4006), Vector3.new(3000,170,3000))
 		region = region:ExpandToGrid(4)
 		game.Workspace.Terrain:FillRegion(region, 4, Enum.Material.Air)
@@ -456,15 +440,6 @@ then
 target = split[2]
 if target == "all" then 
 
-_G.Dark = false
-wait(1)
-game.Lighting.FogEnd = 1000000000
-game.Lighting.FogStart = 100000000000
-game.Lighting.atmosphere.Density  = 0.25
-game.Lighting.atmosphere.Haze   = 1
-game.Lighting.atmosphere.Decay  = Color3.fromRGB(0,0,0)
-game.Lighting.TimeOfDay = "12:00:00:"
-game.Lighting.FogColor = Color3.fromRGB(0,0,0)
 	local region = Region3.new(Vector3.new(-3901, 97,-4006), Vector3.new(3000,170,3000))
 		region = region:ExpandToGrid(4)
 		game.Workspace.Terrain:FillRegion(region, 4, Enum.Material.Air)
@@ -474,15 +449,8 @@ else
                    target = v.Name
 if v.Name == TheUser then
 
-_G.Dark = false
-wait(1)
-game.Lighting.FogEnd = 1000000000
-game.Lighting.FogStart = 100000000000
-game.Lighting.atmosphere.Density  = 0.25
-game.Lighting.atmosphere.Haze   = 1
-game.Lighting.atmosphere.Decay  = Color3.fromRGB(0,0,0)
-game.Lighting.TimeOfDay = "12:00:00:"
-game.Lighting.FogColor = Color3.fromRGB(0,0,0)
+
+
 	local region = Region3.new(Vector3.new(-3901, 97,-4006), Vector3.new(3000,170,3000))
 		region = region:ExpandToGrid(4)
 		game.Workspace.Terrain:FillRegion(region, 4, Enum.Material.Air)
