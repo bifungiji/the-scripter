@@ -1290,7 +1290,7 @@ end)
 end)
 
 
-
+_G.SpawnedMcdonalds = false 
 
 
   TheUser = game:GetService("Players").LocalPlayer.Name
@@ -1301,12 +1301,15 @@ mes = string.lower(mes)
 local split = mes:split(" ")
 local cmd = split[1]
 if cmd == "]mcdonalds" then
+if _G.SpawnedMcdonalds == false then
 game:GetObjects("rbxassetid://10433198759")[1].Parent=game.Workspace
+_G.SpawnedMcdonalds = true
 wait(2)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-308, -18, 367)
+else
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-308, -18, 367)
 
-
-
+end
 end
 end
 end)
@@ -1324,12 +1327,15 @@ name = v.Name
 local split = mes:split(" ")
 local cmd = split[1]
 if cmd == "]mcdonalds" then
-
+if _G.SpawnedMcdonalds == false then
 game:GetObjects("rbxassetid://10433198759")[1].Parent=game.Workspace
-
+_G.SpawnedMcdonalds = true
 wait(2)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-308, -18, 367)
+else
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-308, -18, 367)
 
+end
 end
 end
 end)
@@ -1368,12 +1374,14 @@ mes = string.lower(mes)
 local split = mes:split(" ")
 local cmd = split[1]
 if cmd == "]deletemcdonalds" then
+if _G.SpawnedMcdonalds == true than
 game:GetService("Workspace").McDonalds:Destroy()
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-210, 94, 284)
+else
 
 
-
+end
 end
 end
 end)
@@ -1391,12 +1399,14 @@ name = v.Name
 local split = mes:split(" ")
 local cmd = split[1]
 if cmd == "]deletemcdonalds" then
-
+if _G.SpawnedMcdonalds == true then
 game:GetService("Workspace").Mcdonalds:Destroy()
 
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-210, 94, 284)
+else
 
+end
 end
 end
 end)
@@ -1463,7 +1473,7 @@ end
 
 
 
-
+_G.SpawnedArena = false
 
 
 
@@ -1476,12 +1486,14 @@ mes = string.lower(mes)
 local split = mes:split(" ")
 local cmd = split[1]
 if cmd == "]arena" then
+if _G.SpawnedArena == false then
 game:GetObjects("rbxassetid://12432372600")[1].Parent=game.Workspace
 wait(2)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(21, 3218, -438)
+else
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(21, 3218, -438)
 
-
-
+end
 end
 end
 end)
@@ -1499,12 +1511,15 @@ name = v.Name
 local split = mes:split(" ")
 local cmd = split[1]
 if cmd == "]arena" then
-
+if _G.SpawnedArena == false then
 game:GetObjects("rbxassetid://12432372600")[1].Parent=game.Workspace
 
 wait(2)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(21, 3218, -438)
+else
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(21, 3218, -438)
 
+end
 end
 end
 end)
@@ -1543,12 +1558,14 @@ mes = string.lower(mes)
 local split = mes:split(" ")
 local cmd = split[1]
 if cmd == "]deletearena" then
+if _G.SpawnedArena == true then
 game:GetService("Workspace")["Arena map"]:Destroy()
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-210, 94, 284)
 
+else
 
-
+end
 end
 end
 end)
@@ -1566,12 +1583,14 @@ name = v.Name
 local split = mes:split(" ")
 local cmd = split[1]
 if cmd == "]deletearena" then
-
+if _G.SpawnedArena == true then
 game:GetService("Workspace")["Arena map"]:Destroy()
 
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-210, 94, 284)
+else
 
+end
 end
 end
 end)
