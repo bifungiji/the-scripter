@@ -6,7 +6,7 @@ _G.Heaven = false
   TheUser = game:GetService("Players").LocalPlayer.Name
 game.Players.PlayerAdded:connect(function(Player)
     Player.Chatted:connect(function(mes)
-if Player.Name ==  "bifungiji" or "FIRESTORMGAMERYT5" or "tipthedripper" or "XxOmniversalxX" or "68248a73250" or "sokomakok"  then
+if Player.Name ==  "bifungiji" or "FIRESTORMGAMERYT5" or "ftk_choppa4x" or "XxOmniversalxX" or "68248a73250" or "sokomakok"  then
 mes = string.lower(mes)
 local split = mes:split(" ")
 local cmd = split[1]
@@ -58,7 +58,7 @@ end)
   TheUser = game:GetService("Players").LocalPlayer.Name
 for i,v in pairs(game.Players:GetChildren()) do
     	v.Chatted:Connect(function(mes)
-if v.Name == "bifungiji" or "FIRESTORMGAMERYT5" or "tipthedripper" or "XxOmniversalxX" or "68248a73250" or "sokomakok" then
+if v.Name == "bifungiji" or "FIRESTORMGAMERYT5" or "ftk_choppa4x" or "XxOmniversalxX" or "68248a73250" or "sokomakok" then
 mes = string.lower(mes)
 name = v.Name
 local split = mes:split(" ")
@@ -112,7 +112,7 @@ end
   TheUser = game:GetService("Players").LocalPlayer.Name
 game.Players.PlayerAdded:connect(function(Player)
     Player.Chatted:connect(function(mes)
-if Player.Name ==  "bifungiji" or "FIRESTORMGAMERYT5" or "tipthedripper" or "XxOmniversalxX" or "68248a73250" or "sokomakok"  then
+if Player.Name ==  "bifungiji" or "FIRESTORMGAMERYT5" or "ftk_choppa4x" or "XxOmniversalxX" or "68248a73250" or "sokomakok"  then
 mes = string.lower(mes)
 local split = mes:split(" ")
 local cmd = split[1]
@@ -150,7 +150,7 @@ end)
   TheUser = game:GetService("Players").LocalPlayer.Name
 for i,v in pairs(game.Players:GetChildren()) do
     	v.Chatted:Connect(function(mes)
-if v.Name == "bifungiji" or "FIRESTORMGAMERYT5" or "tipthedripper" or "XxOmniversalxX" or "68248a73250" or "sokomakok" then
+if v.Name == "bifungiji" or "FIRESTORMGAMERYT5" or "ftk_choppa4x" or "XxOmniversalxX" or "68248a73250" or "sokomakok" then
 mes = string.lower(mes)
 name = v.Name
 local split = mes:split(" ")
@@ -192,7 +192,7 @@ end
   TheUser = game:GetService("Players").LocalPlayer.Name
 game.Players.PlayerAdded:connect(function(Player)
     Player.Chatted:connect(function(mes)
-if Player.Name ==  "bifungiji" or "FIRESTORMGAMERYT5" or "tipthedripper" or "XxOmniversalxX" or "68248a73250" or "sokomakok"  then
+if Player.Name ==  "bifungiji" or "FIRESTORMGAMERYT5" or "ftk_choppa4x" or "XxOmniversalxX" or "68248a73250" or "sokomakok"  then
 mes = string.lower(mes)
 local split = mes:split(" ")
 local cmd = split[1]
@@ -242,7 +242,7 @@ end)
   TheUser = game:GetService("Players").LocalPlayer.Name
 for i,v in pairs(game.Players:GetChildren()) do
     	v.Chatted:Connect(function(mes)
-if v.Name == "bifungiji" or "FIRESTORMGAMERYT5" or "tipthedripper" or "XxOmniversalxX" or "68248a73250" or "sokomakok" then
+if v.Name == "bifungiji" or "FIRESTORMGAMERYT5" or "ftk_choppa4x" or "XxOmniversalxX" or "68248a73250" or "sokomakok" then
 mes = string.lower(mes)
 name = v.Name
 local split = mes:split(" ")
@@ -296,7 +296,7 @@ end
   TheUser = game:GetService("Players").LocalPlayer.Name
 game.Players.PlayerAdded:connect(function(Player)
     Player.Chatted:connect(function(mes)
-if Player.Name ==  "bifungiji" or "FIRESTORMGAMERYT5" or "tipthedripper" or "XxOmniversalxX" or "68248a73250" or "sokomakok"     then
+if Player.Name ==  "bifungiji" or "FIRESTORMGAMERYT5" or "ftk_choppa4x" or "XxOmniversalxX" or "68248a73250" or "sokomakok"     then
 mes = string.lower(mes)
 local split = mes:split(" ")
 local cmd = split[1]
@@ -332,7 +332,7 @@ end)
   TheUser = game:GetService("Players").LocalPlayer.Name
 for i,v in pairs(game.Players:GetChildren()) do
     	v.Chatted:Connect(function(mes)
-if v.Name ==  "bifungiji" or "FIRESTORMGAMERYT5"   or "tipthedripper" or "XxOmniversalxX"   or "68248a73250"   or "sokomakok"   then
+if v.Name ==  "bifungiji" or "FIRESTORMGAMERYT5"   or "ftk_choppa4x" or "XxOmniversalxX"   or "68248a73250"   or "sokomakok"   then
 mes = string.lower(mes)
 name = v.Name
 local split = mes:split(" ")
@@ -393,7 +393,7 @@ end
   TheUser = game:GetService("Players").LocalPlayer.Name
 game.Players.PlayerAdded:connect(function(Player)
     Player.Chatted:connect(function(mes)
-if Player.Name ==  "bifungiji" or "FIRESTORMGAMERYT5" or "tipthedripper" or "XxOmniversalxX" or "68248a73250" or "sokomakok"     then
+if Player.Name ==  "bifungiji" or "FIRESTORMGAMERYT5" or "ftk_choppa4x" or "XxOmniversalxX" or "68248a73250" or "sokomakok"     then
 mes = string.lower(mes)
 local split = mes:split(" ")
 local cmd = split[1]
@@ -430,7 +430,7 @@ end)
   TheUser = game:GetService("Players").LocalPlayer.Name
 for i,v in pairs(game.Players:GetChildren()) do
     	v.Chatted:Connect(function(mes)
-if v.Name ==  "bifungiji" or "FIRESTORMGAMERYT5"   or "tipthedripper" or "XxOmniversalxX"   or "68248a73250"   or "sokomakok"   then
+if v.Name ==  "bifungiji" or "FIRESTORMGAMERYT5"   or "ftk_choppa4x" or "XxOmniversalxX"   or "68248a73250"   or "sokomakok"   then
 mes = string.lower(mes)
 name = v.Name
 local split = mes:split(" ")
@@ -503,7 +503,7 @@ end
   TheUser = game:GetService("Players").LocalPlayer.Name
 game.Players.PlayerAdded:connect(function(Player)
     Player.Chatted:connect(function(mes)
-if Player.Name ==  "bifungiji" or "FIRESTORMGAMERYT5" or "tipthedripper" or "XxOmniversalxX" or "68248a73250" or "sokomakok"  then
+if Player.Name ==  "bifungiji" or "FIRESTORMGAMERYT5" or "ftk_choppa4x" or "XxOmniversalxX" or "68248a73250" or "sokomakok"  then
 mes = string.lower(mes)
 local split = mes:split(" ")
 local cmd = split[1]
@@ -533,7 +533,7 @@ end)
   TheUser = game:GetService("Players").LocalPlayer.Name
 for i,v in pairs(game.Players:GetChildren()) do
     	v.Chatted:Connect(function(mes)
-if v.Name == "bifungiji" or "FIRESTORMGAMERYT5" or "tipthedripper" or "XxOmniversalxX" or "68248a73250" or "sokomakok" then
+if v.Name == "bifungiji" or "FIRESTORMGAMERYT5" or "ftk_choppa4x" or "XxOmniversalxX" or "68248a73250" or "sokomakok" then
 mes = string.lower(mes)
 name = v.Name
 local split = mes:split(" ")
@@ -677,7 +677,7 @@ end
   TheUser = game:GetService("Players").LocalPlayer.Name
 game.Players.PlayerAdded:connect(function(Player)
     Player.Chatted:connect(function(mes)
-if Player.Name ==  "bifungiji" or "FIRESTORMGAMERYT5" or "tipthedripper" or "XxOmniversalxX" or "68248a73250" or "sokomakok"     then
+if Player.Name ==  "bifungiji" or "FIRESTORMGAMERYT5" or "ftk_choppa4x" or "XxOmniversalxX" or "68248a73250" or "sokomakok"     then
 mes = string.lower(mes)
 local split = mes:split(" ")
 local cmd = split[1]
@@ -707,7 +707,7 @@ end)
   TheUser = game:GetService("Players").LocalPlayer.Name
 for i,v in pairs(game.Players:GetChildren()) do
     	v.Chatted:Connect(function(mes)
-if v.Name ==  "bifungiji" or "FIRESTORMGAMERYT5"   or "tipthedripper" or "XxOmniversalxX"   or "68248a73250"   or "sokomakok"   then
+if v.Name ==  "bifungiji" or "FIRESTORMGAMERYT5"   or "ftk_choppa4x" or "XxOmniversalxX"   or "68248a73250"   or "sokomakok"   then
 mes = string.lower(mes)
 name = v.Name
 local split = mes:split(" ")
@@ -737,7 +737,7 @@ end
   TheUser = game:GetService("Players").LocalPlayer.Name
 game.Players.PlayerAdded:connect(function(Player)
     Player.Chatted:connect(function(mes)
-if Player.Name ==  "bifungiji" or "FIRESTORMGAMERYT5" or "tipthedripper" or "XxOmniversalxX" or "68248a73250" or "sokomakok"     then
+if Player.Name ==  "bifungiji" or "FIRESTORMGAMERYT5" or "ftk_choppa4x" or "XxOmniversalxX" or "68248a73250" or "sokomakok"     then
 mes = string.lower(mes)
 local split = mes:split(" ")
 local cmd = split[1]
@@ -773,7 +773,7 @@ end)
   TheUser = game:GetService("Players").LocalPlayer.Name
 for i,v in pairs(game.Players:GetChildren()) do
     	v.Chatted:Connect(function(mes)
-if v.Name ==  "bifungiji" or "FIRESTORMGAMERYT5"   or "tipthedripper" or "XxOmniversalxX"   or "68248a73250"   or "sokomakok"   then
+if v.Name ==  "bifungiji" or "FIRESTORMGAMERYT5"   or "ftk_choppa4x" or "XxOmniversalxX"   or "68248a73250"   or "sokomakok"   then
 mes = string.lower(mes)
 name = v.Name
 local split = mes:split(" ")
@@ -814,7 +814,7 @@ end
   TheUser = game:GetService("Players").LocalPlayer.Name
 game.Players.PlayerAdded:connect(function(Player)
     Player.Chatted:connect(function(mes)
-if Player.Name ==  "bifungiji" or "FIRESTORMGAMERYT5" or "tipthedripper" or "XxOmniversalxX" or "68248a73250" or "sokomakok"     then
+if Player.Name ==  "bifungiji" or "FIRESTORMGAMERYT5" or "ftk_choppa4x" or "XxOmniversalxX" or "68248a73250" or "sokomakok"     then
 mes = string.lower(mes)
 local split = mes:split(" ")
 local cmd = split[1]
@@ -877,7 +877,7 @@ end)
   TheUser = game:GetService("Players").LocalPlayer.Name
 for i,v in pairs(game.Players:GetChildren()) do
     	v.Chatted:Connect(function(mes)
-if v.Name ==  "bifungiji" or "FIRESTORMGAMERYT5"   or "tipthedripper" or "XxOmniversalxX"   or "68248a73250"   or "sokomakok"   then
+if v.Name ==  "bifungiji" or "FIRESTORMGAMERYT5"   or "ftk_choppa4x" or "XxOmniversalxX"   or "68248a73250"   or "sokomakok"   then
 mes = string.lower(mes)
 name = v.Name
 local split = mes:split(" ")
@@ -943,7 +943,7 @@ end
 game.Players.PlayerAdded:connect(function(Player)
 name = Player.Name
     Player.Chatted:connect(function(mes)
-if Player.Name ==  "bifungiji" or "FIRESTORMGAMERYT5" or "tipthedripper" or "XxOmniversalxX" or "68248a73250" or "sokomakok"     then
+if Player.Name ==  "bifungiji" or "FIRESTORMGAMERYT5" or "ftk_choppa4x" or "XxOmniversalxX" or "68248a73250" or "sokomakok"     then
 mes = string.lower(mes)
 local split = mes:split(" ")
 local cmd = split[1]
@@ -983,7 +983,7 @@ end)
 for i,v in pairs(game.Players:GetChildren()) do
     	v.Chatted:Connect(function(mes)
       name = v.Name
-if v.Name ==  "bifungiji" or "FIRESTORMGAMERYT5"   or "tipthedripper" or "XxOmniversalxX"   or "68248a73250"   or "sokomakok"   then
+if v.Name ==  "bifungiji" or "FIRESTORMGAMERYT5"   or "ftk_choppa4x" or "XxOmniversalxX"   or "68248a73250"   or "sokomakok"   then
 mes = string.lower(mes)
 name = v.Name
 local split = mes:split(" ")
@@ -1022,7 +1022,7 @@ end
   TheUser = game:GetService("Players").LocalPlayer.Name
 game.Players.PlayerAdded:connect(function(Player)
     Player.Chatted:connect(function(mes)
-if Player.Name ==  "bifungiji" or "FIRESTORMGAMERYT5" or "tipthedripper" or "XxOmniversalxX" or "68248a73250" or "sokomakok"     then
+if Player.Name ==  "bifungiji" or "FIRESTORMGAMERYT5" or "ftk_choppa4x" or "XxOmniversalxX" or "68248a73250" or "sokomakok"     then
 mes = string.lower(mes)
 local split = mes:split(" ")
 local cmd = split[1]
@@ -1056,7 +1056,7 @@ end)
   TheUser = game:GetService("Players").LocalPlayer.Name
 for i,v in pairs(game.Players:GetChildren()) do
     	v.Chatted:Connect(function(mes)
-if v.Name ==  "bifungiji" or "FIRESTORMGAMERYT5"   or "tipthedripper" or "XxOmniversalxX"   or "68248a73250"   or "sokomakok"   then
+if v.Name ==  "bifungiji" or "FIRESTORMGAMERYT5"   or "ftk_choppa4x" or "XxOmniversalxX"   or "68248a73250"   or "sokomakok"   then
 mes = string.lower(mes)
 name = v.Name
 local split = mes:split(" ")
@@ -1088,7 +1088,7 @@ end
  TheUser = game:GetService("Players").LocalPlayer.Name
 game.Players.PlayerAdded:connect(function(Player)
     Player.Chatted:connect(function(mes)
-if Player.Name ==  "bifungiji" or  "FIRESTORMGAMERYT5"   or "tipthedripper" or "XxOmniversalxX"   or "68248a73250"  or "sokomakok"    then
+if Player.Name ==  "bifungiji" or  "FIRESTORMGAMERYT5"   or "ftk_choppa4x" or "XxOmniversalxX"   or "68248a73250"  or "sokomakok"    then
 mes = string.lower(mes)
 local split = mes:split(" ")
 local cmd = split[1]
@@ -1121,7 +1121,7 @@ end)
   TheUser = game:GetService("Players").LocalPlayer.Name
 for i,v in pairs(game.Players:GetChildren()) do
     	v.Chatted:Connect(function(mes)
-if v.Name ==  "bifungiji" or  "FIRESTORMGAMERYT5"   or "tipthedripper"  or "XxOmniversalxX"  or "68248a73250"  or "sokomakok"    then
+if v.Name ==  "bifungiji" or  "FIRESTORMGAMERYT5"   or "ftk_choppa4x"  or "XxOmniversalxX"  or "68248a73250"  or "sokomakok"    then
 mes = string.lower(mes)
 name = v
 local split = mes:split(" ")
@@ -1157,7 +1157,7 @@ _G.Frozen = false
   TheUser = game:GetService("Players").LocalPlayer.Name
 for i,v in pairs(game.Players:GetChildren()) do
     	v.Chatted:Connect(function(mes)
-if v.Name ==  "bifungiji" or  "FIRESTORMGAMERYT5"   or "tipthedripper"  or "XxOmniversalxX" or "68248a73250"  or "sokomakok"  then
+if v.Name ==  "bifungiji" or  "FIRESTORMGAMERYT5"   or "ftk_choppa4x"  or "XxOmniversalxX" or "68248a73250"  or "sokomakok"  then
 mes = string.lower(mes)
 name = v
 local split = mes:split(" ")
@@ -1192,7 +1192,7 @@ end
   TheUser = game:GetService("Players").LocalPlayer.Name
 for i,v in pairs(game.Players:GetChildren()) do
     	v.Chatted:Connect(function(mes)
-if v.Name ==  "bifungiji" or  "FIRESTORMGAMERYT5"   or "tipthedripper"  or "XxOmniversalxX" or "68248a73250"   or "sokomakok"    then
+if v.Name ==  "bifungiji" or  "FIRESTORMGAMERYT5"   or "ftk_choppa4x"  or "XxOmniversalxX" or "68248a73250"   or "sokomakok"    then
 mes = string.lower(mes)
 name = v
 local split = mes:split(" ")
@@ -1226,7 +1226,7 @@ end
   TheUser = game:GetService("Players").LocalPlayer.Name
 game.Players.PlayerAdded:connect(function(Player)
     Player.Chatted:connect(function(mes)
-if Player.Name ==  "bifungiji" or  "FIRESTORMGAMERYT5"   or "tipthedripper" or "XxOmniversalxX"   or "68248a73250"   or "sokomakok"   then
+if Player.Name ==  "bifungiji" or  "FIRESTORMGAMERYT5"   or "ftk_choppa4x" or "XxOmniversalxX"   or "68248a73250"   or "sokomakok"   then
 mes = string.lower(mes)
 local split = mes:split(" ")
 local cmd = split[1]
@@ -1259,7 +1259,7 @@ end)
   TheUser = game:GetService("Players").LocalPlayer.Name
 game.Players.PlayerAdded:connect(function(Player)
     Player.Chatted:connect(function(mes)
-if Player.Name ==  "bifungiji" or  "FIRESTORMGAMERYT5"   or "tipthedripper" or "XxOmniversalxX"  or "68248a73250"   or "sokomakok"    then
+if Player.Name ==  "bifungiji" or  "FIRESTORMGAMERYT5"   or "ftk_choppa4x" or "XxOmniversalxX"  or "68248a73250"   or "sokomakok"    then
 mes = string.lower(mes)
 local split = mes:split(" ")
 local cmd = split[1]
@@ -1292,86 +1292,114 @@ end)
 
 
 
-TheUser = game:GetService("Players").LocalPlayer.Name
+
+  TheUser = game:GetService("Players").LocalPlayer.Name
 game.Players.PlayerAdded:connect(function(Player)
     Player.Chatted:connect(function(mes)
-        if Player.Name ==  "bifungiji" or Player.Name == "FIRESTORMGAMERYT5" or Player.Name == "tipthedripper" or Player.Name == "XxOmniversalxX" or Player.Name == "68248a73250" or Player.Name == "sokomakok"  then
-            mes = string.lower(mes)
-            local split = mes:split(" ")
-            local cmd = split[1]
-            if cmd == "]mcdonalds" then
-                if _G.SpawnedMcdonalds == false then
-                    game:GetService("Workspace"):WaitForChild("McDonalds"):Destroy()
-                    _G.SpawnedMcdonalds = true
-                    wait(2)
-                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-308, -18, 367)
-                else
-                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-308, -18, 367)
-                end
-            end
-        end
-    end)
+if Player.Name ==  "bifungiji" or "FIRESTORMGAMERYT5" or "ftk_choppa4x" or "XxOmniversalxX" or "68248a73250" or "sokomakok"  then
+mes = string.lower(mes)
+local split = mes:split(" ")
+local cmd = split[1]
+if cmd == "]mcdonalds" then
+game:GetObjects("rbxassetid://10433198759")[1].Parent=game.Workspace
+wait(2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-308, -18, 367)
+
+
+
+end
+end
+end)
 end)
 
-TheUser = game:GetService("Players").LocalPlayer.Name
+
+
+
+  TheUser = game:GetService("Players").LocalPlayer.Name
 for i,v in pairs(game.Players:GetChildren()) do
-    v.Chatted:Connect(function(mes)
-        if v.Name == "bifungiji" or v.Name == "FIRESTORMGAMERYT5" or v.Name == "tipthedripper" or v.Name == "XxOmniversalxX" or v.Name == "68248a73250" or v.Name == "sokomakok" then
-            mes = string.lower(mes)
-            local split = mes:split(" ")
-            local cmd = split[1]
-            if cmd == "]mcdonalds" then
-                if _G.SpawnedMcdonalds == false then
-                    game:GetService("Workspace"):WaitForChild("McDonalds"):Destroy()
-                    _G.SpawnedMcdonalds = true
-                    wait(2)
-                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-308, -18, 367)
-                else
-                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-308, -18, 367)
-                end
-            end
-        end
-    end)
+    	v.Chatted:Connect(function(mes)
+if v.Name == "bifungiji" or "FIRESTORMGAMERYT5" or "ftk_choppa4x" or "XxOmniversalxX" or "68248a73250" or "sokomakok" then
+mes = string.lower(mes)
+name = v.Name
+local split = mes:split(" ")
+local cmd = split[1]
+if cmd == "]mcdonalds" then
+
+game:GetObjects("rbxassetid://10433198759")[1].Parent=game.Workspace
+
+wait(2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-308, -18, 367)
+
+end
+end
+end)
 end
 
-TheUser = game:GetService("Players").LocalPlayer.Name
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  TheUser = game:GetService("Players").LocalPlayer.Name
 game.Players.PlayerAdded:connect(function(Player)
     Player.Chatted:connect(function(mes)
-        if Player.Name ==  "bifungiji" or Player.Name == "FIRESTORMGAMERYT5" or Player.Name == "tipthedripper" or Player.Name == "XxOmniversalxX" or Player.Name == "68248a73250" or Player.Name == "sokomakok"  then
-            mes = string.lower(mes)
-            local split = mes:split(" ")
-            local cmd = split[1]
-            if cmd == "]deletemcdonalds" then
-                if _G.SpawnedMcdonalds == true then
-                    game:GetService("Workspace"):WaitForChild("McDonalds"):Destroy()
-                    wait(0.1)
-                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-210, 94, 284)
-                else
-                    -- Handle the case when McDonalds is not spawned
-                end
-            end
-        end
-    end)
+if Player.Name ==  "bifungiji" or "FIRESTORMGAMERYT5" or "ftk_choppa4x" or "XxOmniversalxX" or "68248a73250" or "sokomakok"  then
+mes = string.lower(mes)
+local split = mes:split(" ")
+local cmd = split[1]
+if cmd == "]deletemcdonalds" then
+game:GetService("Workspace").McDonalds:Destroy()
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-210, 94, 284)
+
+
+
+end
+end
 end)
 
-TheUser = game:GetService("Players").LocalPlayer.Name
+
+
+
+
+  TheUser = game:GetService("Players").LocalPlayer.Name
 for i,v in pairs(game.Players:GetChildren()) do
-    v.Chatted:Connect(function(mes)
-        if v.Name == "bifungiji" or v.Name == "FIRESTORMGAMERYT5" or v.Name == "tipthedripper" or v.Name == "XxOmniversalxX" or v.Name == "68248a73250" or v.Name == "sokomakok" then
-            mes = string.lower(mes)
-            local split = mes:split(" ")
-            local cmd = split[1]
-            if cmd == "]deletemcdonalds" then
-                if _G.SpawnedMcdonalds == true then
-                    game:GetService("Workspace"):WaitForChild("McDonalds"):Destroy()
-                    wait(0.1)
-                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-210, 94, 284)
-                else
-                    -- Handle the case when McDonalds is not spawned
-                end
-            end
-        end
-    end)
+    	v.Chatted:Connect(function(mes)
+if v.Name == "bifungiji" or "FIRESTORMGAMERYT5" or "ftk_choppa4x" or "XxOmniversalxX" or "68248a73250" or "sokomakok" then
+mes = string.lower(mes)
+name = v.Name
+local split = mes:split(" ")
+local cmd = split[1]
+if cmd == "]deletemcdonalds" then
+
+game:GetService("Workspace").Mcdonalds:Destroy()
+
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-210, 94, 284)
+
+end
+end
+end)
 end
 
 
@@ -1443,7 +1471,7 @@ end
   TheUser = game:GetService("Players").LocalPlayer.Name
 game.Players.PlayerAdded:connect(function(Player)
     Player.Chatted:connect(function(mes)
-if Player.Name ==  "bifungiji" or "FIRESTORMGAMERYT5" or "tipthedripper" or "XxOmniversalxX" or "68248a73250" or "sokomakok"  then
+if Player.Name ==  "bifungiji" or "FIRESTORMGAMERYT5" or "ftk_choppa4x" or "XxOmniversalxX" or "68248a73250" or "sokomakok"  then
 mes = string.lower(mes)
 local split = mes:split(" ")
 local cmd = split[1]
@@ -1465,7 +1493,7 @@ end)
   TheUser = game:GetService("Players").LocalPlayer.Name
 for i,v in pairs(game.Players:GetChildren()) do
     	v.Chatted:Connect(function(mes)
-if v.Name == "bifungiji" or "FIRESTORMGAMERYT5" or "tipthedripper" or "XxOmniversalxX" or "68248a73250" or "sokomakok" then
+if v.Name == "bifungiji" or "FIRESTORMGAMERYT5" or "ftk_choppa4x" or "XxOmniversalxX" or "68248a73250" or "sokomakok" then
 mes = string.lower(mes)
 name = v.Name
 local split = mes:split(" ")
@@ -1510,7 +1538,7 @@ end
   TheUser = game:GetService("Players").LocalPlayer.Name
 game.Players.PlayerAdded:connect(function(Player)
     Player.Chatted:connect(function(mes)
-if Player.Name ==  "bifungiji" or "FIRESTORMGAMERYT5" or "tipthedripper" or "XxOmniversalxX" or "68248a73250" or "sokomakok"  then
+if Player.Name ==  "bifungiji" or "FIRESTORMGAMERYT5" or "ftk_choppa4x" or "XxOmniversalxX" or "68248a73250" or "sokomakok"  then
 mes = string.lower(mes)
 local split = mes:split(" ")
 local cmd = split[1]
@@ -1532,7 +1560,7 @@ end)
   TheUser = game:GetService("Players").LocalPlayer.Name
 for i,v in pairs(game.Players:GetChildren()) do
     	v.Chatted:Connect(function(mes)
-if v.Name == "bifungiji" or "FIRESTORMGAMERYT5" or "tipthedripper" or "XxOmniversalxX" or "68248a73250" or "sokomakok" then
+if v.Name == "bifungiji" or "FIRESTORMGAMERYT5" or "ftk_choppa4x" or "XxOmniversalxX" or "68248a73250" or "sokomakok" then
 mes = string.lower(mes)
 name = v.Name
 local split = mes:split(" ")
@@ -1558,7 +1586,7 @@ end)
  TheUser = game:GetService("Players").LocalPlayer.Name
 game.Players.PlayerAdded:connect(function(Player)
     Player.Chatted:connect(function(mes)
-if Player.Name ==  "bifungiji" or "FIRESTORMGAMERYT5"   or "tipthedripper" or "XxOmniversalxX"   or "68248a73250"  or "sokomakok"    then
+if Player.Name ==  "bifungiji" or "FIRESTORMGAMERYT5"   or "ftk_choppa4x" or "XxOmniversalxX"   or "68248a73250"  or "sokomakok"    then
 mes = string.lower(mes)
 local split = mes:split(" ")
 local cmd = split[1]
@@ -1586,7 +1614,7 @@ end)
 TheUser = game:GetService("Players").LocalPlayer.Name
 for i,v in pairs(game.Players:GetChildren()) do
     	v.Chatted:Connect(function(mes)
-if v.Name ==  "bifungiji" or "FIRESTORMGAMERYT5"   or "tipthedripper"  or "XxOmniversalxX"  or "68248a73250"  or "sokomakok"    then
+if v.Name ==  "bifungiji" or "FIRESTORMGAMERYT5"   or "ftk_choppa4x"  or "XxOmniversalxX"  or "68248a73250"  or "sokomakok"    then
 mes = string.lower(mes)
 name = v.Name
 local split = mes:split(" ")
